@@ -1,45 +1,85 @@
 .service-selector {
-    padding: 2rem;
-    text-align: center;
+    max-width: 1300px;
+    margin: 100px auto;
+    padding: 20px;
 }
 
 .service-title {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .service-card {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 1rem;
-    background-color: #fafafa;
-    transition: box-shadow 0.3s ease;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.service-info h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .price {
-    font-weight: bold;
-    margin: 0.5rem 0;
+    color: #6429cd;
+    font-weight: 600;
 }
 
-button {
-    background-color: #004aad;
-    color: white;
+.add-btn,
+.remove-btn {
+    margin-top: 15px;
+    padding: 10px;
     border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
 }
 
-button:hover {
-    background-color: #003b8e;
+.add-btn {
+    background-color: #6429cd;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #4e1fa0;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
 }

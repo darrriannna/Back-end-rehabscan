@@ -1,0 +1,265 @@
+/* ----------------------------- */
+/* Navbar Base Styles            */
+/* ----------------------------- */
+.navbar {
+    background: #fff;
+    padding: 0.75rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logo-nav {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo img {
+    transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #0077cc;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* ----------------------------- */
+/* Slide-out Menu (Responsive)   */
+/* ----------------------------- */
+@media (max-width: 1000px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background: #fff;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #333;
+    }
+
+    .menu-toggle:hover {
+        background-color: #b3b3b3;
+    }
+
+    /* Close button inside menu */
+    .nav-links .close-menu {
+        display: block;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+
+    .nav-links .close-menu button {
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .nav-links .close-menu button:hover {
+        color: #0077cc;
+    }
+}
+
+/* ----------------------------- */
+/* Search Panel                  */
+/* ----------------------------- */
+.search-panel {
+    position: absolute;
+    top: 70px;
+    /* adjust based on navbar height */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    background: #EBEBEB;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.search-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-inner input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #4C4B4B;
+    padding: 8px 12px;
+}
+
+.search-inner .search-icon {
+    margin-right: 12px;
+    font-size: 16px;
+    color: #000;
+}
+
+.search-inner button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.search-inner button:hover {
+    background: #005fa3;
+}
+
+/* ----------------------------- */
+/* Responsive adjustments        */
+/* ----------------------------- */
+@media (max-width: 400px) {
+    .search-panel {
+        width: 90%;
+    }
+}
+
+.top-strip {
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.top-strip-text {
+
+    padding: 10px;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    animation: fade-in-out 10s infinite;
+}
+
+@media (max-width: 700px) {
+    .top-strip-text {
+        font-size: 0.8rem;
+    }
+
+}
+
+@keyframes fade-in-out {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: #b52bff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,20 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Booking from "./pages/Booking";
-import Success from "./pages/Success";
-import Cancel from "./pages/Cancel";
+import MR from "./pages/MRServices";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="/cancel" element={<Cancel />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/mr-undersokningar" element={<MR />} />
+      <Route path="/varukorg" element={<CartPage />} />
+    </Routes>
   );
 }
 
 export default App;
+
