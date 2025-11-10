@@ -80,7 +80,6 @@
 .mr-card {
     max-width: 800px;
     width: 100%;
-    background: url("/assets/mr-undersokning.gif") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
