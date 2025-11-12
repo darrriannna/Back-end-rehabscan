@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Unilabs Klara Strand Röntgen",
+        "address": "Blekholmstorget 30, 111 64 Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Sabbatsberg Röntgen",
+        "address": "Olivecronas väg 1, 113 24 Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Backa Röntgen",
+        "address": "Backavägen 3, 417 30 Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Unilabs Haga Röntgen",
+        "address": "Haga Östergata 12, 413 01 Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Mölndal vid GoCo",
+        "address": "Entreprenörsstråket 6, 431 53 Mölndal",
+        "city": "Mölndal"
+    },
+    {
+        "name": "Malmö Entré Röntgen",
+        "address": "Fredsgatan 12, 212 12 Malmö",
+        "city": "Malmö"
+    },
+    {
+        "name": "Unilabs Malmö Arena Röntgen",
+        "address": "Hyllie Stationsväg, 216 23 Malmö",
+        "city": "Malmö"
+    },
+    {
+        "name": "Umeå Röntgen",
+        "address": "Renmarkstorget 12, 903 26 Umeå",
+        "city": "Umeå"
+    },
+    {
+        "name": "Karlstad Röntgen",
+        "address": "Löfbergs Arena, Norra Infarten 79, 654 65 Karlstad",
+        "city": "Karlstad"
+    },
+    {
+        "name": "Sundsvall Röntgen",
+        "address": "Institutvägen 2, 856 43 Sundsvall",
+        "city": "Sundsvall"
+    },
+    {
+        "name": "Jönköping Röntgen",
+        "address": "Batterigatan 11, 553 05 Jönköping",
+        "city": "Jönköping"
+    }
+]

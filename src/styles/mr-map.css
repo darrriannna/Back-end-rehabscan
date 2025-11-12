@@ -1,0 +1,193 @@
+.map-section-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.map-section-container h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.map-section-text-h {
+    text-align: left;
+    color: black;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.map-section-text-p {
+    font-size: 20px;
+    padding: 30px;
+
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    flex: 1;
+
+}
+
+.text-content {
+    flex: 1;
+}
+
+.map-container {
+    position: relative;
+
+    max-width: 100%;
+}
+
+.map-image {
+
+    max-width: 350px;
+    height: auto;
+
+}
+
+/* Marker styling with bounce */
+
+@media (max-width: 950px) {
+    .map-image {
+        display: none;
+    }
+
+    .dropdown-toggle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 950px) {
+    .map-image {
+        max-width: 550px;
+    }
+
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 850px) {
+    .map-section {
+        align-items: center;
+        margin: auto;
+    }
+
+    .map-section-container {
+        width: 90%;
+    }
+
+    .text-content p {
+        margin-bottom: 40px;
+
+    }
+
+    .list-map-container li {
+        font-size: 22px;
+    }
+}
+
+.map-section {
+    display: flex;
+    flex-direction: row;
+    /* default side-by-side */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 950px) {
+    .map-section {
+        flex-direction: column;
+        /* stack vertically */
+        align-items: center;
+        /* center map */
+        text-align: center;
+        width: 90%;
+    }
+
+    .map-container {
+        order: -1;
+        /* move map ABOVE text */
+        margin-bottom: 20px;
+    }
+
+    .map-image {
+        display: block;
+        /* ensure it's visible */
+        max-width: 90%;
+        height: auto;
+    }
+
+    .list-map-container {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+
+.small-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.list-map-container {
+    list-style: none;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    padding-top: 10px;
+}
+
+.button-clinic {
+    margin-top: 5px;
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #082e58;
+}
+
+.list-of-clinics {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.clinic-name {
+    font-weight: bold !important;
+    color: #082e58 !important;
+    padding: 0 !important;
+}
+
+.clinic-adress {
+
+    color: #082e58 !important;
+    padding: 0 !important;
+}
+
+.clinic-details {
+    background-color: rgba(234, 234, 234, 0.456);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}

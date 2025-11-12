@@ -191,3 +191,38 @@
     justify-content: left;
     align-items: center;
 }
+
+.carousel-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* small space between text and arrow */
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+.svg-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    transition: transform 0.25s ease, color 0.25s ease;
+    padding: 0;
+}
+
+/* Hover animation — small push right */
+.svg-btn:hover {
+    background-color: transparent;
+    transform: translateX(10px);
+    color: #2d5fff;
+}
+
+.svg-btn svg {
+    width: 40px;
+    height: 40px;
+}

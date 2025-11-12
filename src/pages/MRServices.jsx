@@ -6,7 +6,8 @@ import '../styles/main.css';
 import Steps from "../components/Steps";
 import ServiceSelector from "../components/ServiceSelector";
 import StartMR from "../components/MRTopHome";
-import MapSection from "../components/Map";
+import MapMR from "../components/MRMap";
+
 
 function MR() {
 
@@ -18,7 +19,7 @@ function MR() {
                 <StartMR />
                 <ProductCarousel />
                 <ServiceSelector />
-                <MapSection />
+                <MapMR />
                 <Steps />
 
             </div>

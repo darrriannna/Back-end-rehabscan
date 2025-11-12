@@ -24,9 +24,10 @@ export default function Navbar() {
                             <button onClick={toggleMenu}>✕</button>
                         </li>
 
-                        <li><Link to="/tester">Hälsotester</Link></li>
+                        <li><Link to="/halsotester">Hälsotester</Link></li>
                         <li><Link to="/mr-undersokningar">MR-undersökningar</Link></li>
                         <li><Link to="/sa-fungerar-det">Så fungerar det</Link></li>
+                        <li><Link to="/mottagningar">Mottagningar</Link></li>
                         <li><Link to="/about">Om oss</Link></li>
                         <li><Link to="/contact">Kontakt</Link></li>
                     </ul>

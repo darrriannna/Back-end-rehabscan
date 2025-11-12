@@ -1,0 +1,377 @@
+[
+    {
+        "name": "Mälarsjukhuset",
+        "address": "Mälarsjukhuset, Eskilstuna",
+        "city": "Eskilstuna"
+    },
+    {
+        "name": "Kullbergska sjukhuset",
+        "address": "Kullbergska sjukhuset, Katrineholm",
+        "city": "Katrineholm"
+    },
+    {
+        "name": "Nyköpings lasarett",
+        "address": "Nyköpings lasarett, Nyköping",
+        "city": "Nyköping"
+    },
+    {
+        "name": "Almedal",
+        "address": "Mölndalsvägen 30 C, Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Carlanderska sjukhuset",
+        "address": "Carlandersparken 1, Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Skaraborgs sjukhus",
+        "address": "Mellbygatan 11, Lidköping",
+        "city": "Lidköping"
+    },
+    {
+        "name": "Engelbrekt närlaboratorium",
+        "address": "Östermalmsgatan 47, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Gärdet närlaboratorium",
+        "address": "Sandhamnsgatan 4, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Hötorget närlaboratorium",
+        "address": "Holländargatan 4, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Johannes närlaboratorium",
+        "address": "Döbelnsgatan 56, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "S:t Eriks närlaboratorium",
+        "address": "Fleminggatan 24, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "S:t Görans närlaboratorium",
+        "address": "S:t Görans sjukhus, plan 1, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Sabbatsberg närlaboratorium",
+        "address": "Olivecronas väg 5, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Serafen närlaboratorium",
+        "address": "Hantverkargatan 2D, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Sibylle närlaboratorium",
+        "address": "Sibyllegatan 53, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Surbrunn närlaboratorium",
+        "address": "Surbrunnsgatan 66, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Östermalm närlaboratorium",
+        "address": "Grevgatan 34, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Axelsberg närlaboratorium",
+        "address": "Axelsbergs Torg 2, Hägersten",
+        "city": "Hägersten"
+    },
+    {
+        "name": "Liljeholmstorg närlaboratorium",
+        "address": "Liljeholmstorget 7, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Salems närlaboratorium",
+        "address": "Säbytorgsvägen 6, Rönninge",
+        "city": "Rönninge"
+    },
+    {
+        "name": "Skärholmen närlaboratorium",
+        "address": "Storholmsgatan 19, Skärholmen",
+        "city": "Skärholmen"
+    },
+    {
+        "name": "Luna närlaboratorium",
+        "address": "Köpmangatan 1, Södertälje",
+        "city": "Södertälje"
+    },
+    {
+        "name": "Ringen närlaboratorium",
+        "address": "Ringvägen 113, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Rosenlunds närlaboratorium",
+        "address": "Tideliusgatan 12, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Tallhöjden närlaboratorium",
+        "address": "Tallhöjdvägen 1-3, Södertälje",
+        "city": "Södertälje"
+    },
+    {
+        "name": "Tumba närlaboratorium",
+        "address": "Samaritvägen 4, Tumba",
+        "city": "Tumba"
+    },
+    {
+        "name": "Älvsjö närlaboratorium",
+        "address": "Solberga Hagväg 1, Älvsjö",
+        "city": "Älvsjö"
+    },
+    {
+        "name": "Alvik närlaboratorium",
+        "address": "Tranebergsplan 1, Bromma",
+        "city": "Bromma"
+    },
+    {
+        "name": "Bromma närlaboratorium",
+        "address": "Follingbogatan 32A, Bromma",
+        "city": "Bromma"
+    },
+    {
+        "name": "Jakobsbergs sjukhus närlaboratorium",
+        "address": "Birgittavägen 4, Järfalla",
+        "city": "Järfalla"
+    },
+    {
+        "name": "Kista närlaboratorium",
+        "address": "Kista Galleria Hus 3, Kista",
+        "city": "Kista"
+    },
+    {
+        "name": "Vällingby närlaboratorium",
+        "address": "Indalsbacken 1, Vällingby",
+        "city": "Vällingby"
+    },
+    {
+        "name": "Uppsala",
+        "address": "Kungsgatan 43, Uppsala",
+        "city": "Uppsala"
+    },
+    {
+        "name": "SYNLAB Göteborg",
+        "address": "Södra Vägen 23, 1tr, Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Encia Uppsala",
+        "address": "Kålsängsgränd 10D, Uppsala",
+        "city": "Uppsala"
+    },
+    {
+        "name": "Encia Gävle",
+        "address": "Nygatan 29, Gävle",
+        "city": "Gävle"
+    },
+    {
+        "name": "Encia Västerås",
+        "address": "Källgatan 10, 1tr, Västerås",
+        "city": "Västerås"
+    },
+    {
+        "name": "Encia Örebro",
+        "address": "Drottninggatan 38, vån 2, Örebro",
+        "city": "Örebro"
+    },
+    {
+        "name": "Encia Kalmar",
+        "address": "Stortorget 32, Kalmar",
+        "city": "Kalmar"
+    },
+    {
+        "name": "Encia Sundsvall",
+        "address": "Centralgatan 14, Sundsvall",
+        "city": "Sundsvall"
+    },
+    {
+        "name": "Encia Norrköping",
+        "address": "Drottninggatan 32, Norrköping",
+        "city": "Norrköping"
+    },
+    {
+        "name": "Encia Falun",
+        "address": "Åsgatan 55, Falun",
+        "city": "Falun"
+    },
+    {
+        "name": "Encia Karlstad",
+        "address": "Bryggaregatan 11, Karlstad",
+        "city": "Karlstad"
+    },
+    {
+        "name": "GoCo, Mölndal",
+        "address": "Entreprenörsstråket 6, Mölndal",
+        "city": "Mölndal"
+    },
+    {
+        "name": "Laboratoriet Gustavsberg",
+        "address": "Odelbergs väg 19A, Gustavsberg",
+        "city": "Gustavsberg"
+    },
+    {
+        "name": "Norrtälje Sjukhus",
+        "address": "Lasarettsgatan 8, Norrtälje",
+        "city": "Norrtälje"
+    },
+    {
+        "name": "Nacka Närsjukhus",
+        "address": "Lasarettsvägen 4, Nacka",
+        "city": "Nacka"
+    },
+    {
+        "name": "Nynäshamn sjukhus",
+        "address": "Idunvägen 1, Nynäshamn",
+        "city": "Nynäshamn"
+    },
+    {
+        "name": "Upplands Väsby Löwenströmska Sjukhuset",
+        "address": "Löwenströms väg 1, Upplands väsby",
+        "city": "Upplands väsby"
+    },
+    {
+        "name": "Närlaboratorium Vaxholm",
+        "address": "Kapellgatan 2, Vaxholm",
+        "city": "Vaxholm"
+    },
+    {
+        "name": "Laboratoriet Solna",
+        "address": "Hannebergsgatan 41, Solna",
+        "city": "Solna"
+    },
+    {
+        "name": "Södersjukhuset",
+        "address": "Sjukhusbacken 10, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "Vallentuna",
+        "address": "Åby gata 6, Vallentuna",
+        "city": "Vallentuna"
+    },
+    {
+        "name": "Täby sjukhus",
+        "address": "Esplanaden 9, Täby",
+        "city": "Täby"
+    },
+    {
+        "name": "Farsta Läkarhus",
+        "address": "Farstagången 32, Farsta",
+        "city": "Farsta"
+    },
+    {
+        "name": "Bagarmossen",
+        "address": "Lillåvägen 68, Bagarmossen",
+        "city": "Bagarmossen"
+    },
+    {
+        "name": "Edsberg",
+        "address": "Edsbergs torg 1, Sollentuna",
+        "city": "Sollentuna"
+    },
+    {
+        "name": "Huvudsta",
+        "address": "Storgatan 70, Solna",
+        "city": "Solna"
+    },
+    {
+        "name": "Märsta",
+        "address": "Södergatan 19, Märsta",
+        "city": "Märsta"
+    },
+    {
+        "name": "Ekerö",
+        "address": "Bryggavägen 8, plan 2, Ekerö",
+        "city": "Ekerö"
+    },
+    {
+        "name": "SYNLAB Göteborg MACC",
+        "address": "Södra Vägen 23, Göteborg",
+        "city": "Göteborg"
+    },
+    {
+        "name": "Provtagningscentral Huddinge",
+        "address": "Hälsovägen 13, Huddinge",
+        "city": "Huddinge"
+    },
+    {
+        "name": "Södertälje Sjukhus",
+        "address": "Rosenborgsgatan 6-10, Södertälje",
+        "city": "Södertälje"
+    },
+    {
+        "name": "Provtagningscentral Årsta",
+        "address": "Bränningevägen 2, Årsta",
+        "city": "Årsta"
+    },
+    {
+        "name": "Karolinska Universitetssjukhuset",
+        "address": "Eugeniavägen 3, Solna",
+        "city": "Solna"
+    },
+    {
+        "name": "Oceanhamnes Vårdcentral",
+        "address": "Henckels Torg 6, Helsingborg",
+        "city": "Helsingborg"
+    },
+    {
+        "name": "Närlaboratorium Boo",
+        "address": "Kanholmsvägen 51, Saltsjö-boo",
+        "city": "Saltsjöbaden"
+    },
+    {
+        "name": "Provtagningscentral Kallhäll",
+        "address": "Kopparvägen 2 B, Järfalla",
+        "city": "Järfalla"
+    },
+    {
+        "name": "Provtagningscentral Maria",
+        "address": "Wollmar Yxkullsgatan 25, Stockholm",
+        "city": "Stockholm"
+    },
+    {
+        "name": "KOPPARHÄLSAN Västerås",
+        "address": "Metallverksgatan 21, Västerås",
+        "city": "Västerås"
+    },
+    {
+        "name": "Danderyds sjukhus",
+        "address": "Entrévägen 2, Danderyd",
+        "city": "Danderyd"
+    },
+    {
+        "name": "Saltsjöbaden laboratoriet",
+        "address": "Byvägen 52, Saltsjöbaden",
+        "city": "Saltsjöbaden"
+    },
+    {
+        "name": "Norrlands Hälsa",
+        "address": "Västra Kyrkogatan 14B, Umeå",
+        "city": "Umeå"
+    },
+    {
+        "name": "Labbkliniken Örebro",
+        "address": "Gustavsgatan 7, Örebro",
+        "city": "Örebro"
+    },
+    {
+        "name": "Provtagningscentral Ersta sjukhus",
+        "address": "Folkungagatan 125, Stockholm",
+        "city": "Stockholm"
+    }
+]

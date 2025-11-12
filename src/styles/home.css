@@ -47,15 +47,27 @@
 
 .hero-card {
     position: relative;
-    flex: 1;
     min-width: 300px;
     border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
     overflow: hidden;
     color: white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mr-hero-card {
+    position: relative;
+    flex: 1 1 20px;
+    min-width: 300px;
+
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.test-hero-card {
     position: relative;
     flex: 1;
     min-width: 300px;
@@ -78,6 +90,18 @@
 }
 
 .mr-card {
+
+    width: 100%;
+    background: url("/assets/mr-undersokning.gif") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px black;
+}
+
+.test-card {
     max-width: 800px;
     width: 100%;
     background: url("/assets/mr-undersokning.gif") center center / cover no-repeat;
@@ -128,6 +152,12 @@
 }
 
 .mr-map-card {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(58, 9, 107, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding: 30px;
+    text-align: center;
+}
+
+.test-map-card {
 
     max-width: 300px;
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(58, 9, 107, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -174,9 +204,12 @@
         height: 250px;
     }
 
+    .mr-card {
+        height: 250px;
+    }
+
     .mr-map-card {
-        max-width: 600px;
-        min-width: 200px;
+        height: 250px;
     }
 
     .search-bar {

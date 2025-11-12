@@ -11,7 +11,11 @@ const StartHome = () => {
                     placeholder="Sök blodprover eller MR-undersökningar"
                     className="search-input"
                 />
-                <button className="search-btn">🔍</button>
+                <button className="search-btn"><img
+                    src="/assets/search.svg"
+                    alt="Sök"
+                    className="cart-icon"
+                /></button>
             </div>
 
             {/* Hero Section */}
