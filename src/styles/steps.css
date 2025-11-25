@@ -47,3 +47,64 @@
     font-size: 1rem;
     color: #333;
 }
+
+.steps-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+/* GIF */
+.gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.steps-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* RIGHT SIDE */
+.steps-right {
+    width: 100%;
+}
+
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+/* Desktop layout */
+@media (min-width: 908px) {
+    .steps-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+    .gif-container {
+        width: 45%;
+    }
+
+
+    .steps-right {
+        width: 55%;
+    }
+}
+
+.steps-video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}

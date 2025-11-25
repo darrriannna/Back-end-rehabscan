@@ -1,0 +1,129 @@
+/* -----------------------------
+   Booking Form – Updated Style
+------------------------------- */
+
+.booking-form {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #48737417;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Title */
+.booking-form h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+/* Inputs */
+.booking-form input,
+.booking-form textarea {
+    width: 90%;
+    margin: auto;
+    padding: 14px 16px;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fafafa;
+}
+
+/* Hover / Focus */
+.booking-form input:focus,
+.booking-form textarea:focus {
+    border-color: #5a7cff;
+    box-shadow: 0 0 0 3px rgba(90, 124, 255, 0.15);
+    background: #fff;
+}
+
+/* Textarea */
+.booking-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Total Price */
+.booking-form p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.booking-form button[type="submit"] {
+    margin-top: 10px;
+    padding: 14px 18px;
+    background: #4d07a4;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.booking-form button[type="submit"]:hover {
+    background: #16044a;
+}
+
+.booking-form button[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .booking-form {
+        margin: 20px;
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .booking-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .booking-form input,
+    .booking-form textarea {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+}
+
+/* Wrapper */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Standard, clean checkbox */
+.checkbox-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Text + link styling */
+.checkbox-row a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.checkbox-row a:hover {
+    text-decoration: none;
+}

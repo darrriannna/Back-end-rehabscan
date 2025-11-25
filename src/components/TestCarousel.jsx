@@ -1,31 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { FiShoppingCart, FiX } from "react-icons/fi";
+import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
-import "../styles/carousel.css";
+import { healthTests } from "../data/healthTestsData";
 
-const TestCarousel = () => {
+import "../styles/test-carousel.css"; // keeps your carousel layout
+import "../styles/tests.css"; // your health card styling (the one you sent)
+
+export default function TestCarousel() {
     const navigate = useNavigate();
     const { addToCart, removeFromCart, cart } = useCart();
     const trackRef = useRef(null);
-
-    const services = [
-        {
-            id: 101,
-            name: "Hälsotest – 49 markörer",
-            description: "Omfattande blodanalys med 49 markörer.",
-            oldPrice: "2 195kr",
-            newPrice: 1795,
-            image: "/assets/halsotest.png",
-        },
-        {
-            id: 102,
-            name: "Hälsotest – 35 markörer",
-            description: "Basblodtest med 35 viktiga hälsomarkörer.",
-            oldPrice: "1 975kr",
-            newPrice: 1295,
-            image: "/assets/halsotest.png",
-        },
-    ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [cardsPerView, setCardsPerView] = useState(4);
@@ -36,18 +22,21 @@ const TestCarousel = () => {
             else if (window.innerWidth < 768) setCardsPerView(2);
             else setCardsPerView(4);
         };
+
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1 >= services.length ? 0 : prev + 1));
-    };
+    const nextSlide = () =>
+        setCurrentIndex((prev) =>
+            prev + 1 >= healthTests.length ? 0 : prev + 1
+        );
 
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 < 0 ? services.length - 1 : prev - 1));
-    };
+    const prevSlide = () =>
+        setCurrentIndex((prev) =>
+            prev - 1 < 0 ? healthTests.length - 1 : prev - 1
+        );
 
     const isInCart = (id) => cart.some((item) => item.id === id);
 
@@ -56,25 +45,16 @@ const TestCarousel = () => {
             <div className="carousel-header">
                 <h2>Hälsotester</h2>
                 <button className="svg-btn" onClick={() => navigate("/halsotester")}>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#3555"
-                        className="bi bi-arrow-right-circle"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            fillRule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                        />
-                    </svg>
+                    <FaArrowRight size={30} />
                 </button>
             </div>
+
             <div className="carousel">
+                {/* LEFT ARROW */}
                 <button className="arrow left" onClick={prevSlide}>
-                    &#10094;
+                    <FaChevronLeft size={22} />
                 </button>
+
                 <div className="carousel-track-wrapper">
                     <div
                         className="carousel-track"
@@ -83,55 +63,74 @@ const TestCarousel = () => {
                             transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)`,
                         }}
                     >
-                        {services.map((service, index) => (
-                            <div className="carousel-card" key={index}>
-                                <img
-                                    src={service.image}
-                                    alt={service.name}
-                                    className="carousel-image"
-                                />
-                                <h3>{service.name}</h3>
-                                <p className="service-description">{service.description}</p>
-                                <p>
-                                    <span className="old-price">{service.oldPrice}</span>{" "}
-                                    <span className="new-price">{service.newPrice} kr</span>
-                                </p>
+                        {healthTests.map((test) => (
+                            <div className="carousel-card health-card" key={test.id}>
 
-                                {/* Buttons */}
-                                <div className="button-group">
-                                    {!isInCart(service.id) ? (
-                                        <img
-                                            src="/assets/add.svg"
-                                            alt="Add to Cart"
-                                            className="custom-icon-btn add"
-                                            onClick={() => addToCart({
-                                                id: service.id,
-                                                name: service.name,
-                                                image: service.image,
-                                                price: Number(service.newPrice.replace(/\D/g, "")), // extract numeric value
-                                            })
-                                            }
-                                        />
-                                    ) : (
-                                        <img
-                                            src="/assets/remove.svg"
-                                            alt="Remove from Cart"
-                                            className="custom-icon-btn remove"
-                                            onClick={() => removeFromCart(service.id)}
-                                        />
-                                    )}
+                                {/* Discount Badge */}
+                                {test.discount && (
+                                    <div className="discount-badge">-{test.discount}%</div>
+                                )}
+
+                                {/* IMAGE BOX */}
+                                <div className="image-box" style={{ backgroundColor: test.bg }}>
+                                    <img src={test.image} alt={test.title} className="test-image" />
+
+                                    <div className="floating-icon">{test.icon}</div>
                                 </div>
 
+                                {/* CONTENT */}
+                                <div className="text-box">
+                                    <h3>{test.title}</h3>
+                                    <p className="subtitle">{test.subtitle}</p>
+                                    <p className="markers">⚙ {test.markers} markörer</p>
+
+
+                                    {/* PRICE */}
+                                    <div className="price-box">
+                                        <span className="old">{test.oldPrice} kr</span>
+                                        <span className="new">{test.newPrice} kr</span>
+                                    </div>
+
+                                    {/* BUTTONS */}
+                                    <div className="button-row">
+                                        <button
+                                            className="cart-btn"
+                                            onClick={() =>
+                                                isInCart(test.id)
+                                                    ? removeFromCart(test.id)
+                                                    : addToCart({
+                                                        id: test.id,
+                                                        name: test.title,
+                                                        image: test.image,
+                                                        price: Number(test.newPrice.replace(/\s+/g, "")),
+                                                    })
+                                            }
+                                        >
+                                            {isInCart(test.id) ? (
+                                                <FiX size={20} color="#fff" />
+                                            ) : (
+                                                <FiShoppingCart size={20} color="#fff" />
+                                            )}
+                                        </button>
+
+                                        <button
+                                            className="arrow-btn"
+                                            onClick={() => navigate(`/halsokontroll/${test.id}`)}
+                                        >
+                                            <FaArrowRight size={18} />
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
+
+                {/* RIGHT ARROW */}
                 <button className="arrow right" onClick={nextSlide}>
-                    &#10095;
+                    <FaChevronRight size={22} />
                 </button>
             </div>
         </div>
     );
-};
-
-export default TestCarousel;
+}

@@ -1,30 +1,81 @@
-import React from "react";
-import "../styles/home.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { services } from "../data/servicesData";
+import { healthTests } from "../data/healthTestsData";
 
 const StartHome = () => {
+    const [query, setQuery] = useState("");
+
+    // Combine MR services + Test services
+    const allItems = [
+        ...services.map(s => ({ ...s, type: "mr" })),
+        ...healthTests.map(t => ({ ...t, type: "test" }))
+    ];
+
+    // Filter by search
+    const filtered = allItems.filter(item =>
+        item.title.toLowerCase().includes(query.toLowerCase())
+    );
+
+    // Return the correct route
+    const resolvePath = (item) => {
+        if (item.type === "mr") {
+            return `/magnetrontgen/${item.id}`;
+        }
+        if (item.type === "test") {
+            return `/halsokontroll/${item.id}`;
+        }
+        return "/";
+    };
+
     return (
         <div className="home">
-            {/* Search Field */}
-            <div className="search-bar">
-                <input
-                    type="text"
-                    placeholder="Sök blodprover eller MR-undersökningar"
-                    className="search-input"
-                />
-                <button className="search-btn"><img
-                    src="/assets/search.svg"
-                    alt="Sök"
-                    className="cart-icon"
-                /></button>
+
+            <div className="search-container">
+                <div className="search-bar">
+                    <input
+                        type="text"
+                        placeholder="Sök blodprover eller MR-undersökningar"
+                        className="search-input"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+                    <button className="search-btn">
+                        <img src="/assets/search.svg" alt="Sök" className="cart-icon" />
+                    </button>
+                </div>
+
+                {/* RESULTS DROPDOWN */}
+                {query && (
+                    <div className="search-results">
+                        {filtered.length ? (
+                            filtered.map(item => (
+                                <Link
+                                    key={item.id + item.type}
+                                    to={resolvePath(item)}
+                                    className="search-item"
+                                    onClick={() => setQuery("")}
+                                >
+                                    {item.title}
+                                </Link>
+                            ))
+                        ) : (
+                            <div className="search-item no-results">Inga träffar</div>
+                        )}
+                    </div>
+                )}
             </div>
+
+
 
             {/* Hero Section */}
             <div className="hero-section">
                 {/* Purple video background card */}
                 <div className="hero-card purple-card">
-
                     <div className="hero-content">
-                        <h2 className="title-hero">Hälsokontroller för ökad insikt om din hälsa</h2>
+                        <h2 className="title-hero">
+                            Hälsokontroller för ökad insikt om din hälsa
+                        </h2>
                         <p>
                             Beställ något av våra <a href="#">280 tester</a> och lämna ditt
                             blodprov på en av alla <a href="#">192 mottagningar</a>
@@ -34,19 +85,17 @@ const StartHome = () => {
 
                 {/* Black Weeks card */}
                 <div className="hero-card black-card">
-                    <h3>BLACK WEEKS</h3>
-                    <p>Årets bästa deals!</p>
-                    <div className="discount-badge">Upp till 50% Rabatt*</div>
-                </div>
-            </div>
+                    <h3>Magnetröntgen utan remiss</h3>
+                    <p>
+                        Få tid inom 1–7 arbetsdagar på närmaste kliniken.
+                        Se insidan av din kropp – helt strålningsfritt.
+                        Billigast i Sverige.
+                    </p>
 
-            {/* Trustpilot Section */}
-            <div className="trustpilot-section">
-                <p>
-                    Se våra <strong>8 970 omdömen</strong>
-                </p>
-                <div className="stars">⭐⭐⭐⭐⭐</div>
-                <span className="trustpilot">Trustpilot</span>
+                    <div className="discount-badge">
+                        Granskas av röntgenspecialister
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,392 @@
+ .product-page {
+     max-width: 1300px;
+     margin: 40px auto;
+     padding: 0 20px;
+ }
+
+ /* ----------------------------------
+   TWO-COLUMN LAYOUT
+---------------------------------- */
+ .product-inner {
+     display: grid;
+     grid-template-columns: 420px 1fr;
+     gap: 48px;
+ }
+
+ /* ----------------------------------
+   LEFT (IMAGE)
+---------------------------------- */
+ .product-media {
+     position: relative;
+ }
+
+ .media-block {
+     background: var(--gray-100);
+     border-radius: 18px;
+     padding: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .product-image {
+     max-width: 75%;
+ }
+
+ /* Floating icon */
+ .floating-icon {
+     position: absolute;
+     bottom: 18px;
+     right: 18px;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background: white;
+     font-weight: 700;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid var(--gray-300);
+ }
+
+ /* ----------------------------------
+   RIGHT (CONTENT)
+---------------------------------- */
+ .product-content h1 {
+     font-size: 38px;
+     margin: 0 0 6px 0;
+ }
+
+ .product-sub {
+     color: var(--gray-600);
+     margin-bottom: 20px;
+ }
+
+ .meta-row {
+     display: flex;
+     gap: 16px;
+     margin-bottom: 12px;
+ }
+
+ .markers {
+     font-weight: 600;
+ }
+
+ /* Pricing */
+ .price-row {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     margin: 20px 0;
+ }
+
+ .price-old {
+     color: var(--gray-300);
+     text-decoration: line-through;
+ }
+
+ .price-new {
+     font-size: 26px;
+     font-weight: 800;
+     color: #d63434;
+ }
+
+ /* Bullet list */
+ .feature-list {
+     margin-top: 12px;
+     padding-left: 20px;
+     color: #444;
+ }
+
+ /* CTA */
+ .action-row {
+     margin-top: 24px;
+     display: flex;
+     gap: 16px;
+ }
+
+ .primary-cart {
+     background: var(--green);
+     color: white;
+     border: none;
+     padding: 16px 28px;
+     font-size: 16px;
+     border-radius: 50px;
+     font-weight: 700;
+     cursor: pointer;
+ }
+
+ .secondary-action {
+     background: none;
+     border: none;
+     color: var(--accent);
+     font-size: 20px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ /* ----------------------------------
+   SECTION WRAPPERS
+---------------------------------- */
+ .section-box {
+     margin-top: 48px;
+     padding: 32px;
+     border-radius: 14px;
+     background: white;
+     border: 1px solid var(--gray-200);
+ }
+
+ .section-box h2 {
+     margin-bottom: 14px;
+     font-size: 24px;
+ }
+
+ /* ----------------------------------
+   MARKER ACCORDIONS
+---------------------------------- */
+ .marker-group {
+     border-bottom: 1px solid var(--gray-200);
+     padding: 18px 0;
+ }
+
+ .marker-toggle {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     border: none;
+     background: none;
+     padding: 0;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .marker-grid {
+     margin-top: 12px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+ }
+
+ .marker-pill {
+     background: var(--gray-100);
+     border-radius: 8px;
+     padding: 8px 12px;
+     font-size: 14px;
+     border: 1px solid var(--gray-200);
+ }
+
+ /* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
+ @media (max-width: 992px) {
+     .product-inner {
+         grid-template-columns: 1fr;
+     }
+
+     .product-image {
+         max-width: 60%;
+     }
+
+     .section-box {
+         padding: 24px;
+     }
+ }
+
+ @media (max-width: 600px) {
+     .primary-cart {
+         width: 100%;
+         text-align: center;
+     }
+
+     .marker-pill {
+         width: 100%;
+     }
+ }
+
+ /* ============================
+   MARKÖR-SEKTION LAYOUT
+   ============================ */
+ .healthtests-container {
+     display: flex;
+     flex: 1;
+     gap: 32px;
+     margin-top: 50px;
+ }
+
+ /* ============================
+   SIDEBAR
+   ============================ */
+ .sidebar {
+     width: 260px;
+     background: #ffffff;
+     border: 1px solid #e5e7eb;
+     border-radius: 12px;
+     padding: 20px;
+     height: fit-content;
+     top: 120px;
+ }
+
+ .sidebar-header h3 {
+     font-size: 18px;
+     font-weight: 600;
+     margin-bottom: 16px;
+ }
+
+ .category-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .category-item {
+     padding: 10px 12px;
+     margin-bottom: 4px;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: 0.2s ease;
+     font-size: 15px;
+     color: #374151;
+     border: 1px solid transparent;
+ }
+
+ .category-item:hover {
+     background: #f3f4f6;
+ }
+
+ .category-item.active {
+     background: #eef6ff;
+     border: 1px solid #3b82f6;
+     color: #1d4ed8;
+     font-weight: 600;
+ }
+
+ /* ============================
+   MARKÖRGRID
+   ============================ */
+ .tests-content {
+     flex: 1;
+ }
+
+ .page-title {
+     font-size: 24px;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+
+ .tests-grid {
+     width: 100%;
+     max-width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+     gap: 20px;
+ }
+
+ /* ============================
+   MARKÖR-KORT
+   ============================ */
+ .test-card {
+     border: 1px solid #e5e7eb;
+     background: white;
+     padding: 18px;
+     border-radius: 12px;
+     transition: box-shadow 0.2s ease, transform 0.1s ease;
+ }
+
+ .test-card:hover {
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+     transform: translateY(-2px);
+ }
+
+ .test-card h3 {
+     font-size: 17px;
+     font-weight: 600;
+     margin-bottom: 6px;
+     color: #111827;
+ }
+
+ .test-description {
+     font-size: 14px;
+     color: #6b7280;
+     line-height: 1.4;
+     margin: 0;
+ }
+
+ /* ============================
+   RESPONSIVE
+   ============================ */
+ @media (max-width: 900px) {
+     .healthtests-container {
+         flex-direction: column;
+     }
+
+     .sidebar {
+         width: 100%;
+         position: relative;
+         top: 0;
+     }
+ }
+
+ /* ============================================
+   CLEAN ACCORDION LIKE THE REFERENCE IMAGE
+   ============================================ */
+
+ .accordion {
+     margin-top: 40px;
+     border-top: 1px solid #e5e5e5;
+ }
+
+ .acc-toggle {
+     width: 100%;
+     background: none;
+     border: none;
+     padding: 28px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     text-align: left;
+     border-bottom: 1px solid #e5e5e5;
+ }
+
+ .acc-toggle h3 {
+     margin: 0;
+     font-size: 22px;
+     font-weight: 600;
+     color: #0f0f0f;
+ }
+
+ .acc-icon {
+     font-size: 22px;
+     font-weight: 300;
+     color: #111;
+     transition: transform 0.25s ease;
+ }
+
+ /* rotate arrow when open */
+ .acc-toggle.open .acc-icon {
+     transform: rotate(180deg);
+ }
+
+ .acc-body {
+     padding: 20px 0 32px 0;
+     border-bottom: 1px solid #e5e5e5;
+ }
+
+ .acc-body p,
+ .acc-body li {
+     color: #333;
+     font-size: 16px;
+     line-height: 1.55;
+ }
+
+ .acc-body strong {
+     font-weight: 600;
+ }
+
+ /* For spacing inside FAQ block */
+ .acc-body ul {
+     padding-left: 18px;
+     margin: 10px 0 0;
+ }

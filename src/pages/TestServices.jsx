@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
 import React from 'react';
 import '../styles/main.css';
-import Steps from "../components/Steps";
 import StartTest from "../components/TestTopHome";
+import HealthTests from "../components/HealthTests";
 
 
 
@@ -15,7 +15,7 @@ function Test() {
                 <TopStrip />
                 <Navbar />
                 <StartTest />
-                <Steps />
+                <HealthTests />
 
             </div>
 

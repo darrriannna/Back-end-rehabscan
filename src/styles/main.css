@@ -22,9 +22,6 @@ button {
     transition: background-color 0.2s ease;
 }
 
-button:hover {
-    background-color: #d65a0d;
-}
 
 .container {
     max-width: 1200px;

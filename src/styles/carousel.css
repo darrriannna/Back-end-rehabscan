@@ -56,7 +56,6 @@
     width: 100%;
     height: 300px;
     padding: 0;
-    background-color: #5555550a;
     border-radius: 20px;
     object-fit: cover;
     margin-bottom: 15px;
@@ -142,6 +141,10 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .carousel-container {
+        max-width: 90%;
+    }
+
     .carousel-card {
         flex: 0 0 calc(33.333% - 20px);
     }
@@ -225,4 +228,142 @@
 .svg-btn svg {
     width: 40px;
     height: 40px;
+}
+
+/* -------------------------------------- */
+/* NEW PREMIUM STYLES FOR HEALTH TEST CARDS */
+/* -------------------------------------- */
+
+/* Premium Card Wrapper */
+.carousel-card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Top colored block */
+.card-top-area {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background: #f4f7ff;
+    border-radius: 22px 22px 0 0;
+    overflow: hidden;
+}
+
+/* Rotated image */
+.card-top-area img {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 150px;
+    transform: rotate(12deg);
+    object-fit: contain;
+}
+
+/* Floating icon */
+.float-icon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Black Weeks badge */
+.discount-badge {
+    background: black;
+    color: white;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
+
+/* Content section */
+.card-content {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+.card-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Description */
+.card-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Price block */
+.price-row {
+    margin-bottom: 12px;
+}
+
+.price-row .old-price {
+    font-size: 0.9rem;
+}
+
+.price-row .new-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Buttons container */
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+/* Add to cart */
+.action-cart-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 8px;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.action-cart-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Läs mer button */
+.learn-more-btn {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    background: #f7f7f7;
 }

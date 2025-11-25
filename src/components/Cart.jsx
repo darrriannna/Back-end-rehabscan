@@ -11,7 +11,7 @@ export default function Cart() {
 
     const goToBooking = () => {
         if (cart.length === 0) return alert("Din varukorg är tom!");
-        navigate("/booking", { state: { cart } });
+        navigate("/bokning", { state: { cart } });
     };
 
     return (

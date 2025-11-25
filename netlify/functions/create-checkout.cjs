@@ -1,36 +1,25 @@
 import Stripe from "stripe";
 
-// Use your Stripe secret key from .env
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export const handler = async (event) => {
     try {
-        const { items } = JSON.parse(event.body);
+        const { items, email } = JSON.parse(event.body);
 
-        if (!items || items.length === 0) {
-            return {
-                statusCode: 400,
-                body: JSON.stringify({ error: "Cart is empty" }),
-            };
-        }
-
-        // Build line items for Stripe
         const line_items = items.map((item) => ({
             price_data: {
-                currency: "sek", // Swedish krona
-                product_data: {
-                    name: item.name,
-                },
-                unit_amount: item.price * 100, // Stripe expects price in cents
+                currency: "sek",
+                product_data: { name: item.name },
+                unit_amount: item.price * 100,
             },
-            quantity: 1, // or item.quantity if you add a quantity field
+            quantity: 1,
         }));
 
-        // Create Stripe checkout session
         const session = await stripe.checkout.sessions.create({
-            payment_method_types: ["card"],
-            line_items,
+            customer_email: email,
+            payment_method_types: ["card", "klarna"],
             mode: "payment",
+            line_items,
             success_url: `${process.env.URL}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.URL}/cancel`,
         });
@@ -39,13 +28,11 @@ export const handler = async (event) => {
             statusCode: 200,
             body: JSON.stringify({ url: session.url }),
         };
-    } catch (error) {
-        console.error(error);
+    } catch (err) {
+        console.log(err);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "Failed to create checkout session" }),
+            body: JSON.stringify({ error: "Unable to create checkout" }),
         };
     }
 };
-
-

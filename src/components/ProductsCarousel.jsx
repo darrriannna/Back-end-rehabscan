@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { FaArrowRight } from "react-icons/fa";
+
+import { FiShoppingCart, FiX, FiArrowRight } from "react-icons/fi";
 import "../styles/carousel.css";
 
 const ProductCarousel = () => {
@@ -14,7 +17,7 @@ const ProductCarousel = () => {
             name: "MR Vänster Axel",
             description: "Upptäck skador i axelledens muskler och senor.",
             oldPrice: "4 900kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/axel.jpg",
         },
         {
@@ -22,7 +25,7 @@ const ProductCarousel = () => {
             name: "MR Vänster Knä",
             description: "Upptäck skador på korsband, menisk och ledband.",
             oldPrice: "4 900kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/kna-hoger.jpg",
         },
         {
@@ -30,7 +33,7 @@ const ProductCarousel = () => {
             name: "MR Ländrygg",
             description: "Identifiera diskbråck eller ryggmärgsproblem.",
             oldPrice: "4 900kr",
-            newPrice: 4200,
+            newPrice: "4200 kr",
             image: "/assets/landrygg.jpg",
         },
         {
@@ -38,7 +41,7 @@ const ProductCarousel = () => {
             name: "MR Nacke/Halsrygg",
             description: "Upptäck skador, diskbråck eller påverkad nervfunktion.",
             oldPrice: "5 200kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/nacke.jpg",
         },
         {
@@ -46,7 +49,7 @@ const ProductCarousel = () => {
             name: "MR Bäcken/höftleder",
             description: "Påvisa inflammation eller artros i höftleder.",
             oldPrice: "4 900kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/backen.jpg",
         },
         {
@@ -54,7 +57,7 @@ const ProductCarousel = () => {
             name: "MR Höger Axel",
             description: "Upptäck inflammation eller artros i axeln.",
             oldPrice: "4 900kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/axel.jpg",
         },
         {
@@ -62,7 +65,7 @@ const ProductCarousel = () => {
             name: "MR Höger Knä",
             description: "Identifiera vanliga knäskador och inflammationer.",
             oldPrice: "4 900kr",
-            newPrice: 4100,
+            newPrice: "4100 kr",
             image: "/assets/kna-vanster.jpg",
         },
         {
@@ -70,7 +73,7 @@ const ProductCarousel = () => {
             name: "MR Helrygg",
             description: "Upptäck diskbråck och andra ryggproblem.",
             oldPrice: "12 400kr",
-            newPrice: 11500,
+            newPrice: "11500 kr",
             image: "/assets/helrygg.jpg",
         },
     ];
@@ -101,67 +104,83 @@ const ProductCarousel = () => {
 
     return (
         <div className="carousel-container">
-            <h2 className="carousel-header">MR-undersökningar</h2>
-            <div className="carousel">
-                <button className="arrow left" onClick={prevSlide}>
-                    &#10094;
+            <div className="carousel-header">
+                <h2>Magnetröntgen</h2>
+                <button className="svg-btn" onClick={() => navigate("/mr-undersokningar")}>
+                    <FaArrowRight size={30} />
                 </button>
+            </div>
+
+            <div className="carousel">
+                <button className="arrow left" onClick={prevSlide}>&#10094;</button>
+
                 <div className="carousel-track-wrapper">
                     <div
                         className="carousel-track"
                         ref={trackRef}
                         style={{
-                            transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)`,
+                            transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)`
                         }}
                     >
-                        {services.map((service, index) => (
-                            <div className="carousel-card" key={index}>
-                                <img
-                                    src={service.image}
-                                    alt={service.name}
-                                    className="carousel-image"
-                                />
-                                <h3>{service.name}</h3>
-                                <p className="service-description">{service.description}</p>
-                                <p>
-                                    <span className="old-price">{service.oldPrice}</span>{" "}
-                                    <span className="new-price">{service.newPrice} kr</span>
-                                </p>
+                        {services.map((service, index) => {
+                            const price = Number(service.newPrice.replace(/\D/g, ""));
 
-                                {/* Buttons */}
-                                <div className="button-group">
-                                    {!isInCart(service.id) ? (
-                                        <img
-                                            src="/assets/add.svg"
-                                            alt="Add to Cart"
-                                            className="custom-icon-btn add"
-                                            onClick={() => addToCart({
-                                                id: service.id,
-                                                name: service.name,
-                                                image: service.image,
-                                                price: Number(service.newPrice.replace(/\D/g, "")), // extract numeric value
-                                            })
+                            return (
+                                <div className="carousel-card" key={index}>
+                                    <img
+                                        src={service.image}
+                                        alt={service.name}
+                                        className="carousel-image"
+                                    />
+
+                                    <h3>{service.name}</h3>
+                                    <p className="service-description">{service.description}</p>
+
+                                    <p>
+                                        <span className="old-price">{service.oldPrice}</span>{" "}
+                                        <span className="new-price">{service.newPrice}</span>
+                                    </p>
+
+                                    {/* --- NEW BUTTON GROUP --- */}
+                                    <div className="button-row">
+                                        <button
+                                            className="cart-btn"
+                                            onClick={() =>
+                                                isInCart(service.id)
+                                                    ? removeFromCart(service.id)
+                                                    : addToCart({
+                                                        id: service.id,
+                                                        name: service.name,
+                                                        image: service.image,
+                                                        price,
+                                                    })
                                             }
+                                        >
+                                            {isInCart(service.id) ? (
+                                                <FiX size={18} color="#fff" />
+                                            ) : (
+                                                <FiShoppingCart size={18} color="#fff" />
+                                            )}
+                                        </button>
+                                        {/* Go to product page */}
+                                        <button
+                                            className="arrow-btn"
+                                            onClick={() => navigate(`/magnetrontgen/${service.id}`)}
+                                        >
+                                            <FiArrowRight size={18} />
+                                        </button>
 
-                                        />
-                                    ) : (
-                                        <img
-                                            src="/assets/remove.svg"
-                                            alt="Remove from Cart"
-                                            className="custom-icon-btn remove"
-                                            onClick={() => removeFromCart(service.id)}
-                                        />
-                                    )}
+                                        {/* Cart Button */}
+
+                                    </div>
+
                                 </div>
-
-
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
-                <button className="arrow right" onClick={nextSlide}>
-                    &#10095;
-                </button>
+
+                <button className="arrow right" onClick={nextSlide}>&#10095;</button>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ import TopStrip from "../components/TopStrip";
 import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
+import LinksHome from "../components/LinksHome";
 
 function Home() {
 
@@ -15,6 +16,7 @@ function Home() {
                 <TopStrip />
                 <Navbar />
                 <StartHome />
+                <LinksHome />
                 <Steps />
                 <TestCarousel />
                 <ProductCarousel />
