@@ -50,8 +50,6 @@
     position: relative;
     flex: 1;
     border-radius: 16px;
-    margin-left: 20px;
-    margin-right: 5px;
     overflow: hidden;
     color: white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -208,6 +206,10 @@
     }
 
     .purple-card {
+        height: 280px;
+    }
+
+    .black-card {
         height: 250px;
     }
 

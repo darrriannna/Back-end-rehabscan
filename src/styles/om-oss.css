@@ -1,0 +1,123 @@
+:root {
+    --purple: #4e2d78;
+    --text: #111;
+    --muted-text: #555;
+    --max-width: 1200px;
+}
+
+.omoss-page {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 20px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
+
+.hero-title {
+    margin-top: 0;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--purple);
+    max-width: 430px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.quote-doctor {
+    color: #4e2d78;
+}
+
+.hero-title img {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--purple);
+    max-width: 430px;
+    border-radius: 40px;
+}
+
+.image-doctor {
+    height: 65px;
+    border-radius: 35px;
+}
+
+.hero-text p {
+    margin-bottom: 16px;
+    line-height: 1.55;
+    color: var(--muted-text);
+}
+
+/* 3 COLUMNS */
+.pillars-section {
+    margin-top: 90px;
+    display: grid;
+    gap: 40px;
+}
+
+.pillar h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pillar p {
+    line-height: 1.5;
+    color: var(--muted-text);
+}
+
+.pillar img {
+    max-width: 400px;
+    border-radius: 16px;
+}
+
+
+/* LABS SECTION */
+.labs-section {
+    margin-top: 120px;
+    text-align: left;
+}
+
+.labs-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.labs-text {
+    color: var(--muted-text);
+    margin-bottom: 30px;
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logos img {
+    height: 75px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (min-width: 1000px) {
+    .hero-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pillars-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .labs-section {
+        width: 70%;
+    }
+}

@@ -2,18 +2,21 @@ import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
 import React from 'react';
 import '../styles/main.css';
-import ServiceProductPage from "../components/ServiceProductPage";
+import StartTest from "../components/TestTopHome";
+import HealthTests from "../components/HealthTests";
 import Footer from "../components/Footer";
 
 
-function ServiceProduct() {
+
+function Search() {
 
     return (
         <>
             <div className="body">
                 <TopStrip />
                 <Navbar />
-                <ServiceProductPage />
+                <StartTest />
+                <HealthTests />
                 <Footer />
             </div>
 
@@ -21,4 +24,4 @@ function ServiceProduct() {
     )
 }
 
-export default ServiceProduct
+export default Search

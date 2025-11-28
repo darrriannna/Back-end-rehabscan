@@ -4,6 +4,7 @@ import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 import MapSection from "../components/Map";
+import Footer from "../components/Footer";
 
 function Mottagningar() {
 
@@ -14,7 +15,7 @@ function Mottagningar() {
                 <Navbar />
                 <MapSection />
                 <Steps />
-
+                <Footer />
             </div>
 
         </>

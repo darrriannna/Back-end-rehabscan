@@ -4,6 +4,7 @@ import React from 'react';
 import '../styles/main.css';
 import StartTest from "../components/TestTopHome";
 import HealthTests from "../components/HealthTests";
+import Footer from "../components/Footer";
 
 
 
@@ -16,7 +17,7 @@ function Test() {
                 <Navbar />
                 <StartTest />
                 <HealthTests />
-
+                <Footer />
             </div>
 
         </>

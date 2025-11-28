@@ -4,6 +4,7 @@ import React from 'react';
 import '../styles/main.css';
 
 import TestProductPage from "../components/TestProductPage";
+import Footer from "../components/Footer";
 
 
 function TestProduct() {
@@ -14,7 +15,7 @@ function TestProduct() {
                 <TopStrip />
                 <Navbar />
                 <TestProductPage />
-
+                <Footer />
             </div>
 
         </>

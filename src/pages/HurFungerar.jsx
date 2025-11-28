@@ -2,18 +2,20 @@ import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
 import React from 'react';
 import '../styles/main.css';
-import ServiceProductPage from "../components/ServiceProductPage";
+import Steps from "../components/Steps";
 import Footer from "../components/Footer";
+import FAQGroups from "../components/FAQ";
 
-
-function ServiceProduct() {
+function HurFungerar() {
 
     return (
         <>
             <div className="body">
                 <TopStrip />
                 <Navbar />
-                <ServiceProductPage />
+
+                <Steps />
+                <FAQGroups />
                 <Footer />
             </div>
 
@@ -21,4 +23,4 @@ function ServiceProduct() {
     )
 }
 
-export default ServiceProduct
+export default HurFungerar

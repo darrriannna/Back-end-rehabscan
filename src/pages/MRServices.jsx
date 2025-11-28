@@ -7,6 +7,7 @@ import Steps from "../components/Steps";
 import ServiceSelector from "../components/ServiceSelector";
 import StartMR from "../components/MRTopHome";
 import MapMR from "../components/MRMap";
+import Footer from "../components/Footer";
 
 
 function MR() {
@@ -21,7 +22,7 @@ function MR() {
                 <ServiceSelector />
                 <MapMR />
                 <Steps />
-
+                <Footer />
             </div>
 
         </>

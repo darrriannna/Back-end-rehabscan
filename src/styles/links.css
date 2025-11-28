@@ -29,8 +29,14 @@
 /* Icon */
 .icon-link {
     font-size: 32px;
-    min-width: 32px;
+    max-width: 32px;
 }
+
+.icon-link img {
+    height: 40px;
+    padding-right: 8px;
+}
+
 
 /* Text */
 .text-area-link h3 {

@@ -4,6 +4,7 @@ import Cart from "../components/Cart";
 import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
+import Footer from "../components/Footer";
 
 function CartPage() {
 
@@ -14,7 +15,7 @@ function CartPage() {
                 <Navbar />
                 <Cart />
                 <Steps />
-
+                <Footer />
             </div>
 
         </>

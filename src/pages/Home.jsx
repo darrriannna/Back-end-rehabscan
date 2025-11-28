@@ -7,6 +7,7 @@ import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 import LinksHome from "../components/LinksHome";
+import Footer from "../components/Footer";
 
 function Home() {
 
@@ -20,6 +21,7 @@ function Home() {
                 <Steps />
                 <TestCarousel />
                 <ProductCarousel />
+                <Footer />
             </div>
 
         </>

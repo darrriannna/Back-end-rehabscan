@@ -6,6 +6,7 @@ import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 import BookingForm from "../components/BookingForm";
+import Footer from "../components/Footer";
 
 function BookingPage() {
 
@@ -18,6 +19,7 @@ function BookingPage() {
                 <Steps />
                 <TestCarousel />
                 <ProductCarousel />
+                <Footer />
             </div>
 
         </>

@@ -9,6 +9,8 @@ import CartMessage from "./components/CartMessage";
 import ServiceProduct from "./pages/ServiceProduct";
 import TestProduct from "./pages/TestProduct";
 import Kontakt from "./pages/Kontakt";
+import OmOss from "./pages/OmOss";
+import HurFungerar from "./pages/HurFungerar";
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/halsotester" element={< Test />} />
         <Route path="/varukorg" element={<CartPage />} />
         <Route path="/kontakta" element={<Kontakt />} />
+        <Route path="/om-oss" element={<OmOss />} />
+        <Route path="/hur-fungerar-det" element={<HurFungerar />} />
         <Route path="/mottagningar" element={<Mottagningar />} />
         <Route path="/bokning" element={<BookingPage />} />
         <Route path="/magnetrontgen/:id" element={<ServiceProduct />} />

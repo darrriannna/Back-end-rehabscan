@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
 import "../styles/Kontakt.css";
+import Footer from "../components/Footer";
 
 export default function Kontakt() {
     return (
@@ -61,15 +62,8 @@ export default function Kontakt() {
                         utanför ordinarie telefontid, ring 010-210 22 31 och vänta kvar i växeln så hjälper vi dig!
                     </p>
                 </section>
-
-                {/* Manager Section */}
-                <section className="manager">
-                    <h3 className="manager-title">Verksamhetschef</h3>
-                    <div className="manager-card card">
-                        <div className="manager-email">info@rehabscan.se</div>
-                    </div>
-                </section>
             </div>
+            <Footer />
         </div>
     );
 }
