@@ -29,9 +29,10 @@
 .steps-video {
     width: 60%;
     border-radius: 18px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-    min-height: 260px;
+    height: auto;
+
 }
 
 .steps-title {

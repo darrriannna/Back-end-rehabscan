@@ -265,6 +265,7 @@
 
     .title-hero {
         font-size: 2rem;
+        padding: 0;
     }
 
     .hero-card .black-card .trustpilot-section {

@@ -74,7 +74,7 @@ const StartHome = () => {
                 <div className="hero-card purple-card">
                     <div className="hero-content">
                         <h2 className="title-hero">
-                            Hälsotester som hjälper dig få klarare bild av din hälsa
+                            Se din hälsa klarare
                         </h2>
                         <p>
                             Lämna blodprov på <a href="./Mottagningar">närmaste klinik</a> i Sverige och få professionell analys av specialistläkare.
