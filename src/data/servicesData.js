@@ -658,5 +658,5 @@ MR prostata rekommenderas vid utredning av prostatacancer, förhöjt PSA, misst�
 MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH), strukturella förändringar, kapselgenombrott, spridning och andra patologiska fynd.
 `,
 
-    }
+    },
 ];

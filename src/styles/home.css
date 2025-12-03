@@ -41,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -75,6 +75,26 @@
     border-radius: 16px;
 }
 
+.ultraljud-hero-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.helkropp-hero-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
 /* Purple video background card */
 .purple-card {
     height: 300px;
@@ -98,10 +118,46 @@
     text-shadow: 1px black;
 }
 
+.ultraljud-card {
+    flex: 2;
+    width: 100%;
+    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/ultraljud.mp4") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px black;
+}
+
+.helkropp-card {
+    width: 100%;
+    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/helkropp-video.mp4") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px black;
+}
+
+
 .test-banner-card {
     flex: 2;
     width: 100%;
     background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/tester-back.mp4") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px black;
+}
+
+.helkropp-banner-card {
+
+    width: 100%;
+    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/helkropp-video.mp4") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +225,12 @@
     text-align: center;
 }
 
+.ultraljud-map-card {
+    background: radial-gradient(circle, rgb(38, 13, 122) 0%, rgb(23, 9, 23) 53%, rgb(71, 71, 71) 99%);
+    padding: 30px;
+    text-align: center;
+}
+
 .map-title {
     font-size: 2rem;
     color: #fff;
@@ -201,6 +263,10 @@
         margin: 10px;
     }
 
+    .title-hero {
+        font-size: 2rem;
+    }
+
     .hero-card .black-card .trustpilot-section {
         width: 100%;
     }
@@ -231,6 +297,7 @@
 
     .search-bar {
         width: 90%;
+        padding: 20px;
     }
 }
 

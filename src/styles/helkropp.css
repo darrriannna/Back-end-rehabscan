@@ -1,0 +1,195 @@
+/* ======= LAYOUT ======= */
+.layout-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px;
+    background: white;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.left-image {
+    flex: 1 1 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.body-image {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.right-text {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.benefits-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    color: #333;
+}
+
+.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #593594;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #5a4980;
+    transform: translateY(-3px);
+}
+
+/* ======= MR SCAN SECTION ======= */
+.mr-scan-container {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+}
+
+.mr-scan-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.grid-deceases {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.containers-deceases-info p {
+    max-width: 800px;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.mr-scan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.mr-scan-category {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 25px 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.mr-scan-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mr-scan-category-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #45375c;
+}
+
+.mr-scan-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.mr-scan-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-text {
+        text-align: center;
+    }
+
+    .mr-scan-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mr-scan-title {
+        font-size: 24px;
+    }
+
+    .mr-scan-category-title {
+        font-size: 18px;
+    }
+
+    .mr-scan-list li {
+        font-size: 14px;
+    }
+}

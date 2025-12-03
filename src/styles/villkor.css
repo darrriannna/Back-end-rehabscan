@@ -1,0 +1,122 @@
+.integrity-policy {
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.container-policy {
+    width: 100%;
+    max-width: var(--container-width);
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid rgba(15, 23, 42, 0.03);
+}
+
+.title {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-2);
+}
+
+.intro {
+    margin: 0 0 20px 0;
+    color: var(--muted);
+    line-height: 1.65;
+    font-size: 1rem;
+}
+
+.container-policy section {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(245, 247, 250, 0.6), transparent);
+    border: 1px solid rgba(15, 23, 42, 0.02);
+}
+
+.container-policy h5 {
+    margin: 0 0 10px 0;
+    font-size: 1.05rem;
+    color: #260b50;
+    font-weight: 600;
+}
+
+.container-policy p {
+    margin: 0;
+    color: #111827;
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+/* Small note / muted text */
+.container-policy p.small {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* Info badge for remissavgift */
+.info-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(6, 78, 59, 0.08);
+    color: var(--accent-2);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .container-policy {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .integrity-policy {
+        padding: 28px 8px;
+    }
+
+    .container-policy {
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .container-policy section {
+        padding: 12px;
+    }
+}
+
+/* Accessibility focus states */
+a:focus,
+button:focus {
+    outline: 3px solid rgba(15, 118, 110, 0.18);
+    outline-offset: 2px;
+}
+
+/* Utility */
+.u-row {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+
+.u-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width:900px) {
+    .u-columns {
+        grid-template-columns: 1fr;
+    }
+}

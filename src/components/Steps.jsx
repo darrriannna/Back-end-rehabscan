@@ -1,55 +1,130 @@
-import React from 'react';
-import '../styles/steps.css';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import "../styles/steps.css";
 
 export default function Steps() {
+    const [service, setService] = useState("mri");
+
+    const subtitles = {
+        mri: "Magnetröntgen – fyra enkla steg",
+        health: "Hälsokontroll – fyra enkla steg",
+        ultra: "Ultraljud – fyra enkla steg"
+    };
+
+    const stepData = {
+        mri: [
+            ["Beställ magnetröntgen – fyll i förfrågan."],
+            ["Vi aktiverar remissen och bekräftar tid."],
+            ["Genomför undersökningen på klinik."],
+            ["Specialistläkare ger utlåtande digitalt."]
+        ],
+        health: [
+            ["Välj hälsokontroll och boka tid."],
+            ["Lämna blodprov nära dig."],
+            ["Resultat analyseras av specialist."],
+            ["Personligt läkarutlåtande digitalt."]
+        ],
+        ultra: [
+            ["Välj område och skicka förfrågan."],
+            ["Vi bokar tid på närmaste klinik."],
+            ["Undersökning hos specialist."],
+            ["Digitalt utlåtande och rekommendationer."]
+        ]
+    };
+
     return (
-        <section className="private-mri-section">
-            <div className="steps-home-container">
-                <div className="steps-layout">
-                    <div className="gif-container">
-                        <video
-                            className="steps-video"
-                            src="https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/video-ad.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        />
+        <section className="steps-section">
+            <div className="steps-wrapper">
+
+                {/* TOP ROW */}
+                <div className="steps-hero">
+                    <motion.video
+                        className="steps-video"
+                        src="https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/video-ad.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                    />
+
+                    <div className="steps-title-box">
+                        <motion.h2
+                            className="steps-title"
+                            initial={{ opacity: 0, x: 40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            Hur fungerar det?
+                        </motion.h2>
+
+                        <motion.p
+                            className="steps-subtext"
+                            initial={{ opacity: 0, x: 40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.1 }}
+                        >
+                            Vi på RehabScan arbetar för att göra hälsoundersökningar enklare, tryggare
+                            och mer lättbegripliga. Därför har vi utvecklat en tydlig bokningsprocess
+                            och ett transparent flöde från start till mål — för att ge dig tillgång till
+                            kvalificerad vård på ett smidigt och överkomligt sätt.
+                        </motion.p>
+                    </div>
+                </div>
+
+
+                {/* BOTTOM ROW */}
+                <div className="steps-content-row">
+
+                    {/* BUTTONS */}
+                    <div className="steps-button-group">
+                        {[
+                            ["mri", "Magnetröntgen"],
+                            ["health", "Hälsokontroll"],
+                            ["ultra", "Ultraljud"]
+                        ].map(([key, label]) => (
+                            <motion.button
+                                key={key}
+                                whileTap={{ scale: 0.97 }}
+                                whileHover={{ scale: 1.02 }}
+                                onClick={() => setService(key)}
+                                className={`steps-btn ${service === key ? "active" : ""}`}
+                            >
+                                {label}
+                            </motion.button>
+                        ))}
                     </div>
 
-                    <div className="steps-right">
-                        <h2 className="steps-title">Beställ magnetröntgen – fyra enkla steg</h2>
-                        <div className="steps-list">
-                            {[
-                                {
-                                    step: "Steg 1",
-                                    title: "Beställ magnetröntgen",
-                                    text: "Lägg in dina uppgifter och önskemål för undersökningen. Det tar bara några minuter.",
-                                },
-                                {
-                                    step: "Steg 2",
-                                    title: "Aktivera remissen",
-                                    text: "Efter förfrågan blir du kontaktad för att bekräfta tid och eventuella detaljer.",
-                                },
-                                {
-                                    step: "Steg 3",
-                                    title: "Genomför röntgen",
-                                    text: "Du får din tid inom 1–7 arbetsdagar och besöker kliniken för din MR-undersökning.",
-                                },
-                                {
-                                    step: "Steg 4",
-                                    title: "Resultat och utlåtande",
-                                    text: "Efter undersökningen får du en personlig rapport med MR-svar från specialistläkare.",
-                                },
-                            ].map((step, index) => (
-                                <div className="step-card" key={index}>
-                                    <h4 className="step-label">{step.step}</h4>
-                                    <h3 className="step-title">{step.title}</h3>
-                                    <p className="step-text">{step.text}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    {/* RIGHT SIDE CONTENT */}
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={service}
+                            className="steps-card"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.35 }}
+                        >
+                            <h3 className="steps-subtitle">{subtitles[service]}</h3>
+
+                            <div className="steps-list">
+                                {stepData[service].map((step, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className="step-box"
+                                        initial={{ opacity: 0, x: -15 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.3, delay: index * 0.08 }}
+                                    >
+                                        <h4>Steg {index + 1}</h4>
+                                        <p>{step}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </div>
         </section>

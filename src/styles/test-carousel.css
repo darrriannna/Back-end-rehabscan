@@ -166,8 +166,9 @@
         height: 160px;
     }
 
-    .carousel-header {
-        font-size: 1.5rem;
+    .carousel-header h2 {
+        font-size: 2rem;
+        padding-left: 10px;
     }
 }
 

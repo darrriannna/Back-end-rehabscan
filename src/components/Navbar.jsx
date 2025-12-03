@@ -26,6 +26,8 @@ export default function Navbar() {
 
                         <li><Link to="/halsotester">Hälsotester</Link></li>
                         <li><Link to="/mr-undersokningar">MR-undersökningar</Link></li>
+                        <li><Link to="/helkropp">Helkropp</Link></li>
+                        <li><Link to="/ultraljud">Ultraljud</Link></li>
                         <li><Link to="/hur-fungerar-det">Så fungerar det</Link></li>
                         <li><Link to="/mottagningar">Mottagningar</Link></li>
                         <li><Link to="/om-oss">Om oss</Link></li>
@@ -33,7 +35,7 @@ export default function Navbar() {
                     </ul>
 
                     <div className="nav-actions">
-                        <Link to="/search" className="icon-btn"> <img
+                        <Link to="/mer-info" className="icon-btn"> <img
                             src="/assets/search.svg"
                             alt="Sök"
                             className="cart-icon"

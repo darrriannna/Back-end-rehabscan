@@ -15,30 +15,30 @@ export default function Footer() {
             <div className="footer-links">
                 <div className="footer-column">
                     <h3>Inför blodprov och röntgen</h3>
-                    <a href="#">Inför blodprov och röntgen</a>
-                    <a href="#">Mottagningar</a>
+                    <a href="/villkor">Inför blodprov och röntgen</a>
+                    <a href="/mottagningar">Mottagningar</a>
                 </div>
 
                 <div className="footer-column">
                     <h3>Information</h3>
-                    <a href="#">Köpvillkor</a>
-                    <a href="#">Om oss</a>
+                    <a href="/villkor">Köpvillkor</a>
+                    <a href="/om-oss">Om oss</a>
                 </div>
 
                 <div className="footer-column">
                     <h3>Fakta & råd</h3>
-                    <a href="#">Hälsotester</a>
-                    <a href="#">MR-undersökningar</a>
-                    <a href="#">Helkroppsscreening</a>
+                    <a href="/halsotester">Hälsotester</a>
+                    <a href="/mr-undersokningar">MR-undersökningar</a>
+                    <a href="/helkropp">Helkroppsscreening</a>
                 </div>
             </div>
 
             <div className="footer-bottom">
                 <p>© 2025 – RehabScan Sverige – Registrerad vårdgivare hos IVO</p>
                 <div className="payment-logos">
-                    <span>Klarna</span>
-                    <span>Mastercard</span>
-                    <span>Visa</span>
+                    <span><img src="/assets/klarna.png" alt="klarna" /></span>
+                    <span><img src="/assets/master.png" alt="klarna" /></span>
+                    <span><img src="/assets/visa.png" alt="klarna" /></span>
                     <span>Swish</span>
                 </div>
             </div>

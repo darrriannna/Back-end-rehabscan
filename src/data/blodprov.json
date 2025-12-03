@@ -2,376 +2,979 @@
     {
         "name": "Mälarsjukhuset",
         "address": "Mälarsjukhuset, Eskilstuna",
-        "city": "Eskilstuna"
+        "city": "Eskilstuna",
+        "type": "drop-in"
     },
     {
         "name": "Kullbergska sjukhuset",
         "address": "Kullbergska sjukhuset, Katrineholm",
-        "city": "Katrineholm"
+        "city": "Katrineholm",
+        "type": "drop-in"
     },
     {
         "name": "Nyköpings lasarett",
         "address": "Nyköpings lasarett, Nyköping",
-        "city": "Nyköping"
+        "city": "Nyköping",
+        "type": "drop-in"
     },
     {
         "name": "Almedal",
         "address": "Mölndalsvägen 30 C, Göteborg",
-        "city": "Göteborg"
+        "city": "Göteborg",
+        "type": "tidsbokning"
     },
     {
         "name": "Carlanderska sjukhuset",
         "address": "Carlandersparken 1, Göteborg",
-        "city": "Göteborg"
+        "city": "Göteborg",
+        "type": "drop-in"
     },
     {
         "name": "Skaraborgs sjukhus",
         "address": "Mellbygatan 11, Lidköping",
-        "city": "Lidköping"
+        "city": "Lidköping",
+        "type": "drop-in"
     },
     {
         "name": "Engelbrekt närlaboratorium",
         "address": "Östermalmsgatan 47, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Gärdet närlaboratorium",
         "address": "Sandhamnsgatan 4, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Hötorget närlaboratorium",
         "address": "Holländargatan 4, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Johannes närlaboratorium",
         "address": "Döbelnsgatan 56, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "S:t Eriks närlaboratorium",
         "address": "Fleminggatan 24, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "S:t Görans närlaboratorium",
         "address": "S:t Görans sjukhus, plan 1, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Sabbatsberg närlaboratorium",
         "address": "Olivecronas väg 5, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Serafen närlaboratorium",
         "address": "Hantverkargatan 2D, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Sibylle närlaboratorium",
         "address": "Sibyllegatan 53, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Surbrunn närlaboratorium",
         "address": "Surbrunnsgatan 66, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Östermalm närlaboratorium",
         "address": "Grevgatan 34, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Axelsberg närlaboratorium",
         "address": "Axelsbergs Torg 2, Hägersten",
-        "city": "Hägersten"
+        "city": "Hägersten",
+        "type": "drop-in"
     },
     {
         "name": "Liljeholmstorg närlaboratorium",
         "address": "Liljeholmstorget 7, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Salems närlaboratorium",
         "address": "Säbytorgsvägen 6, Rönninge",
-        "city": "Rönninge"
+        "city": "Rönninge",
+        "type": "drop-in"
     },
     {
         "name": "Skärholmen närlaboratorium",
         "address": "Storholmsgatan 19, Skärholmen",
-        "city": "Skärholmen"
+        "city": "Skärholmen",
+        "type": "drop-in"
     },
     {
         "name": "Luna närlaboratorium",
         "address": "Köpmangatan 1, Södertälje",
-        "city": "Södertälje"
+        "city": "Södertälje",
+        "type": "drop-in"
     },
     {
         "name": "Ringen närlaboratorium",
         "address": "Ringvägen 113, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Rosenlunds närlaboratorium",
         "address": "Tideliusgatan 12, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Tallhöjden närlaboratorium",
         "address": "Tallhöjdvägen 1-3, Södertälje",
-        "city": "Södertälje"
+        "city": "Södertälje",
+        "type": "drop-in"
     },
     {
         "name": "Tumba närlaboratorium",
         "address": "Samaritvägen 4, Tumba",
-        "city": "Tumba"
+        "city": "Tumba",
+        "type": "drop-in"
     },
     {
         "name": "Älvsjö närlaboratorium",
         "address": "Solberga Hagväg 1, Älvsjö",
-        "city": "Älvsjö"
+        "city": "Älvsjö",
+        "type": "drop-in"
     },
     {
         "name": "Alvik närlaboratorium",
         "address": "Tranebergsplan 1, Bromma",
-        "city": "Bromma"
+        "city": "Bromma",
+        "type": "drop-in"
     },
     {
         "name": "Bromma närlaboratorium",
         "address": "Follingbogatan 32A, Bromma",
-        "city": "Bromma"
+        "city": "Bromma",
+        "type": "drop-in"
     },
     {
         "name": "Jakobsbergs sjukhus närlaboratorium",
         "address": "Birgittavägen 4, Järfalla",
-        "city": "Järfalla"
+        "city": "Järfalla",
+        "type": "drop-in"
     },
     {
         "name": "Kista närlaboratorium",
         "address": "Kista Galleria Hus 3, Kista",
-        "city": "Kista"
+        "city": "Kista",
+        "type": "drop-in"
     },
     {
         "name": "Vällingby närlaboratorium",
         "address": "Indalsbacken 1, Vällingby",
-        "city": "Vällingby"
+        "city": "Vällingby",
+        "type": "drop-in"
     },
     {
         "name": "Uppsala",
         "address": "Kungsgatan 43, Uppsala",
-        "city": "Uppsala"
+        "city": "Uppsala",
+        "type": "drop-in"
     },
     {
         "name": "SYNLAB Göteborg",
         "address": "Södra Vägen 23, 1tr, Göteborg",
-        "city": "Göteborg"
+        "city": "Göteborg",
+        "type": "drop-in"
     },
     {
         "name": "Encia Uppsala",
         "address": "Kålsängsgränd 10D, Uppsala",
-        "city": "Uppsala"
+        "city": "Uppsala",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Gävle",
         "address": "Nygatan 29, Gävle",
-        "city": "Gävle"
+        "city": "Gävle",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Västerås",
         "address": "Källgatan 10, 1tr, Västerås",
-        "city": "Västerås"
+        "city": "Västerås",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Örebro",
         "address": "Drottninggatan 38, vån 2, Örebro",
-        "city": "Örebro"
+        "city": "Örebro",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Kalmar",
         "address": "Stortorget 32, Kalmar",
-        "city": "Kalmar"
+        "city": "Kalmar",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Sundsvall",
         "address": "Centralgatan 14, Sundsvall",
-        "city": "Sundsvall"
+        "city": "Sundsvall",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Norrköping",
         "address": "Drottninggatan 32, Norrköping",
-        "city": "Norrköping"
+        "city": "Norrköping",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Falun",
         "address": "Åsgatan 55, Falun",
-        "city": "Falun"
+        "city": "Falun",
+        "type": "tidsbokning"
     },
     {
         "name": "Encia Karlstad",
         "address": "Bryggaregatan 11, Karlstad",
-        "city": "Karlstad"
+        "city": "Karlstad",
+        "type": "tidsbokning"
     },
     {
         "name": "GoCo, Mölndal",
         "address": "Entreprenörsstråket 6, Mölndal",
-        "city": "Mölndal"
+        "city": "Mölndal",
+        "type": "drop-in"
     },
     {
         "name": "Laboratoriet Gustavsberg",
         "address": "Odelbergs väg 19A, Gustavsberg",
-        "city": "Gustavsberg"
+        "city": "Gustavsberg",
+        "type": "drop-in"
     },
     {
         "name": "Norrtälje Sjukhus",
         "address": "Lasarettsgatan 8, Norrtälje",
-        "city": "Norrtälje"
+        "city": "Norrtälje",
+        "type": "drop-in"
     },
     {
         "name": "Nacka Närsjukhus",
         "address": "Lasarettsvägen 4, Nacka",
-        "city": "Nacka"
+        "city": "Nacka",
+        "type": "drop-in"
     },
     {
         "name": "Nynäshamn sjukhus",
         "address": "Idunvägen 1, Nynäshamn",
-        "city": "Nynäshamn"
+        "city": "Nynäshamn",
+        "type": "drop-in"
     },
     {
         "name": "Upplands Väsby Löwenströmska Sjukhuset",
         "address": "Löwenströms väg 1, Upplands väsby",
-        "city": "Upplands väsby"
+        "city": "Upplands väsby",
+        "type": "drop-in"
     },
     {
         "name": "Närlaboratorium Vaxholm",
         "address": "Kapellgatan 2, Vaxholm",
-        "city": "Vaxholm"
+        "city": "Vaxholm",
+        "type": "drop-in"
     },
     {
         "name": "Laboratoriet Solna",
         "address": "Hannebergsgatan 41, Solna",
-        "city": "Solna"
+        "city": "Solna",
+        "type": "drop-in"
     },
     {
         "name": "Södersjukhuset",
         "address": "Sjukhusbacken 10, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "Vallentuna",
         "address": "Åby gata 6, Vallentuna",
-        "city": "Vallentuna"
+        "city": "Vallentuna",
+        "type": "drop-in"
     },
     {
         "name": "Täby sjukhus",
         "address": "Esplanaden 9, Täby",
-        "city": "Täby"
+        "city": "Täby",
+        "type": "drop-in"
     },
     {
         "name": "Farsta Läkarhus",
         "address": "Farstagången 32, Farsta",
-        "city": "Farsta"
+        "city": "Farsta",
+        "type": "drop-in"
     },
     {
         "name": "Bagarmossen",
         "address": "Lillåvägen 68, Bagarmossen",
-        "city": "Bagarmossen"
+        "city": "Bagarmossen",
+        "type": "drop-in"
     },
     {
         "name": "Edsberg",
         "address": "Edsbergs torg 1, Sollentuna",
-        "city": "Sollentuna"
+        "city": "Sollentuna",
+        "type": "drop-in"
     },
     {
         "name": "Huvudsta",
         "address": "Storgatan 70, Solna",
-        "city": "Solna"
+        "city": "Solna",
+        "type": "drop-in"
     },
     {
         "name": "Märsta",
         "address": "Södergatan 19, Märsta",
-        "city": "Märsta"
+        "city": "Märsta",
+        "type": "drop-in"
     },
     {
         "name": "Ekerö",
         "address": "Bryggavägen 8, plan 2, Ekerö",
-        "city": "Ekerö"
-    },
-    {
-        "name": "SYNLAB Göteborg MACC",
-        "address": "Södra Vägen 23, Göteborg",
-        "city": "Göteborg"
+        "city": "Ekerö",
+        "type": "drop-in"
     },
     {
         "name": "Provtagningscentral Huddinge",
         "address": "Hälsovägen 13, Huddinge",
-        "city": "Huddinge"
+        "city": "Huddinge",
+        "type": "drop-in"
     },
     {
         "name": "Södertälje Sjukhus",
         "address": "Rosenborgsgatan 6-10, Södertälje",
-        "city": "Södertälje"
+        "city": "Södertälje",
+        "type": "drop-in"
     },
     {
         "name": "Provtagningscentral Årsta",
         "address": "Bränningevägen 2, Årsta",
-        "city": "Årsta"
+        "city": "Årsta",
+        "type": "drop-in"
     },
     {
         "name": "Karolinska Universitetssjukhuset",
         "address": "Eugeniavägen 3, Solna",
-        "city": "Solna"
+        "city": "Solna",
+        "type": "drop-in"
     },
     {
         "name": "Oceanhamnes Vårdcentral",
         "address": "Henckels Torg 6, Helsingborg",
-        "city": "Helsingborg"
+        "city": "Helsingborg",
+        "type": "tidsbokning"
     },
     {
         "name": "Närlaboratorium Boo",
         "address": "Kanholmsvägen 51, Saltsjö-boo",
-        "city": "Saltsjöbaden"
+        "city": "Saltsjöbaden",
+        "type": "drop-in"
     },
     {
         "name": "Provtagningscentral Kallhäll",
         "address": "Kopparvägen 2 B, Järfalla",
-        "city": "Järfalla"
+        "city": "Järfalla",
+        "type": "drop-in"
     },
     {
         "name": "Provtagningscentral Maria",
         "address": "Wollmar Yxkullsgatan 25, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
     },
     {
         "name": "KOPPARHÄLSAN Västerås",
         "address": "Metallverksgatan 21, Västerås",
-        "city": "Västerås"
+        "city": "Västerås",
+        "type": "tidsbokning"
     },
     {
         "name": "Danderyds sjukhus",
         "address": "Entrévägen 2, Danderyd",
-        "city": "Danderyd"
+        "city": "Danderyd",
+        "type": "drop-in"
     },
     {
         "name": "Saltsjöbaden laboratoriet",
         "address": "Byvägen 52, Saltsjöbaden",
-        "city": "Saltsjöbaden"
+        "city": "Saltsjöbaden",
+        "type": "drop-in"
     },
     {
         "name": "Norrlands Hälsa",
         "address": "Västra Kyrkogatan 14B, Umeå",
-        "city": "Umeå"
+        "city": "Umeå",
+        "type": "tidsbokning"
     },
     {
         "name": "Labbkliniken Örebro",
         "address": "Gustavsgatan 7, Örebro",
-        "city": "Örebro"
+        "city": "Örebro",
+        "type": "tidsbokning"
     },
     {
         "name": "Provtagningscentral Ersta sjukhus",
         "address": "Folkungagatan 125, Stockholm",
-        "city": "Stockholm"
+        "city": "Stockholm",
+        "type": "drop-in"
+    },
+    {
+        "name": "Vallentuna",
+        "address": "Åby gata 6, Vallentuna",
+        "city": "Vallentuna",
+        "type": "drop-in"
+    },
+    {
+        "name": "Täby sjukhus",
+        "address": "Esplanaden 9, Täby",
+        "city": "Täby",
+        "type": "drop-in"
+    },
+    {
+        "name": "Farsta Läkarhus",
+        "address": "Farstagången 32, Farsta",
+        "city": "Farsta",
+        "type": "drop-in"
+    },
+    {
+        "name": "Bagarmossen",
+        "address": "Lillåvägen 68, Bagarmossen",
+        "city": "Bagarmossen",
+        "type": "drop-in"
+    },
+    {
+        "name": "Edsberg",
+        "address": "Edsbergs torg 1, Sollentuna",
+        "city": "Sollentuna",
+        "type": "drop-in"
+    },
+    {
+        "name": "Huvudsta",
+        "address": "Storgatan 70, Solna",
+        "city": "Solna",
+        "type": "drop-in"
+    },
+    {
+        "name": "Märsta",
+        "address": "Södergatan 19, Märsta",
+        "city": "Märsta",
+        "type": "drop-in"
+    },
+    {
+        "name": "Ekerö",
+        "address": "Bryggavägen 8, plan 2, Ekerö",
+        "city": "Ekerö",
+        "type": "drop-in"
+    },
+    {
+        "name": "Provtagningscentral Huddinge",
+        "address": "Hälsovägen 13, Huddinge",
+        "city": "Huddinge",
+        "type": "drop-in"
+    },
+    {
+        "name": "Södertälje Sjukhus",
+        "address": "Rosenborgsgatan 6-10, Södertälje",
+        "city": "Södertälje",
+        "type": "drop-in"
+    },
+    {
+        "name": "Provtagningscentral Årsta",
+        "address": "Bränningevägen 2, Årsta",
+        "city": "Årsta",
+        "type": "drop-in"
+    },
+    {
+        "name": "Närlaboratorium Solna centrum",
+        "address": "Hotellgatan 3, 2 tr, Solna",
+        "city": "Solna",
+        "type": "drop-in"
+    },
+    {
+        "name": "Närlaboratorium Hallstavik",
+        "address": "Carl Wahrens väg 24, Hallstavik",
+        "city": "Hallstavik",
+        "type": "drop-in"
+    },
+    {
+        "name": "Näsets Läkargrupp",
+        "address": "Stortorget 17, Vellinge",
+        "city": "Vellinge",
+        "type": "drop-in"
+    },
+    {
+        "name": "KLINIKEN Barbro Börjeson",
+        "address": "Göteborgsvägen 14, Alingsås",
+        "city": "Alingsås",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "CrossFit Västervik",
+        "address": "Lysingsvägen 18, Västervik",
+        "city": "Västervik",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Nordic Vitality Clinic",
+        "address": "Landshövdingevägen 9C, Ängelholm",
+        "city": "Ängelholm",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Alovia Vårdcentral",
+        "address": "Lantmannavägen 109C, Trollhättan",
+        "city": "Trollhättan",
+        "type": "drop-in"
+    },
+    {
+        "name": "Vaccin i Norr",
+        "address": "Köpmangatan 13, Skellefteå",
+        "city": "Skellefteå",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "HälsoBrunnen Vårdcentral",
+        "address": "Vistvägen 2, Ulricehamn",
+        "city": "Ulricehamn",
+        "type": "drop-in"
+    },
+    {
+        "name": "Calestam Care Hjo",
+        "address": "Hamngatan 18, Hjo",
+        "city": "Hjo",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "LenaGo Health",
+        "address": "Kvarngatan 72, Rättvik",
+        "city": "Rättvik",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Hagakliniken Borlänge",
+        "address": "Hagavägen 20, Borlänge",
+        "city": "Borlänge",
+        "type": "drop-in"
+    },
+    {
+        "name": "Liwia Vårdcentral",
+        "address": "Östra Tullgatan 6, Malmö",
+        "city": "Malmö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Strandhälsan",
+        "address": "Motellvägen 1A, Falkenberg",
+        "city": "Falkenberg",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Veronicare",
+        "address": "Fyrvallavägen 2, Östersund",
+        "city": "Östersund",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Injektionskliniken Lycksele",
+        "address": "Borgaregatan 17 BV, Lycksele",
+        "city": "Lycksele",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Vård & Vaccination i Luleå",
+        "address": "Köpmangatan 33, Luleå",
+        "city": "Luleå",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People, Uddevalla",
+        "address": "Norra Drottninggatan 1, Uddevalla",
+        "city": "Uddevalla",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC Bilen Landskrona",
+        "address": "Kavallerigatan 4B, Landskrona",
+        "city": "Landskrona",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Synlab MACCbilen, Kävlinge",
+        "address": "Köpmansgatan 1, Kävlinge",
+        "city": "Kävlinge",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Lund",
+        "address": "Trollebergsvägen 5, Lund",
+        "city": "Lund",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Synlab MACC People, Malmö",
+        "address": "Derbyvägen 6E, Hus E2, Malmö",
+        "city": "Malmö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACCbilen, Simrishamn",
+        "address": "Stortorget 4, Simrishamn",
+        "city": "Simrishamn",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACCbilen Ystad",
+        "address": "Sankt Knuts Torg 4, Ystad",
+        "city": "Ystad",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC people Eslöv",
+        "address": "Stora torget, Eslöv",
+        "city": "Eslöv",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC people Bjärnum",
+        "address": "Järnvägsgatan 2, Bjärnum",
+        "city": "Bjärnum",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC people Bjuv",
+        "address": "Järnvägsgatan 1, Bjuv",
+        "city": "Bjuv",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC people Svalöv",
+        "address": "Herrevadsgatan 10B, Svalöv",
+        "city": "Svalöv",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Lomma",
+        "address": "Hamntorget 1, Lomma",
+        "city": "Lomma",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Osby",
+        "address": "Torget, Osby",
+        "city": "Osby",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Hässleholm",
+        "address": "Stortorget, Hässleholm",
+        "city": "Hässleholm",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Kristianstad",
+        "address": "Blekingevägen 2, Kristianstad",
+        "city": "Kristianstad",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Trelleborg",
+        "address": "Nygatan 30, Trelleborg",
+        "city": "Trelleborg",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Tomelilla",
+        "address": "Malmövägen 8, Tomelilla",
+        "city": "Tomelilla",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Skurup",
+        "address": "Stora Torg, Skurup",
+        "city": "Skurup",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Höganäs",
+        "address": "Kyrkplatsen 2, Höganäs",
+        "city": "Höganäs",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Helsingborg",
+        "address": "Grenadjärgatan 19, Helsingborg",
+        "city": "Helsingborg",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Capio Malmö",
+        "address": "Stortorget 9, Malmö",
+        "city": "Malmö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Vård Access Linköping",
+        "address": "Sankt Larsgatan 22A, Linköping",
+        "city": "Linköping",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Löddeköpinge",
+        "address": "Marknadsvägen 2, Löddeköpinge",
+        "city": "Löddeköpinge",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Cordinator Norrköping",
+        "address": "Södra Promenaden 32, Norrköping",
+        "city": "Norrköping",
+        "type": "drop-in"
+    },
+    {
+        "name": "Cordinator Linköping",
+        "address": "Brigadgatan 26, Linköping",
+        "city": "Linköping",
+        "type": "drop-in"
+    },
+    {
+        "name": "MACC People Staffanstorp",
+        "address": "Klågerupsvägen 1, Staffanstorp",
+        "city": "Staffanstorp",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Höör",
+        "address": "Nya Torg, Höör",
+        "city": "Höör",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Norrländsk Sjukvård",
+        "address": "Skiljevägen 42, Umeå",
+        "city": "Umeå",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Limhamn",
+        "address": "R. F. Bergs plats, Limhamn",
+        "city": "Limhamn",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Svedala",
+        "address": "Norra Ellenborgsgatan 1, Svedala",
+        "city": "Svedala",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Hörby",
+        "address": "Gamla torget, Hörby",
+        "city": "Hörby",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Startskottet Hälsocamp",
+        "address": "Staketgatan 32, Gävle",
+        "city": "Gävle",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Mitt under livet",
+        "address": "Nygatan 3b, Nässjö",
+        "city": "Nässjö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Kungälv",
+        "address": "Västra Gatan 57, Kungälv",
+        "city": "Kungälv",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Ångfärjans Skönhet",
+        "address": "Kungsgatan 2, Helsingborg",
+        "city": "Helsingborg",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Testcentrum",
+        "address": "Storgatan 56, Växjö",
+        "city": "Växjö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Provtagningscentral Ersta sjukhus",
+        "address": "Folkungagatan 125, Stockholm",
+        "city": "Stockholm",
+        "type": "drop-in"
+    },
+    {
+        "name": "Livsstilscentralen",
+        "address": "Bryngelsgatan 2B, Falköping",
+        "city": "Falköping",
+        "type": "drop-in"
+    },
+    {
+        "name": "VaccinF",
+        "address": "Ingelstadsvägen 33, Växjö",
+        "city": "Växjö",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "AK´s Estetik & hälsa Kiruna",
+        "address": "Reenstiernagatan 33 A, Kiruna",
+        "city": "Kiruna",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "AK´s Estetik & hälsa Gällivare",
+        "address": "Föreningsgatan 9, Gällivare",
+        "city": "Gällivare",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Labbkliniken Hagfors",
+        "address": "Uvedsvägen 9, Hagfors",
+        "city": "Hagfors",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Vhila Hälsoklinik",
+        "address": "Ronnebygatan 41, Karlskrona",
+        "city": "Karlskrona",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Medprov",
+        "address": "Östra storgatan 45, Kristianstad",
+        "city": "Kristianstad",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Öresundhälsan",
+        "address": "Jägersrovägen 80A, Malmö",
+        "city": "Malmö",
+        "type": "drop-in"
+    },
+    {
+        "name": "Närlaboratorium Upplands Väsby",
+        "address": "Dragonvägen 92, Upplands väsby",
+        "city": "Upplands väsby",
+        "type": "drop-in"
+    },
+    {
+        "name": "Kopparhälsan Västerås",
+        "address": "Metallverksgatan 21, Västerås",
+        "city": "Västerås",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Sannas skönhetsvård",
+        "address": "Kyrkogatan 25, Skurup",
+        "city": "Skurup",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Oceanhamnes Vårdcentral",
+        "address": "Henckels Torg 6, Helsingborg",
+        "city": "Helsingborg",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Närlaboratorium Handens närsjukhus",
+        "address": "Dalarövägen 6, Haninge",
+        "city": "Haninge",
+        "type": "drop-in"
+    },
+    {
+        "name": "MACC People, Ängelholm",
+        "address": "Stjernsvärds allé 59, Ängelholm",
+        "city": "Ängelholm",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Borås",
+        "address": "Allégatan 6, Borås",
+        "city": "Borås",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Båstad",
+        "address": "Torget, Båstad",
+        "city": "Båstad",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Tomelilla",
+        "address": "Malmövägen 8, Tomelilla",
+        "city": "Tomelilla",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Höör",
+        "address": "Nya Torg, Höör",
+        "city": "Höör",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Staffanstorp",
+        "address": "Klågerupsvägen 1, Staffanstorp",
+        "city": "Staffanstorp",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Limhamn",
+        "address": "R. F. Bergs plats, Limhamn",
+        "city": "Limhamn",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Svedala",
+        "address": "Norra Ellenborgsgatan 1, Svedala",
+        "city": "Svedala",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "MACC People Hörby",
+        "address": "Gamla torget, Hörby",
+        "city": "Hörby",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Startskottet Hälsocamp",
+        "address": "Staketgatan 32, Gävle",
+        "city": "Gävle",
+        "type": "tidsbokning"
+    },
+    {
+        "name": "Mitt under livet",
+        "address": "Nygatan 3b, Nässjö",
+        "city": "Nässjö",
+        "type": "tidsbokning"
     }
 ]

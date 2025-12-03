@@ -127,7 +127,7 @@
 }
 
 .arrow:hover {
-    background: #0BAED3;
+    background: #7c7d7d;
     color: white;
 }
 
@@ -142,7 +142,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
     .carousel-container {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .carousel-card {
@@ -153,10 +153,11 @@
 @media (max-width: 768px) {
     .carousel-card {
         flex: 0 0 calc(50% - 20px);
+
     }
 
     .carousel-header {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -170,8 +171,9 @@
         height: 160px;
     }
 
-    .carousel-header {
-        font-size: 1.5rem;
+    .carousel-header h2 {
+        padding-left: 10px;
+        font-size: 2rem;
     }
 }
 

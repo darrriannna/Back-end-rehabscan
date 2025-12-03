@@ -38,12 +38,7 @@ const groups = [
             {
                 question: "Kan jag betala med Klarna?",
                 answer: "Ja, vi erbjuder betalning via Klarna, Swish och kort.",
-            },
-            {
-                question: "Har ni öppet köp?",
-                answer:
-                    "Ja, enligt distanshandelslagen erbjuder vi öppet köp på de flesta tjänster.",
-            },
+            }
         ],
     },
     {

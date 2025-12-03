@@ -161,7 +161,7 @@ export default function BookingForm() {
 
             <label className="checkbox-row">
                 <input type="checkbox" name="acceptPrivacy" checked={formData.acceptPrivacy} onChange={handleChange} required />
-                Jag godkänner <a href="/integritetspolicy" target="_blank">integritetspolicyn</a>
+                Jag godkänner <a href="/integritet" target="_blank">integritetspolicyn</a>
             </label>
 
             <label className="checkbox-row">

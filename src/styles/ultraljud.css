@@ -1,0 +1,260 @@
+/* =============================== */
+/* ULTRALJUD PRODUCT CARDS (UNIQUE) */
+/* =============================== */
+
+.ultr-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.ultr-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    padding: 0 5px;
+}
+
+/* Grid layout */
+.ultr-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 1024px) {
+    .ultr-container {
+        max-width: 90%;
+    }
+
+    .ultr-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ultr-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ultr-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card */
+.ultr-card {
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ultr-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Pastel header with code text */
+.ultr-top {
+    height: 150px;
+    border-radius: 22px 22px 0 0;
+    background: #f4f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ultr-code {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #4a5bd3;
+    opacity: 0.9;
+}
+
+/* Content */
+.ultr-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ultr-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.ultr-desc {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+/* Price row */
+.ultr-prices {
+    margin-bottom: 14px;
+}
+
+.ultr-old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.ultr-new {
+    color: black;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* Buttons */
+.ultr-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Cart icon button */
+.ultr-cart-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ultr-cart-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Läs mer */
+.ultr-more-btn {
+    flex: 1;
+    border: 1px solid #101010;
+    color: #000;
+    background: transparent;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.25s ease;
+}
+
+.ultr-more-btn:hover {
+    background: #f7f7f7;
+}
+
+/* Dropdown container */
+.ultr-dropdown {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    animation: ultrFade 0.25s ease;
+}
+
+@keyframes ultrFade {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Individual sections */
+.ultr-drop-section {
+    margin-bottom: 14px;
+}
+
+.ultr-drop-section h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.ultr-drop-section p,
+.ultr-drop-section li {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.45;
+}
+
+.ultr-drop-section ul {
+    padding-left: 18px;
+}
+
+
+/* Dropdown container */
+.ultr-dropdown {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    animation: ultrFade 0.25s ease;
+}
+
+@keyframes ultrFade {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Closed state – collapsed, invisible, not affecting layout */
+.ultr-dropdown {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* OPEN STATE */
+.ultr-dropdown.open {
+    max-height: 600px;
+    /* can be any large number */
+    opacity: 1;
+    overflow: visible;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
+}

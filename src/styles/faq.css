@@ -65,4 +65,12 @@
     .faq-question {
         font-size: 1.05rem;
     }
+
+}
+
+@media (max-width: 1000px) {
+
+    .faq-container {
+        max-width: 90%;
+    }
 }

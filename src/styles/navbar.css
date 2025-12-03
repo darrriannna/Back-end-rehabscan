@@ -86,7 +86,7 @@
 /* ----------------------------- */
 /* Slide-out Menu (Responsive)   */
 /* ----------------------------- */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .nav-links {
         position: fixed;
         top: 0;
