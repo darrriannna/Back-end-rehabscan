@@ -8,7 +8,7 @@ const groups = [
             {
                 question: "Får jag ta del av bilderna från MR-röntgen?",
                 answer:
-                    "Ja, du får alltid ta del av dina MR-bilder digitalt efter undersökningen.",
+                    "För att få tillgång till dina MR-bilder behöver du kontakta den klinik där undersökningen gjordes (Unilabs eller Evidia). Dina röntgenbilder omfattas av sekretess, därför kan vi inte se eller hämta dem utan ditt uttryckliga medgivande. Om din undersökning gjordes hos Unilabs brukar bilderna även bli tillgängliga på *Unilabs Mina sidor* ungefär en vecka efter undersökningen.",
             },
             {
                 question: "Hur går magnetröntgen till?",
@@ -20,15 +20,11 @@ const groups = [
     {
         title: "Frågor om Hälsotester",
         items: [
-            {
-                question: "Behöver jag vara fastande?",
-                answer:
-                    "De flesta blodprover kräver inte fasta. Du får tydlig information vid bokning.",
-            },
+
             {
                 question: "När får jag mina provsvar?",
                 answer:
-                    "Resultaten levereras normalt inom 1–3 arbetsdagar digitalt.",
+                    "Resultaten levererar vi normalt inom 1–3 arbetsdagar via telefonsamtal samt epost.",
             },
         ],
     },
@@ -37,7 +33,7 @@ const groups = [
         items: [
             {
                 question: "Kan jag betala med Klarna?",
-                answer: "Ja, vi erbjuder betalning via Klarna, Swish och kort.",
+                answer: "Ja, vi erbjuder betalning via Klarna och kort.",
             }
         ],
     },
@@ -47,7 +43,7 @@ const groups = [
             {
                 question: "Hur får jag återkoppling från läkare?",
                 answer:
-                    "Ett skriftligt läkarutlåtande ingår i de flesta större hälsokontroller.",
+                    "Ett skriftligt läkarutlåtande ingår i de flesta större hälsokontroller och MR-undersökningar.",
             },
         ],
     },

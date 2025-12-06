@@ -10,7 +10,7 @@ const MapMR = () => {
 
     return (
         <div className='map-section-container'>
-            <h2 className='map-section-text-h'>Hitta klinik närmast dig</h2>
+            <h2 className='map-section-text-h'>Hitta kliniken närmast dig</h2>
             <div className="map-section">
 
                 <div className="text-content">

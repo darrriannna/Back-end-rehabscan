@@ -120,7 +120,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligaments
             "Genomgång av alla organområden"
         ],
         price: 19200,
-        image: "/assets/helkropp-img.png",
+        image: "/assets/helkropp.png",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
 `,
@@ -659,4 +659,32 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
 `,
 
     },
+    {
+        id: 401,
+        type: "mr",
+        title: "MR Helkropp Plus",
+        subtitle: "MR + blodprover",
+        description: "Strålningsfri MR-helkroppsundersökning kombinerat med 50+ blodmarkörer.",
+        includes: [
+            "MR Helkropp",
+            "50+ blodanalyser",
+            "Medicinsk specialistbedömning"
+        ],
+        price: 20900
+    },
+    {
+        id: 402,
+        type: "mr",
+        title: "MR Helkropp Pro",
+        subtitle: "MR + blodprover + EKG",
+        description: "Vår mest omfattande helkroppskontroll med MR, 70+ blodprover och långtids-EKG.",
+        includes: [
+            "MR Helkropp",
+            "70+ blodanalyser",
+            "Långtids-EKG (5–7 dygn)"
+        ],
+        price: 22300
+    }
+
+
 ];

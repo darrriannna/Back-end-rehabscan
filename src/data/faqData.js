@@ -14,11 +14,11 @@ export const faqData = {
         },
         {
             q: "Får jag svar samma dag?",
-            a: "Radiologen granskar bilderna och skickar ett utlåtande till remitterande läkare. Återkoppling sker vanligtvis inom 1–7 dagar."
+            a: "Radiologen granskar bilderna och skickar ett utlåtande till remitterande läkare. Återkoppling sker vanligtvis inom 1–7 dagar. Ibland kan det ta längre tid, till exempel vid helgdagar eller hög arbetsbelastning på vissa kliniker. Tyvärr kan vi inte påverka detta. "
         },
         {
             q: "Hur gör man för att avboka eller ändra tiden?",
-            a: "För att avboka måste du ringa kliniken där du bokade tiden senast 24 timmar före undersökningen. Uteblivet besök eller avbokning senare än 24 timmar innan inbokad tid debiteras fullt och återbetalas ej. För att ändra tiden kan du också ringa kliniken där din undersökning är bokad."
+            a: "Du kan av- eller omboka din tid genom att ringa direkt till den klinik där du har bokat din undersökning. Vi ber dig göra detta senast 24 timmar innan ditt besök. Vid uteblivet besök eller sen avbokning debiteras hela beloppet och återbetalas ej. Om remissen redan har skickats och du väljer att avboka av personliga skäl, tillkommer en remissavgift på 1000 kr som dras från det belopp du får tillbaka."
         },
         {
             q: "Kan jag själv bestämma tiden för undersökningen?",
@@ -37,7 +37,7 @@ export const faqData = {
         },
         {
             q: "Hur får jag mina provsvar?",
-            a: "Svaren kommer digitalt till din journal och du får en notifiering när de är klara."
+            a: "Så snart vi har fått dina provsvar kontaktar vi dig via telefon eller e-post för att gå igenom resultatet tillsammans. Därefter skickar vi även en skriftlig sammanfattning med våra rekommendationer."
         },
         {
             q: "Vilka tester rekommenderas?",
@@ -48,7 +48,7 @@ export const faqData = {
     betalning: [
         {
             q: "Vilka betalningsmetoder accepterar ni?",
-            a: "Vi accepterar kort, Klarna, Swish och faktura."
+            a: "Vi accepterar kort, Klarna och faktura (företagkunder)."
         },
         {
             q: "Får jag kvitto?",
@@ -63,11 +63,7 @@ export const faqData = {
     saFungerarDet: [
         {
             q: "Hur bokar jag en undersökning?",
-            a: "Välj tjänst, beställ den och boka en tid hos valfri mottagning."
-        },
-        {
-            q: "Kan jag avboka?",
-            a: "Avbokning är gratis fram till 24 timmar innan besöket."
+            a: "Du väljer den undersökning du behöver och slutför beställningen online. Efter bokning får du en bekräftelse och förslag på kliniker nära dig. Den mottagning du väljer kontaktar dig sedan för att boka in en tid som passar dig. Vid behov kan en specialist även höra av sig för att få mer information om dina symtom innan undersökningen."
         },
         {
             q: "Hur lång tid tar processen?",

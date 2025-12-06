@@ -65,9 +65,7 @@
 /* Marker styling with bounce */
 
 @media (max-width: 950px) {
-    .map-image {
-        display: none;
-    }
+
 
     .dropdown-toggle {
         font-size: 1rem;
@@ -131,7 +129,7 @@
     .map-image {
         display: block;
         /* ensure it's visible */
-        max-width: 90%;
+        max-width: 80%;
         height: auto;
     }
 

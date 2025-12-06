@@ -106,6 +106,9 @@
     position: relative;
 }
 
+
+
+
 .mr-card {
     flex: 2;
     width: 100%;
@@ -205,6 +208,15 @@
     text-shadow: 2px black;
 }
 
+.discount-card {
+    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/julklapp.mp4") center center / cover no-repeat;
+    padding: 40px;
+    margin: 20px;
+    height: 150px;
+    text-align: left;
+    text-shadow: 2px black;
+}
+
 .black-card h3 {
     color: #fff;
     font-size: 35px;
@@ -237,6 +249,24 @@
     font-weight: 600;
     text-align: left;
     text-shadow: 1px;
+}
+
+/* Black Weeks badge */
+.discount-badge-jul {
+    background: rgb(187, 11, 11);
+    color: white;
+    padding: 6px 14px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
+
+.discount-badge-jul-link {
+    color: #ddd;
 }
 
 
@@ -290,6 +320,10 @@
 
     .mr-map-card {
         flex: 2;
+    }
+
+    .discount-card {
+        margin: 20px;
     }
 
     .test-map-card {

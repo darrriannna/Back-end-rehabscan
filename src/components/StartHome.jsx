@@ -66,11 +66,27 @@ const StartHome = () => {
                 )}
             </div>
 
+            <div className="hero-card discount-card">
 
+                <div className="discount-badge-jul">
+                    <Link className="discount-badge-jul-link" to="/halsotester">Hitta din julklapp</Link>
+                </div>
+            </div>
 
             {/* Hero Section */}
             <div className="hero-section">
-                {/* Purple video background card */}
+                <div className="hero-card black-card">
+                    <h3>Magnetröntgen utan remiss</h3>
+                    <p>
+                        Få tid inom 1–7 arbetsdagar på närmaste kliniken.
+                        Se insidan av din kropp – helt strålningsfritt.
+                        Billigast i Sverige.
+                    </p>
+
+                    <div className="discount-badge">
+                        Granskas av röntgenspecialister
+                    </div>
+                </div> {/* Purple video background card */}
                 <div className="hero-card purple-card">
                     <div className="hero-content">
                         <h2 className="title-hero">
@@ -83,18 +99,7 @@ const StartHome = () => {
                 </div>
 
                 {/* Black Weeks card */}
-                <div className="hero-card black-card">
-                    <h3>Magnetröntgen utan remiss</h3>
-                    <p>
-                        Få tid inom 1–7 arbetsdagar på närmaste kliniken.
-                        Se insidan av din kropp – helt strålningsfritt.
-                        Billigast i Sverige.
-                    </p>
 
-                    <div className="discount-badge">
-                        Granskas av röntgenspecialister
-                    </div>
-                </div>
             </div>
         </div>
     );

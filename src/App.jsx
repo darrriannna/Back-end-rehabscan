@@ -17,6 +17,7 @@ import Restrictions from "./pages/Villkor";
 import Helkropp from "./pages/Helkropp";
 import UltraljudPage from "./pages/Ultraljud";
 import Success from "./pages/Success";
+import Cancel from "./pages/Failed";
 
 
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/mottagningar" element={<Mottagningar />} />
         <Route path="/bokning" element={<BookingPage />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
         <Route path="/magnetrontgen/:id" element={<ServiceProduct />} />
         <Route path="/halsokontroll/:id" element={<TestProduct />} />
 

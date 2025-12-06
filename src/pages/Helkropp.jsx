@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-import "../styles/helkropp.css";
-import "../styles/service-product.css";
-import Footer from "../components/Footer";
+import { useCart } from "../context/CartContext";
+import { services } from "../data/servicesData";
+import { FiShoppingCart, FiX } from "react-icons/fi";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import TopStrip from "../components/TopStrip";
 import StartHelkropp from "../components/TopHelkropp";
+import "../styles/helkropp.css";
+import "../styles/service-product.css";
+import HelkroppPackages from "../components/Package";
 
-export default function Helkropp() {
+export default function HelkroppPage() {
+    const helkroppService = services.find((s) => s.id === 6); // your Helkropp ID
+    const { cart, addToCart, removeFromCart } = useCart();
+    const isInCart = cart.some((item) => item.id === helkroppService.id);
 
     const [openSections, setOpenSections] = useState({
         before: false,
@@ -14,12 +21,9 @@ export default function Helkropp() {
         location: false,
     });
 
-    const toggleSection = (section) => {
-        setOpenSections((prev) => ({
-            ...prev,
-            [section]: !prev[section],
-        }));
-    };
+    const toggleSection = (key) =>
+        setOpenSections((prev) => ({ ...prev, [key]: !prev[key] }));
+
     const scanData = [
         {
             title: "MR Hjärna, ögonhålor, bihålor",
@@ -35,112 +39,145 @@ export default function Helkropp() {
         },
         {
             title: "MR Hals",
-            items: [
-                "Tumör",
-                "Förstorade lymfkörtlar",
-                "Sköldkörteln",
-                "Spottkörtlar",
-                "Larynx-strupen",
-                "Vid tydliga symtom rekommenderas MR-Hals",
-            ],
+            items: ["Tumör", "Förstorade lymfkörtlar", "Sköldkörteln", "Spottkörtlar", "Larynx-strupen", "Vid tydliga symtom rekommenderas MR-Hals"],
         },
         {
             title: "MR Lungor",
-            items: [
-                "Översikt av lungor, lungsäck",
-                "Förstorade lymfkörtlar",
-                "Inflammation, tumör, förändringar",
-                "Aortaneurysm – Aderbråck",
-                "Om du haft stroke, cancer eller lungproblem rekommenderas datortomografi",
-            ],
+            items: ["Översikt av lungor, lungsäck", "Förstorade lymfkörtlar", "Inflammation, tumör, förändringar", "Aortaneurysm – Aderbråck", "Om du haft stroke, cancer eller lungproblem rekommenderas datortomografi"],
         },
         {
             title: "MR-Buk - lever, gallblåsa, njurar, lymfkörtlar",
-            items: [
-                "Tumör i bukens organ",
-                "Inflammation i bukens organ (t.ex. hepatit, pankreatit)",
-                "Leverförfettning och andra leverförändringar",
-                "Hinder i gallgångar och njurar",
-                "Aortaneurysm – Aderbråck",
-                "Förstorade lymfkörtlar (inflammation, infektion, tumör)",
-            ],
+            items: ["Tumör i bukens organ", "Inflammation i bukens organ (t.ex. hepatit, pankreatit)", "Leverförfettning och andra leverförändringar", "Hinder i gallgångar och njurar", "Aortaneurysm – Aderbråck", "Förstorade lymfkörtlar (inflammation, infektion, tumör)"],
         },
         {
             title: "MR Lilla bäcken - prostata, äggstockar",
-            items: [
-                "Urinblåsa",
-                "Prostata – förstoring, inflammation och tumör",
-                "PSA-prov (enligt Socialstyrelsens riktlinjer)",
-                "Livmoder och äggstockar",
-                "Muskelknutor (myom), tumör, endometrios, cystor",
-                "Lymfkörtlar",
-                "Skelett – bäcken, höftleder, muskelfästen",
-                "Tarmfickor i tjocktarmen (divertiklar)",
-            ],
+            items: ["Urinblåsa", "Prostata – förstoring, inflammation och tumör", "PSA-prov (enligt Socialstyrelsens riktlinjer)", "Livmoder och äggstockar", "Muskelknutor (myom), tumör, endometrios, cystor", "Lymfkörtlar", "Skelett – bäcken, höftleder, muskelfästen", "Tarmfickor i tjocktarmen (divertiklar)"],
         },
         {
             title: "MR Skelett – hals, bröst- och ländrygg, höfter",
-            items: [
-                "Tumör",
-                "Metastas",
-                "Diskbråck",
-                "Spinal stenos",
-                "Inflammation",
-                "Artros",
-                "Kotkompression",
-            ],
+            items: ["Tumör", "Metastas", "Diskbråck", "Spinal stenos", "Inflammation", "Artros", "Kotkompression"],
         },
     ];
+    const clinics = [
+        {
+            name: "Sabbatsberg Röntgen",
+            address: "Olivecronas väg 1, 113 24 Stockholm",
+            city: "Stockholm"
+        },
+        {
+            name: "Backa Röntgen",
+            address: "Backavägen 3, 417 30 Göteborg",
+            city: "Göteborg"
+        },
+        {
+            name: "Mölndal vid GoCo",
+            address: "Entreprenörsstråket 6, 431 53 Mölndal",
+            city: "Mölndal"
+        },
+        {
+            name: "Malmö Entré Röntgen",
+            address: "Fredsgatan 12, 212 12 Malmö",
+            city: "Malmö"
+        },
+        {
+            name: "Umeå Röntgen",
+            address: "Renmarkstorget 12, 903 26 Umeå",
+            city: "Umeå"
+        },
+        {
+            name: "Karlstad Röntgen",
+            address: "Löfbergs Arena, Norra Infarten 79, 654 65 Karlstad",
+            city: "Karlstad"
+        },
+        {
+            name: "Sundsvall Röntgen",
+            address: "Institutvägen 2, 856 43 Sundsvall",
+            city: "Sundsvall"
+        },
+        {
+            name: "Jönköping Röntgen",
+            address: "Batterigatan 11, 553 05 Jönköping",
+            city: "Jönköping"
+        }
+    ];
+
+
     return (
         <div>
             <TopStrip />
             <Navbar />
             <StartHelkropp />
+            <HelkroppPackages services={services} addToCart={addToCart} />
+
             <div className="layout-container">
                 <div className="content-wrapper">
                     <div className="left-image">
-                        <img
-                            src="/assets/helkropp.png"
-                            alt="Body scan"
-                            className="body-image"
-                        />
+                        <img src={helkroppService.image} alt={helkroppService.title} className="body-image" />
                     </div>
 
                     <div className="right-text">
-                        <h1 className="title">MR Helkropp</h1>
-                        <p className="subtitle">
-                            Välj MR Helkropp för en heltäckande hälsokontroll.
-                        </p>
+                        <h1 className="title">{helkroppService.title}</h1>
+                        <p className="subtitle">{helkroppService.subtitle}</p>
 
                         <ul className="benefits-list">
-                            <li>Fullständig hälsorapport</li>
-                            <li>Radiologens analys</li>
-                            <li>Specialistbedömning</li>
-                            <li>Genomgång av alla organområden</li>
+                            {helkroppService.includes.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                            ))}
                         </ul>
+                        <p
+                            className="scroll-link"
+                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                            onClick={() => {
+                                const section = document.getElementById("vad-kan-man-upptacka");
+                                if (section) section.scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Vad kan man upptäcka?
+                        </p>
+                        <p
+                            className="scroll-link"
+                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                            onClick={() => {
+                                const section = document.getElementById("hitta-kliniken");
+                                if (section) section.scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Hitta kliniken
+                        </p>
+                        <div className="price-row">
+                            <span className="price-new">{helkroppService.price.toLocaleString("sv-SE")} kr</span>
+                        </div>
 
-                        <button className="add-to-cart-btn">Lägg i kundvagn</button>
+                        <button
+                            className="add-to-cart-btn"
+                            onClick={() =>
+                                isInCart
+                                    ? removeFromCart(helkroppService.id)
+                                    : addToCart({
+                                        id: helkroppService.id,
+                                        name: helkroppService.title,
+                                        price: helkroppService.price,
+                                        image: helkroppService.image,
+                                    })
+                            }
+                        >
+                            {isInCart ? "Ta bort från kundvagn" : "Lägg i kundvagn"}
+                        </button>
+
                     </div>
                 </div>
-                <button
-                    className={`acc-toggle ${openSections.before ? "open" : ""}`}
-                    onClick={() => toggleSection("before")}
-                >
+
+                {/* Accordions */}
+                <button className={`acc-toggle ${openSections.before ? "open" : ""}`} onClick={() => toggleSection("before")}>
                     <h3>Inför undersökningen</h3>
                     <span className="acc-icon">{openSections.before ? "▴" : "▾"}</span>
                 </button>
-
                 {openSections.before && (
                     <div className="acc-body">
                         <p>
-                            Efter din beställning kommer vi skicka en remiss för din MR-undersökning.
-                            Innan dess får du ett kortare samtal med en remitterande läkare som går
-                            igenom din sjukdomshistoria och dina besvär. Därefter skickas remissen vidare
-                            till röntgenkliniken.
+                            Efter din beställning kommer vi skicka en remiss för din MR-undersökning. Innan dess får du ett kortare samtal med en remitterande läkare som går igenom din sjukdomshistoria och dina besvär. Därefter skickas remissen vidare till röntgenkliniken.
                         </p>
-                        <p>
-                            MR är en säker metod som använder magnetfält och radiovågor — helt utan strålning.
-                        </p>
+                        <p>MR är en säker metod som använder magnetfält och radiovågor — helt utan strålning.</p>
                         <ul>
                             <li>Kläder och föremål med metall tas av före undersökningen.</li>
                             <li>Informera om pacemaker, implantat eller metall i kroppen.</li>
@@ -150,66 +187,66 @@ export default function Helkropp() {
                     </div>
                 )}
 
-                {/* AFTER EXAM (GLOBAL TEXT) */}
-                <button
-                    className={`acc-toggle ${openSections.after ? "open" : ""}`}
-                    onClick={() => toggleSection("after")}
-                >
+                <button className={`acc-toggle ${openSections.after ? "open" : ""}`} onClick={() => toggleSection("after")}>
                     <h3>Uppföljning efter undersökningen</h3>
                     <span className="acc-icon">{openSections.after ? "▴" : "▾"}</span>
                 </button>
-
                 {openSections.after && (
                     <div className="acc-body">
                         <p>
-                            Efter undersökningen granskas bilderna av en specialistläkare i radiologi,
-                            som sammanställer ett detaljerat utlåtande till den remitterande läkaren.
+                            Efter undersökningen granskas bilderna av en specialistläkare i radiologi, som sammanställer ett detaljerat utlåtande till den remitterande läkaren.
                         </p>
                         <p>
-                            Läkaren återkopplar till dig med resultat, förklaring av fynd och rekommenderad
-                            uppföljning. Om något kräver vidare vård hjälper vi dig vidare.
+                            Läkaren återkopplar till dig med resultat, förklaring av fynd och rekommenderad uppföljning. Om något kräver vidare vård hjälper vi dig vidare.
                         </p>
                     </div>
                 )}
 
-                {/* LOCATION */}
-                <button
-                    className={`acc-toggle ${openSections.location ? "open" : ""}`}
-                    onClick={() => toggleSection("location")}
-                >
+                <button className={`acc-toggle ${openSections.location ? "open" : ""}`} onClick={() => toggleSection("location")}>
                     <h3>Var kan jag testa mig?</h3>
                     <span className="acc-icon">{openSections.location ? "▴" : "▾"}</span>
                 </button>
-
                 {openSections.location && (
                     <div className="acc-body">
-                        <p>MR-undersökningar utförs på våra anslutna röntgenkliniker.</p>
+                        <p> MR Helkropp erbjuds endast på vissa kliniker. </p>
+                        <p
+                            className="scroll-link"
+                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                            onClick={() => {
+                                const section = document.getElementById("hitta-kliniken");
+                                if (section) section.scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Hitta kliniken
+                        </p>
                     </div>
                 )}
 
-                <div className="mr-scan-container">
+                {/* Scan Data */}
+
+                <div id="vad-kan-man-upptacka" className="mr-scan-container">
                     <h2 className="mr-scan-title">Vad ingår i MR-Helkropp?</h2>
-
-                    <div className="grid-deceases">
-                        <div className="containers-deceases-info">
-                            <p>
-                                MR helkropp är en översiktsundersökning, för att hinna avbilda de
-                                viktigaste delarna på ca 60 minuter måste vi dra ner på antalet
-                                MR-serier/kroppsdel och bildupplösningen.
-                            </p>
-                            <p>Kontakta oss för mer info – info@rehabscan.se</p>
-                        </div>
-                    </div>
-
                     <div className="mr-scan-grid">
-                        {scanData.map((section, index) => (
-                            <div key={index} className="mr-scan-category">
+                        {scanData.map((section, idx) => (
+                            <div key={idx} className="mr-scan-category">
                                 <h3 className="mr-scan-category-title">{section.title}</h3>
                                 <ul className="mr-scan-list">
-                                    {section.items.map((item, idx) => (
-                                        <li key={idx}>{item}</li>
+                                    {section.items.map((item, i) => (
+                                        <li key={i}>{item}</li>
                                     ))}
                                 </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div id="hitta-kliniken" className="h-clinics-container">
+                    <h1 className="h-clinics-title">MR Helkropp kliniker</h1>
+                    <div className="h-clinics-grid">
+                        {clinics.map((clinic, idx) => (
+                            <div key={idx} className="h-clinic-card">  <p className="clinic-city">{clinic.city}</p>
+                                <h3 className="h-clinic-name">{clinic.name}</h3>
+                                <p className="h-clinic-address">{clinic.address}</p>
+
                             </div>
                         ))}
                     </div>
@@ -217,6 +254,5 @@ export default function Helkropp() {
             </div>
             <Footer />
         </div>
-
     );
 }

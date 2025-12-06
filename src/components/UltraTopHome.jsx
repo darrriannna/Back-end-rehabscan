@@ -22,7 +22,7 @@ const StartUltraljud = () => {
                 <div className="ultraljud-hero-card ultraljud-map-card">
                     <h3 className="map-title">Vi finns över hela Sverige</h3>
                     <p className="map-text">Rehabscan är en digital klinik, så vi kan ordna din ultraljud närmast ditt hem.</p>
-                    <a className="map-link" href="./Mottagningar">Hitta klinik</a>
+                    <a className="map-link" href="./Mottagningar">Hitta kliniken</a>
 
                 </div>
             </div>

@@ -10,8 +10,8 @@ export const healthTests = [
             "Analys av 52 centrala hälsomarkörer.",
             "Ger en bred genomgång av organfunktion, blodstatus och livsstilsrelaterade risker."
         ],
-        oldPrice: "2 195",
-        newPrice: "1 750",
+        oldPrice: "2 295",
+        newPrice: "2 065",
         bg: "#e9fce9",
         image: "/assets/halsotest.png",
         icon: "+"
@@ -27,8 +27,8 @@ export const healthTests = [
             "49 markörer som ger en tydlig helhetsbild över din hälsa.",
             "Fokus på hormonstatus, vitaminer, ämnesomsättning och blodmarkörer."
         ],
-        oldPrice: "1 850",
-        newPrice: "1 595",
+        oldPrice: "2 195",
+        newPrice: "1 975",
         bg: "#f7eefe",
         image: "/assets/halsotest.png",
         icon: "♀"
@@ -44,8 +44,8 @@ export const healthTests = [
             "46 markörer som analyserar hjärta, blod, hormoner och organfunktion.",
             "Ger en klarare bild av testosteron, näringsstatus och livsstilspåverkan."
         ],
-        oldPrice: "1 850",
-        newPrice: "1 595",
+        oldPrice: "2 195",
+        newPrice: "1 975",
         bg: "#f5efe7",
         image: "/assets/halsotest.png",
         icon: "♂"
@@ -62,7 +62,7 @@ export const healthTests = [
             "Ger en mycket detaljerad bild av din hälsa och livsstilsrelaterade risker."
         ],
         oldPrice: "3 895",
-        newPrice: "3 195",
+        newPrice: "3 500",
         bg: "#e9fce9",
         image: "/assets/halsotest.png",
         icon: "♂"
@@ -79,7 +79,7 @@ export const healthTests = [
             "Ger en djupgående och detaljerad helhetsbild över din hälsa."
         ],
         oldPrice: "3 895",
-        newPrice: "3 195",
+        newPrice: "3 500",
         bg: "#f7eefe",
         image: "/assets/halsotest.png",
         icon: "♀"

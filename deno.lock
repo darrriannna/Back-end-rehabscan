@@ -34,7 +34,7 @@
         "npm:sass@^1.93.3",
         "npm:stripe@^19.3.1",
         "npm:tailwindcss@^4.1.16",
-        "npm:vite@^7.1.7"
+        "npm:vite@^7.2.6"
       ]
     }
   }

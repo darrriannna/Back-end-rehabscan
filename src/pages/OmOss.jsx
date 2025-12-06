@@ -40,7 +40,7 @@ export default function OmOss() {
                         <img src="/assets/spine.png" alt="ländrygg-mr" />
                     </div>
 
-                    <div className="hero-text">
+                    <div className="hero-text text-om">
                         <h1 className="hero-title">
                             Våra specialister
                         </h1>

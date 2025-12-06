@@ -58,7 +58,7 @@
 .pillars-section {
     margin-top: 90px;
     display: grid;
-    gap: 40px;
+    gap: 20px;
 }
 
 .pillar h3 {
@@ -115,9 +115,21 @@
 
     .pillars-section {
         grid-template-columns: repeat(3, 1fr);
+
     }
 
     .labs-section {
         width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-om {
+        padding: 20px;
+    }
+
+    .pillars-section {
+        margin-left: 0px;
+
     }
 }

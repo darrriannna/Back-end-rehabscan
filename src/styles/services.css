@@ -1,11 +1,11 @@
 .service-selector {
     max-width: 1300px;
-    margin: 100px auto;
+    margin: 40px auto;
     padding: 20px;
 }
 
 .service-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
@@ -76,8 +76,9 @@
 
 @media (max-width: 600px) {
     .service-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
+
 
     .service-card {
         padding: 15px;

@@ -18,7 +18,7 @@ function MR() {
                 <TopStrip />
                 <Navbar />
                 <StartMR />
-                <ProductCarousel />
+
                 <ServiceSelector />
                 <MapMR />
                 <Steps />

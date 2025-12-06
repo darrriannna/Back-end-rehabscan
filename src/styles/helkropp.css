@@ -172,7 +172,7 @@
     }
 
     .right-text {
-        text-align: center;
+        text-align: left;
     }
 
     .mr-scan-title {
@@ -192,4 +192,48 @@
     .mr-scan-list li {
         font-size: 14px;
     }
+}
+
+.h-clinics-container {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.h-clinics-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #45375c;
+    text-align: left;
+}
+
+.h-clinics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.h-clinic-card {
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.h-clinic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.h-clinic-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.h-clinic-address,
+.h-clinic-city {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
 }
