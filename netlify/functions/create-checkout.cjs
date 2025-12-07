@@ -1,8 +1,6 @@
-import Stripe from "stripe";
+const Stripe = require("stripe");
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
-export const handler = async (event) => {
+exports.handler = async (event) => {
     try {
         const { items, email } = JSON.parse(event.body);
 
@@ -15,7 +13,7 @@ export const handler = async (event) => {
             quantity: 1,
         }));
 
-        const session = await stripe.checkout.sessions.create({
+        const session = await Stripe(process.env.STRIPE_SECRET_KEY).checkout.sessions.create({
             customer_email: email,
             payment_method_types: ["card", "klarna"],
             mode: "payment",
