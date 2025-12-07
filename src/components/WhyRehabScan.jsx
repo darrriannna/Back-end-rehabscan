@@ -39,13 +39,6 @@ const Varfor = () => {
                 </div>
 
                 <div className="why-video">
-                    <video
-                        src="https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/varfor-video.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        className="video-placeholder"
-                    ></video>
                 </div>
 
             </div>

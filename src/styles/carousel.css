@@ -140,7 +140,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
     .carousel-container {
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .carousel-card {
@@ -281,18 +281,6 @@
     z-index: 10;
 }
 
-/* Black Weeks badge */
-.discount-badge {
-    background: black;
-    color: white;
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    border-radius: 8px;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    z-index: 10;
-}
 
 /* Content section */
 .card-content {
@@ -337,6 +325,11 @@
     margin-top: auto;
 }
 
+.image-box {
+    position: relative;
+
+}
+
 /* Add to cart */
 .action-cart-btn {
     width: 45px;
@@ -366,4 +359,25 @@
 
 .learn-more-btn:hover {
     background: #f7f7f7;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title-row h3 {
+    margin: 0;
+}
+
+.title-badge {
+    background: #ff3b30;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
 }

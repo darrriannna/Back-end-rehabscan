@@ -14,21 +14,21 @@ export default function Steps() {
     const stepData = {
         mri: [
             ["Beställ magnetröntgen – fyll i förfrågan."],
-            ["Vi aktiverar remissen och bekräftar tid."],
-            ["Genomför undersökningen på klinik."],
-            ["Specialistläkare ger utlåtande digitalt."]
+            ["Vi kontaktar dig för information samt skickar remiss."],
+            ["Kliniken du har valt kontaktar dig vid första lediga tillfälle. Undersökningen genomförs på kliniken."],
+            ["Specialistläkaren skickar ett utlåtande till dig så fort vi har fått svar."]
         ],
         health: [
-            ["Välj hälsokontroll och boka tid."],
-            ["Lämna blodprov nära dig."],
-            ["Resultat analyseras av specialist."],
-            ["Personligt läkarutlåtande digitalt."]
+            ["Beställ hälsokontroll – fyll i förfrågan. "],
+            ["När din bokning bekräftats skickas en länk där du kan välja provtagning nära dig. "],
+            ["Vi får dina resultat inom 2 arbetsdagar. Resultat analyseras av specialist."],
+            ["Personligt läkarutlåtande via e-post."]
         ],
         ultra: [
-            ["Välj område och skicka förfrågan."],
-            ["Vi bokar tid på närmaste klinik."],
-            ["Undersökning hos specialist."],
-            ["Digitalt utlåtande och rekommendationer."]
+            ["Beställ ultraljud – fyll i förfrågan."],
+            ["Vi kontaktar dig för information samt skickar remiss."],
+            ["Kliniken du har valt kontaktar dig vid första lediga tillfälle. Undersökningen genomförs på kliniken."],
+            ["Specialistläkaren skickar ett utlåtande till dig så fort vi har fått svar."]
         ]
     };
 

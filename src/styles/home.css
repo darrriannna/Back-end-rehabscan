@@ -286,11 +286,19 @@
     font-weight: 600;
 }
 
+@media (max-width: 1000px) {
+    .hero-section {
+        margin: 20px;
+        gap: 20px;
+    }
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
-        margin: 10px;
+        gap: 10px;
+        margin: 20px;
     }
 
     .title-hero {
@@ -323,7 +331,7 @@
     }
 
     .discount-card {
-        margin: 20px;
+        margin: 30px;
     }
 
     .test-map-card {

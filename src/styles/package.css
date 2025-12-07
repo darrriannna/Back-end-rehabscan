@@ -44,6 +44,7 @@
 }
 
 .package-includes li {
+    list-style: none;
     margin-bottom: 6px;
     font-size: 15px;
 }

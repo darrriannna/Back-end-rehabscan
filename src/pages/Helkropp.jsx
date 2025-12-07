@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { services } from "../data/servicesData";
-import { FiShoppingCart, FiX } from "react-icons/fi";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TopStrip from "../components/TopStrip";
@@ -65,11 +64,6 @@ export default function HelkroppPage() {
             city: "Stockholm"
         },
         {
-            name: "Backa Röntgen",
-            address: "Backavägen 3, 417 30 Göteborg",
-            city: "Göteborg"
-        },
-        {
             name: "Mölndal vid GoCo",
             address: "Entreprenörsstråket 6, 431 53 Mölndal",
             city: "Mölndal"
@@ -108,148 +102,148 @@ export default function HelkroppPage() {
             <Navbar />
             <StartHelkropp />
             <HelkroppPackages services={services} addToCart={addToCart} />
-
-            <div className="layout-container">
-                <div className="content-wrapper">
-                    <div className="left-image">
-                        <img src={helkroppService.image} alt={helkroppService.title} className="body-image" />
-                    </div>
-
-                    <div className="right-text">
-                        <h1 className="title">{helkroppService.title}</h1>
-                        <p className="subtitle">{helkroppService.subtitle}</p>
-
-                        <ul className="benefits-list">
-                            {helkroppService.includes.map((item, idx) => (
-                                <li key={idx}>{item}</li>
-                            ))}
-                        </ul>
-                        <p
-                            className="scroll-link"
-                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
-                            onClick={() => {
-                                const section = document.getElementById("vad-kan-man-upptacka");
-                                if (section) section.scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Vad kan man upptäcka?
-                        </p>
-                        <p
-                            className="scroll-link"
-                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
-                            onClick={() => {
-                                const section = document.getElementById("hitta-kliniken");
-                                if (section) section.scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Hitta kliniken
-                        </p>
-                        <div className="price-row">
-                            <span className="price-new">{helkroppService.price.toLocaleString("sv-SE")} kr</span>
+            <div id="helkropp-product">
+                <div className="layout-container">
+                    <div className="content-wrapper">
+                        <div className="left-image">
+                            <img src={helkroppService.image} alt={helkroppService.title} className="body-image" />
                         </div>
 
-                        <button
-                            className="add-to-cart-btn"
-                            onClick={() =>
-                                isInCart
-                                    ? removeFromCart(helkroppService.id)
-                                    : addToCart({
-                                        id: helkroppService.id,
-                                        name: helkroppService.title,
-                                        price: helkroppService.price,
-                                        image: helkroppService.image,
-                                    })
-                            }
-                        >
-                            {isInCart ? "Ta bort från kundvagn" : "Lägg i kundvagn"}
-                        </button>
+                        <div className="right-text">
+                            <h1 className="title">{helkroppService.title}</h1>
+                            <p className="subtitle">{helkroppService.subtitle}</p>
 
-                    </div>
-                </div>
-
-                {/* Accordions */}
-                <button className={`acc-toggle ${openSections.before ? "open" : ""}`} onClick={() => toggleSection("before")}>
-                    <h3>Inför undersökningen</h3>
-                    <span className="acc-icon">{openSections.before ? "▴" : "▾"}</span>
-                </button>
-                {openSections.before && (
-                    <div className="acc-body">
-                        <p>
-                            Efter din beställning kommer vi skicka en remiss för din MR-undersökning. Innan dess får du ett kortare samtal med en remitterande läkare som går igenom din sjukdomshistoria och dina besvär. Därefter skickas remissen vidare till röntgenkliniken.
-                        </p>
-                        <p>MR är en säker metod som använder magnetfält och radiovågor — helt utan strålning.</p>
-                        <ul>
-                            <li>Kläder och föremål med metall tas av före undersökningen.</li>
-                            <li>Informera om pacemaker, implantat eller metall i kroppen.</li>
-                            <li>Meddela om du är gravid eller misstänker graviditet.</li>
-                            <li>Kontrastmedel kan förekomma — du får information i förväg.</li>
-                        </ul>
-                    </div>
-                )}
-
-                <button className={`acc-toggle ${openSections.after ? "open" : ""}`} onClick={() => toggleSection("after")}>
-                    <h3>Uppföljning efter undersökningen</h3>
-                    <span className="acc-icon">{openSections.after ? "▴" : "▾"}</span>
-                </button>
-                {openSections.after && (
-                    <div className="acc-body">
-                        <p>
-                            Efter undersökningen granskas bilderna av en specialistläkare i radiologi, som sammanställer ett detaljerat utlåtande till den remitterande läkaren.
-                        </p>
-                        <p>
-                            Läkaren återkopplar till dig med resultat, förklaring av fynd och rekommenderad uppföljning. Om något kräver vidare vård hjälper vi dig vidare.
-                        </p>
-                    </div>
-                )}
-
-                <button className={`acc-toggle ${openSections.location ? "open" : ""}`} onClick={() => toggleSection("location")}>
-                    <h3>Var kan jag testa mig?</h3>
-                    <span className="acc-icon">{openSections.location ? "▴" : "▾"}</span>
-                </button>
-                {openSections.location && (
-                    <div className="acc-body">
-                        <p> MR Helkropp erbjuds endast på vissa kliniker. </p>
-                        <p
-                            className="scroll-link"
-                            style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
-                            onClick={() => {
-                                const section = document.getElementById("hitta-kliniken");
-                                if (section) section.scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Hitta kliniken
-                        </p>
-                    </div>
-                )}
-
-                {/* Scan Data */}
-
-                <div id="vad-kan-man-upptacka" className="mr-scan-container">
-                    <h2 className="mr-scan-title">Vad ingår i MR-Helkropp?</h2>
-                    <div className="mr-scan-grid">
-                        {scanData.map((section, idx) => (
-                            <div key={idx} className="mr-scan-category">
-                                <h3 className="mr-scan-category-title">{section.title}</h3>
-                                <ul className="mr-scan-list">
-                                    {section.items.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
+                            <ul className="benefits-list">
+                                {helkroppService.includes.map((item, idx) => (
+                                    <li key={idx}>{item}</li>
+                                ))}
+                            </ul>
+                            <p
+                                className="scroll-link"
+                                style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                                onClick={() => {
+                                    const section = document.getElementById("vad-kan-man-upptacka");
+                                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                                }}
+                            >
+                                Vad kan man upptäcka?
+                            </p>
+                            <p
+                                className="scroll-link"
+                                style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                                onClick={() => {
+                                    const section = document.getElementById("hitta-kliniken");
+                                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                                }}
+                            >
+                                Hitta kliniken
+                            </p>
+                            <div className="price-row">
+                                <span className="price-new">{helkroppService.price.toLocaleString("sv-SE")} kr</span>
                             </div>
-                        ))}
-                    </div>
-                </div>
-                <div id="hitta-kliniken" className="h-clinics-container">
-                    <h1 className="h-clinics-title">MR Helkropp kliniker</h1>
-                    <div className="h-clinics-grid">
-                        {clinics.map((clinic, idx) => (
-                            <div key={idx} className="h-clinic-card">  <p className="clinic-city">{clinic.city}</p>
-                                <h3 className="h-clinic-name">{clinic.name}</h3>
-                                <p className="h-clinic-address">{clinic.address}</p>
 
-                            </div>
-                        ))}
+                            <button
+                                className="add-to-cart-btn"
+                                onClick={() =>
+                                    isInCart
+                                        ? removeFromCart(helkroppService.id)
+                                        : addToCart({
+                                            id: helkroppService.id,
+                                            name: helkroppService.title,
+                                            price: helkroppService.price,
+                                            image: helkroppService.image,
+                                        })
+                                }
+                            >
+                                {isInCart ? "Ta bort från kundvagn" : "Lägg i kundvagn"}
+                            </button>
+
+                        </div>
                     </div>
+
+                    {/* Accordions */}
+                    <button className={`acc-toggle ${openSections.before ? "open" : ""}`} onClick={() => toggleSection("before")}>
+                        <h3>Inför undersökningen</h3>
+                        <span className="acc-icon">{openSections.before ? "▴" : "▾"}</span>
+                    </button>
+                    {openSections.before && (
+                        <div className="acc-body">
+                            <p>
+                                Efter din beställning kommer vi skicka en remiss för din MR-undersökning. Innan dess får du ett kortare samtal med en remitterande läkare som går igenom din sjukdomshistoria och dina besvär. Därefter skickas remissen vidare till röntgenkliniken.
+                            </p>
+                            <p>MR är en säker metod som använder magnetfält och radiovågor — helt utan strålning.</p>
+                            <ul>
+                                <li>Kläder och föremål med metall tas av före undersökningen.</li>
+                                <li>Informera om pacemaker, implantat eller metall i kroppen.</li>
+                                <li>Meddela om du är gravid eller misstänker graviditet.</li>
+                                <li>Kontrastmedel kan förekomma — du får information i förväg.</li>
+                            </ul>
+                        </div>
+                    )}
+
+                    <button className={`acc-toggle ${openSections.after ? "open" : ""}`} onClick={() => toggleSection("after")}>
+                        <h3>Uppföljning efter undersökningen</h3>
+                        <span className="acc-icon">{openSections.after ? "▴" : "▾"}</span>
+                    </button>
+                    {openSections.after && (
+                        <div className="acc-body">
+                            <p>
+                                Efter undersökningen granskas bilderna av en specialistläkare i radiologi, som sammanställer ett detaljerat utlåtande till den remitterande läkaren.
+                            </p>
+                            <p>
+                                Läkaren återkopplar till dig med resultat, förklaring av fynd och rekommenderad uppföljning. Om något kräver vidare vård hjälper vi dig vidare.
+                            </p>
+                        </div>
+                    )}
+
+                    <button className={`acc-toggle ${openSections.location ? "open" : ""}`} onClick={() => toggleSection("location")}>
+                        <h3>Var kan jag testa mig?</h3>
+                        <span className="acc-icon">{openSections.location ? "▴" : "▾"}</span>
+                    </button>
+                    {openSections.location && (
+                        <div className="acc-body">
+                            <p> MR Helkropp kan bara utföras på specifika mottagningar </p>
+                            <p
+                                className="scroll-link"
+                                style={{ cursor: "pointer", color: "black", textDecoration: "underline" }}
+                                onClick={() => {
+                                    const section = document.getElementById("hitta-kliniken");
+                                    if (section) section.scrollIntoView({ behavior: "smooth" });
+                                }}
+                            >
+                                Hitta mottagning
+                            </p>
+                        </div>
+                    )}
+
+                    {/* Scan Data */}
+
+                    <div id="vad-kan-man-upptacka" className="mr-scan-container">
+                        <h2 className="mr-scan-title">Vad ingår i MR-Helkropp?</h2>
+                        <div className="mr-scan-grid">
+                            {scanData.map((section, idx) => (
+                                <div key={idx} className="mr-scan-category">
+                                    <h3 className="mr-scan-category-title">{section.title}</h3>
+                                    <ul className="mr-scan-list">
+                                        {section.items.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div id="hitta-kliniken" className="h-clinics-container">
+                        <h1 className="h-clinics-title">MR Helkropp kliniker</h1>
+                        <div className="h-clinics-grid">
+                            {clinics.map((clinic, idx) => (
+                                <div key={idx} className="h-clinic-card">  <p className="clinic-city">{clinic.city}</p>
+                                    <h3 className="h-clinic-name">{clinic.name}</h3>
+                                    <p className="h-clinic-address">{clinic.address}</p>
+
+                                </div>
+                            ))}
+                        </div></div>
                 </div>
             </div>
             <Footer />

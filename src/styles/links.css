@@ -61,7 +61,6 @@
 @media (min-width: 900px) {
     .health-links-container {
         flex-direction: row;
-
     }
 
     .health-card-link {

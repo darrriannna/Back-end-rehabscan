@@ -53,7 +53,7 @@ export default function TestProductPage() {
             <div className="product-inner">
                 {/* LEFT IMAGE */}
                 <aside className="product-media">
-                    <div className="badge-discount">{test.discount ? `-${test.discount}%` : null}</div>
+
                     <div className="media-block" style={{ background: test.bg || "#fff" }}>
                         <img src={test.image} alt={test.title} className="product-image" />
                     </div>

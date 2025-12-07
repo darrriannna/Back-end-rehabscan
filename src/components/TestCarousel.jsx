@@ -67,20 +67,23 @@ export default function TestCarousel() {
                             <div className="carousel-card health-card" key={test.id}>
 
                                 {/* Discount Badge */}
-                                {test.discount && (
-                                    <div className="discount-badge">-{test.discount}%</div>
-                                )}
+
 
                                 {/* IMAGE BOX */}
-                                <div className="image-box" style={{ backgroundColor: test.bg }}>
-                                    <img src={test.image} alt={test.title} className="test-image" />
+                                <div className="image-box" style={{ backgroundColor: test.bg }}> <img src={test.image} alt={test.title} className="test-image" />
 
                                     <div className="floating-icon">{test.icon}</div>
                                 </div>
 
                                 {/* CONTENT */}
                                 <div className="text-box">
-                                    <h3>{test.title}</h3>
+                                    <div className="title-row">
+                                        <h3>{test.title}</h3>
+
+                                        {test.discount && (
+                                            <span className="title-badge">-{test.discount}%</span>
+                                        )}
+                                    </div>
                                     <p className="subtitle">{test.subtitle}</p>
                                     <p className="markers">⚙ {test.markers} markörer</p>
 

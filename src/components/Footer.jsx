@@ -39,7 +39,6 @@ export default function Footer() {
                     <span><img src="/assets/klarna.png" alt="klarna" /></span>
                     <span><img src="/assets/master.png" alt="klarna" /></span>
                     <span><img src="/assets/visa.png" alt="klarna" /></span>
-                    <span>Swish</span>
                 </div>
             </div>
         </footer>

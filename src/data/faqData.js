@@ -39,10 +39,7 @@ export const faqData = {
             q: "Hur får jag mina provsvar?",
             a: "Så snart vi har fått dina provsvar kontaktar vi dig via telefon eller e-post för att gå igenom resultatet tillsammans. Därefter skickar vi även en skriftlig sammanfattning med våra rekommendationer."
         },
-        {
-            q: "Vilka tester rekommenderas?",
-            a: "Det beror på dina symtom, ålder och livsstil. Hälsokontroll Bas och Stor är populära val."
-        }
+
     ],
 
     betalning: [

@@ -15,12 +15,7 @@ export default function HealthTestCard({ test }) {
     return (
         <div className="health-card">
 
-            {/* Discount badge */}
-            {test.discount && (
-                <div className="discount-badge">
-                    -{test.discount}%
-                </div>
-            )}
+
 
             {/* Image section */}
             <div
@@ -36,7 +31,13 @@ export default function HealthTestCard({ test }) {
 
             {/* Text section */}
             <div className="text-box">
-                <h3>{test.title}</h3>
+                <div className="title-row">
+                    <h3>{test.title}</h3>
+
+                    {test.discount && (
+                        <span className="title-badge">-{test.discount}%</span>
+                    )}
+                </div>
                 <p className="subtitle">{test.subtitle}</p>
 
                 <p className="markers">

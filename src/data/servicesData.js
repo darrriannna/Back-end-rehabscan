@@ -116,8 +116,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligaments
         includes: [
             "Fullständig hälsorapport",
             "Radiologens analys",
-            "Specialistbedömning",
-            "Genomgång av alla organområden"
+            "Specialistbedömning"
         ],
         price: 19200,
         image: "/assets/helkropp.png",
@@ -663,27 +662,42 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
         id: 401,
         type: "mr",
         title: "MR Helkropp Plus",
-        subtitle: "MR + blodprover",
-        description: "Strålningsfri MR-helkroppsundersökning kombinerat med 50+ blodmarkörer.",
+        subtitle: "MR + Hälsokontroll Stor",
+        description: "Strålningsfri MR-helkroppsundersökning kombinerat med 52 blodmarkörer.",
         includes: [
             "MR Helkropp",
             "50+ blodanalyser",
             "Medicinsk specialistbedömning"
         ],
-        price: 20900
+        price: 20900,
+        image: "/assets/helkropp.png",
+        whenRecommended: `
+MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
+`,
+        detectable: `
+Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
+`,
     },
     {
         id: 402,
         type: "mr",
         title: "MR Helkropp Pro",
-        subtitle: "MR + blodprover + EKG",
-        description: "Vår mest omfattande helkroppskontroll med MR, 70+ blodprover och långtids-EKG.",
+        subtitle: "MR Helkropp + Hälsokontroll Kvinna/Man +",
+        description: "Vår mest omfattande helkroppskontroll med MR och 64 blodmarkörer",
         includes: [
             "MR Helkropp",
-            "70+ blodanalyser",
-            "Långtids-EKG (5–7 dygn)"
+            "64 blodanalyser",
+            "Medicinsk specialistbedömning"
         ],
-        price: 22300
+        price: 22300,
+
+        image: "/assets/helkropp.png",
+        whenRecommended: `
+MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
+`,
+        detectable: `
+Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
+`,
     }
 
 

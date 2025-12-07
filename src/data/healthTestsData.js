@@ -10,6 +10,7 @@ export const healthTests = [
             "Analys av 52 centrala hälsomarkörer.",
             "Ger en bred genomgång av organfunktion, blodstatus och livsstilsrelaterade risker."
         ],
+        discount: 10,
         oldPrice: "2 295",
         newPrice: "2 065",
         bg: "#e9fce9",
@@ -27,6 +28,7 @@ export const healthTests = [
             "49 markörer som ger en tydlig helhetsbild över din hälsa.",
             "Fokus på hormonstatus, vitaminer, ämnesomsättning och blodmarkörer."
         ],
+        discount: 10,
         oldPrice: "2 195",
         newPrice: "1 975",
         bg: "#f7eefe",
@@ -44,6 +46,7 @@ export const healthTests = [
             "46 markörer som analyserar hjärta, blod, hormoner och organfunktion.",
             "Ger en klarare bild av testosteron, näringsstatus och livsstilspåverkan."
         ],
+        discount: 10,
         oldPrice: "2 195",
         newPrice: "1 975",
         bg: "#f5efe7",
@@ -61,6 +64,7 @@ export const healthTests = [
             "64 markörer med extra fokus på hjärta, hormoner och prostatamarkörer.",
             "Ger en mycket detaljerad bild av din hälsa och livsstilsrelaterade risker."
         ],
+        discount: 10,
         oldPrice: "3 895",
         newPrice: "3 500",
         bg: "#e9fce9",
@@ -78,6 +82,7 @@ export const healthTests = [
             "64 markörer med fokus på hormonell balans, näringsstatus och organfunktion.",
             "Ger en djupgående och detaljerad helhetsbild över din hälsa."
         ],
+        discount: 10,
         oldPrice: "3 895",
         newPrice: "3 500",
         bg: "#f7eefe",

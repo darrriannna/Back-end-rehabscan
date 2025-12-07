@@ -18,13 +18,14 @@ import Helkropp from "./pages/Helkropp";
 import UltraljudPage from "./pages/Ultraljud";
 import Success from "./pages/Success";
 import Cancel from "./pages/Failed";
-
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <>
       <CartMessage />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
