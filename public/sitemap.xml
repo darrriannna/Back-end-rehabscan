@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://rehabscan.se/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/mr-undersokningar</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/halsotester</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/integritet</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/villkor</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/kontakta</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/om-oss</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/ultraljud</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/helkropp</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/hur-fungerar-det</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://rehabscan.se/mottagningar</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
