@@ -36,12 +36,12 @@ export default function OmOss() {
                     </div>
                 </section>
                 <section className="hero-section">
-                    <div className="hero-title">
+                    <div className="hero-image">
                         <img src="/assets/spine.png" alt="ländrygg-mr" />
                     </div>
 
                     <div className="hero-text text-om">
-                        <h1 className="hero-title">
+                        <h1 className="hero-title-om">
                             Våra specialister
                         </h1>
                         <p className="italic">
@@ -73,7 +73,7 @@ export default function OmOss() {
                         </p>
                     </div>
                     <div className="pillar">
-                        <img src="/assets/om-oss.png" alt="" />
+                        <img className="pillar-image" src="/assets/om-oss.png" alt="" />
                     </div>
 
                 </section>

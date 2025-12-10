@@ -293,6 +293,8 @@
         grid-template-columns: 1fr;
     }
 
+
+
     .product-media {
         order: 1;
     }
@@ -308,16 +310,32 @@
     }
 }
 
+.media-block .mr-im-top {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: #f4f7ff;
+}
+
+.media-block .mr-im-code {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4a5bd3;
+}
+
 @media (max-width: 520px) {
     .sticky-left {
         display: none;
     }
 
     .product-title {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .product-image {
-        max-width: 260px;
+        max-width: 350px;
     }
 }

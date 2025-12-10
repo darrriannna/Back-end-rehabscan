@@ -10,6 +10,9 @@ import "../styles/service-product.css";
 export default function ServiceProductPage() {
     const { id } = useParams();
     const { addToCart, removeFromCart, cart } = useCart();
+    const service = services.find((s) => s.id === Number(id));
+    if (!service) return <h2>Tjänst hittades inte</h2>;
+    const code = service.title.slice(0, 3).toUpperCase();
 
     const [openSections, setOpenSections] = useState({
         when: true,
@@ -19,8 +22,6 @@ export default function ServiceProductPage() {
         location: false,
     });
 
-    const service = services.find((s) => s.id === Number(id));
-    if (!service) return <h2>Tjänst hittades inte</h2>;
 
     const isInCart = cart.some((item) => item.id === service.id);
 
@@ -33,13 +34,24 @@ export default function ServiceProductPage() {
                 {/* LEFT IMAGE */}
                 <aside className="product-media">
                     <div className="media-block">
-                        <img src={service.image} alt={service.title} className="product-image" />
+
+                        {service.image.includes("placeholder-service.png") ? (
+                            <div className="mr-im-top">
+                                <div className="mr-im-code">
+                                    {code}
+                                </div>
+                            </div>
+                        ) : (
+                            <img src={service.image} alt={service.title} className="product-image" />
+                        )}
+
                     </div>
+
                 </aside>
 
                 {/* RIGHT CONTENT */}
                 <main className="product-content">
-                    <h1 className="product-title">{service.title}</h1>
+                    <h2 className="product-title">{service.title}</h2>
                     <p className="product-sub">{service.subtitle}</p>
 
                     <div className="price-row">

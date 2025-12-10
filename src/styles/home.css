@@ -203,7 +203,7 @@
 /* Black Weeks card */
 .black-card {
     background: url("/assets/second-banner-home.jpg") center center / cover no-repeat;
-    padding: 40px;
+    padding: 30px;
     text-align: left;
     text-shadow: 2px black;
 }
@@ -318,8 +318,12 @@
         height: 250px;
     }
 
+    .black-card h3 {
+        font-size: 30px;
+    }
+
     .mr-card {
-        height: 250px;
+        height: 300px;
     }
 
     .test-card {

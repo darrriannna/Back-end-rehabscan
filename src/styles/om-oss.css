@@ -2,13 +2,12 @@
     --purple: #4e2d78;
     --text: #111;
     --muted-text: #555;
-    --max-width: 1200px;
 }
 
 .omoss-page {
-    max-width: var(--max-width);
+    max-width: 1300px;
     margin: auto;
-    padding: 20px;
+
 }
 
 /* HERO SECTION */
@@ -35,11 +34,9 @@
     color: #4e2d78;
 }
 
-.hero-title img {
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--purple);
-    max-width: 430px;
+.hero-image img {
+
+    max-width: 400px;
     border-radius: 40px;
 }
 
@@ -56,7 +53,7 @@
 
 /* 3 COLUMNS */
 .pillars-section {
-    margin-top: 90px;
+    margin-top: 50px;
     display: grid;
     gap: 20px;
 }
@@ -115,7 +112,6 @@
 
     .pillars-section {
         grid-template-columns: repeat(3, 1fr);
-
     }
 
     .labs-section {
@@ -124,12 +120,16 @@
 }
 
 @media (max-width: 500px) {
-    .text-om {
-        padding: 20px;
+
+    .omoss-page {
+        width: 90%;
     }
 
-    .pillars-section {
-        margin-left: 0px;
+    .hero-image {
+        width: 320px;
+    }
 
+    .pillar-image {
+        width: 350px;
     }
 }

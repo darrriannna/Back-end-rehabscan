@@ -231,7 +231,7 @@ export default function TestProductPage() {
 
                     <div className="tests-grid">
                         {filteredMarkers.map((marker) => (
-                            <div className="test-card" key={marker.id}>
+                            <div className="test-card-markers" key={marker.id}>
                                 <h3>{marker.name}</h3>
                                 <p className="test-description">{marker.groupName}</p>
                             </div>

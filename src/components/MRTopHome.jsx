@@ -11,7 +11,6 @@ const StartMR = () => {
                     <div className="hero-content">
                         <h2 className="title-hero">Magnetröntgen</h2>
                         <p className="mr-text">
-                            Få tid för magnetkameraundersökning inom 1-7 arbetsdagar.<br />
                             Vi skickar din remiss, därefter får du kallelse till undersökning.
                             Dina röntgenbilder kontrolleras <em> av röntgenspecialister.</em>.
                         </p>
@@ -22,7 +21,7 @@ const StartMR = () => {
                 <div className="mr-hero-card mr-map-card">
                     <h3 className="map-title">Vi finns över hela Sverige</h3>
                     <p className="map-text">Rehabscan är en digital klinik, så vi kan ordna din MR-skanning närmast ditt hem.</p>
-                    <a className="map-link" href="./Mottagningar">Hitta kliniken</a>
+                    <a className="map-link" href="./mottagningar">Hitta klinik</a>
 
                 </div>
             </div>

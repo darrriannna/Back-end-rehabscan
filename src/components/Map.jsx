@@ -121,7 +121,7 @@ export default function MapSection() {
 
     return (
         <div className="map-wrapper">
-            <h2 className="map-big-title">Mottagningar för hälsokontroller</h2>
+            <h1 className="map-big-title">Mottagningar </h1>
             <div className="app-root">
                 <div className="left-panel">
                     <h2 className="title">Sök mottagningar</h2>
