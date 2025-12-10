@@ -35,7 +35,7 @@
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    font-size: 1.2rem;
+    font-size: 18px;
     line-height: 1.8rem;
     margin-bottom: 25px;
     color: #333;
@@ -108,19 +108,6 @@
     }
 }
 
-.why-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    font-size: 1.15rem;
-    line-height: 2rem;
-    /* increased for readability */
-    margin-bottom: 30px;
-    /* more spacing for longer text */
-    color: #333;
-    opacity: 0;
-    /* animation start */
-}
 
 .why-text h2 {
     font-size: 3rem;
@@ -151,8 +138,8 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-size: 1.15rem;
-    line-height: 2rem;
+    font-size: 1rem;
+
     margin-bottom: 28px;
     color: #333;
     opacity: 0;
