@@ -33,7 +33,7 @@
 
 .nav-links {
     display: flex;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
     align-items: center;
     gap: 1.5rem;
@@ -86,7 +86,7 @@
 /* ----------------------------- */
 /* Slide-out Menu (Responsive)   */
 /* ----------------------------- */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .nav-links {
         position: fixed;
         top: 0;

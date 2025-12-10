@@ -36,6 +36,10 @@
     font-size: 18px;
 }
 
+.mr-title-home {
+    color: #ddd;
+}
+
 /* --- Hero section --- */
 .hero-section {
     display: flex;

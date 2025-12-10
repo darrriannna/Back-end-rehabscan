@@ -75,8 +75,9 @@ const StartHome = () => {
 
             {/* Hero Section */}
             <div className="hero-section">
+
                 <div className="hero-card black-card">
-                    <h3>Magnetröntgen utan remiss</h3>
+                    <a className="mr-title-home" href="/mr-undersokningar"> <h3>Magnetröntgen utan remiss</h3></a>
                     <p>
                         Få tid inom 1–7 arbetsdagar på närmaste kliniken.
                         Se insidan av din kropp – helt strålningsfritt.
@@ -86,7 +87,8 @@ const StartHome = () => {
                     <div className="discount-badge">
                         Granskas av röntgenspecialister
                     </div>
-                </div> {/* Purple video background card */}
+                </div>
+
                 <div className="hero-card purple-card">
                     <div className="hero-content">
                         <h2 className="title-hero">
