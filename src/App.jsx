@@ -18,6 +18,7 @@ import Helkropp from "./pages/Helkropp";
 import UltraljudPage from "./pages/Ultraljud";
 import Success from "./pages/Success";
 import Cancel from "./pages/Failed";
+import PresentSteps from "./pages/Presentkort";
 import ScrollToTop from "./components/ScrollToTop";
 
 
@@ -46,7 +47,7 @@ function App() {
         <Route path="/cancel" element={<Cancel />} />
         <Route path="/magnetrontgen/:id" element={<ServiceProduct />} />
         <Route path="/halsokontroll/:id" element={<TestProduct />} />
-
+        <Route path="/presentkort" element={<PresentSteps />} />
       </Routes></>
   );
 }

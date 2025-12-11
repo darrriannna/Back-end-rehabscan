@@ -23,6 +23,7 @@ export default function Footer() {
                     <h3>Information</h3>
                     <a href="/villkor">Köpvillkor</a>
                     <a href="/om-oss">Om oss</a>
+                    <a href="/presentkort">Presentkort</a>
                 </div>
 
                 <div className="footer-column">

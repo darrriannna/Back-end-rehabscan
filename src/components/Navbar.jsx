@@ -31,6 +31,7 @@ export default function Navbar() {
                         <li><Link to="/hur-fungerar-det">Så fungerar det</Link></li>
                         <li><Link to="/mottagningar">Mottagningar</Link></li>
                         <li><Link to="/om-oss">Om oss</Link></li>
+                        <li><Link to="/presentkort">Presentkort</Link></li>
                         <li><Link to="/kontakta">Kontakt</Link></li>
                     </ul>
 
