@@ -188,7 +188,7 @@ export default function TestProductPage() {
                         {openSections.where && (
                             <div className="acc-body">
                                 <p>
-                                    Vi samarbetar med flera provtagningscentraler. Du väljer den som passar dig i kassan.
+                                    Vi samarbetar med flera provtagningscentraler. Du väljer den som passar efter vi skickar bekräftelse eller vi kan boka tid åt dig.
                                 </p>
                             </div>
                         )}
