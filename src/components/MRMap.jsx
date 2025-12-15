@@ -50,6 +50,14 @@ const MapMR = () => {
                             </ul>
 
                         </li>
+                        <li className='list-map'>Lund
+                            <ul className='list-of-clinics'>
+                                <li className='clinic-details'>
+                                    <p className='clinic-name'>Lund Röntgen</p>
+                                    <p className='clinic-adress'>Scheelevägen 8,
+                                        223 63 Lund</p>
+                                </li>
+                            </ul></li>
                         <li className='list-map'>Malmö
                             <ul className='list-of-clinics'>
                                 <li className='clinic-details'>

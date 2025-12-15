@@ -25,6 +25,11 @@
         "city": "Mölndal"
     },
     {
+        "name": " Lund Röntgen",
+        "address": "Scheelevägen 8, 223 63 Lund",
+        "city": "Lund"
+    },
+    {
         "name": "Malmö Entré Röntgen",
         "address": "Fredsgatan 12, 212 12 Malmö",
         "city": "Malmö"
