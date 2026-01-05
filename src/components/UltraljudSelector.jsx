@@ -6,6 +6,8 @@ import { ultrasoundServices } from "../data/ultraljudData";
 import "../styles/ultraljud.css";
 
 const UltraljudCards = () => {
+
+
     const { cart, addToCart, removeFromCart } = useCart();
 
     const [openId, setOpenId] = useState(null);
@@ -68,6 +70,7 @@ const UltraljudCards = () => {
                                                 : addToCart({
                                                     id: service.id,
                                                     name: service.title,
+                                                    type: service.type,
                                                     price,
                                                     image: null,
                                                 })

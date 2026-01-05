@@ -152,6 +152,7 @@ const ProductCarousel = () => {
                                                         id: service.id,
                                                         name: service.name,
                                                         image: service.image,
+                                                        type: service.type,
                                                         price,
                                                     })
                                             }

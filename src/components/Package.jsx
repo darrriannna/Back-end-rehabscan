@@ -96,6 +96,7 @@ const HelkroppPackages = ({ services }) => {
                                             id: data.id,
                                             name: data.title,
                                             image: data.image || "/assets/placeholder.png",
+                                            type: service.type,
                                             price: data.price
                                         })
                                 }

@@ -83,23 +83,29 @@ export default function TestProductPage() {
                         <div className="button-row">
                             <button
                                 className="cart-btn"
-                                onClick={() =>
-                                    isInCart
-                                        ? removeFromCart(test.id)
-                                        : addToCart({
+                                onClick={() => {
+                                    if (isInCart) {
+                                        removeFromCart(test.id);
+                                    } else {
+                                        const cartItem = {
                                             id: test.id,
                                             name: test.title,
                                             image: test.image,
+                                            type: test.type, // make sure "test" is here
                                             price: priceNumber,
-                                        })
-                                }
+                                        };
+
+                                        console.log("Adding to cart:", cartItem); // ✅ This will show
+                                        addToCart(cartItem);
+                                    }
+                                }}
                             >
-                                {isInCart ? (
-                                    <FiX size={20} color="#fff" />
-                                ) : (
-                                    <FiShoppingCart size={20} color="#fff" />
-                                )}
+                                {isInCart ? <FiX size={20} color="#fff" /> : <FiShoppingCart size={20} color="#fff" />}
                             </button>
+
+
+
+
                         </div>
 
 

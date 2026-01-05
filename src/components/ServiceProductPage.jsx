@@ -79,6 +79,7 @@ export default function ServiceProductPage() {
                                             id: service.id,
                                             name: service.title,
                                             price: service.price,
+                                            type: service.type,
                                             image: service.image,
                                         })
                                 }

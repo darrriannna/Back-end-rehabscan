@@ -127,3 +127,40 @@
 .checkbox-row a:hover {
     text-decoration: none;
 }
+
+/* MR / Ultraljud Dropdown */
+/* Make all selects in booking form match inputs */
+.booking-form select {
+    -webkit-appearance: none;
+    /* Remove default styling in Safari/Chrome */
+    -moz-appearance: none;
+    /* Remove default styling in Firefox */
+    appearance: none;
+    /* Standard */
+    width: 97%;
+    margin: 7px auto;
+    color: #333;
+    padding: 14px 16px;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: #fafafa url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%227%22%20viewBox%3D%220%200%2010%207%22%20xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200l5%207%205-7H0z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E") no-repeat right 16px center;
+    background-size: 10px 7px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Focus style */
+.booking-form select:focus {
+    border-color: #5a7cff;
+    box-shadow: 0 0 0 3px rgba(90, 124, 255, 0.15);
+    background-color: #fff;
+}
+
+/* Mobile adjustment */
+@media (max-width: 480px) {
+    .booking-form select {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { SERVICE_CITIES } from "../data/serviceCities";
+
 import { useCart } from "../context/CartContext";
 import { supabase } from "../utils/supabaseClient";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -14,13 +16,21 @@ export default function BookingForm() {
 
     const currentCart = location.state?.cart || cart;
     const total = currentCart.reduce((sum, i) => sum + i.price, 0);
+    const needsMrCity = currentCart.some(item =>
+        ["mr", "ultraljud"].includes(item.type)
+    );
 
+    const needsHealthCity = currentCart.some(item =>
+        ["test"].includes(item.type)
+    );
     const [formData, setFormData] = useState({
         name: "",
         lastname: "",
         email: "",
         phone: "",
         personnummer: "",
+        mr_city: "",
+        health_city: "",
         city: "",
         address: "",
         postcity: "",
@@ -72,6 +82,14 @@ export default function BookingForm() {
         if (!formData.acceptTerms) {
             return alert("Du måste godkänna villkoren.");
         }
+        if (needsMrCity && !formData.mr_city) {
+            return alert("Välj stad för MR / Ultraljud");
+        }
+
+        if (needsHealthCity && !formData.health_city) {
+            return alert("Välj stad för hälsokontroll");
+        }
+
 
         // ---- FORMAT SERVICES FOR EMAIL ----
         const formattedServices = currentCart
@@ -85,6 +103,8 @@ export default function BookingForm() {
             email: formData.email,
             phone: formData.phone,
             personnummer: formData.personnummer,
+            mr_city: formData.mr_city || "Ej valt",
+            health_city: formData.health_city || "Ej valt",
             address: formData.address,
             postnum: formData.postnum,
             postcity: formData.postcity,
@@ -152,12 +172,39 @@ export default function BookingForm() {
 
             <input name="phone" placeholder="Telefonnummer" onChange={handleChange} required />
             <input name="personnummer" placeholder="Personnummer (SE/DK)" onChange={handleChange} required />
+            {needsMrCity && (
+                <select
+                    name="mr_city"
+                    value={formData.mr_city}
+                    onChange={handleChange}
+                    required
+                >
+                    <option value="">Välj stad för MR / Ultraljud</option>
+                    {SERVICE_CITIES.mr.map(city => (
+                        <option key={city} value={city}>{city}</option>
+                    ))}
+                </select>
+            )}
+
+            {needsHealthCity && (
+                <select
+                    name="health_city"
+                    value={formData.health_city}
+                    onChange={handleChange}
+                    required
+                >
+                    <option value="">Välj stad för hälsokontroll</option>
+                    {SERVICE_CITIES.health.map(city => (
+                        <option key={city} value={city}>{city}</option>
+                    ))}
+                </select>
+            )}
 
             <input name="address" placeholder="Adress" onChange={handleChange} required />
             <input name="postcity" placeholder="Postort" onChange={handleChange} required />
             <input name="postnum" placeholder="Postnummer" onChange={handleChange} required />
 
-            <textarea name="message" placeholder="Meddelande (valfritt)" onChange={handleChange} />
+            <textarea name="message" placeholder="Beskriv dina besvär" onChange={handleChange} />
 
             <label className="checkbox-row">
                 <input type="checkbox" name="acceptPrivacy" checked={formData.acceptPrivacy} onChange={handleChange} required />

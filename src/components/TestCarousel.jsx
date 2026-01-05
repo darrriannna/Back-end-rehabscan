@@ -105,6 +105,7 @@ export default function TestCarousel() {
                                                         id: test.id,
                                                         name: test.title,
                                                         image: test.image,
+                                                        type: test.type || "test",
                                                         price: Number(test.newPrice.replace(/\s+/g, "")),
                                                     })
                                             }
