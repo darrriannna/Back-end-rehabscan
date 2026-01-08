@@ -66,13 +66,6 @@ const StartHome = () => {
                 )}
             </div>
 
-            <div className="hero-card discount-card">
-
-                <div className="discount-badge-jul">
-                    <Link className="discount-badge-jul-link" to="/halsotester">Hitta din julklapp</Link>
-                </div>
-            </div>
-
             {/* Hero Section */}
             <div className="hero-section">
 
