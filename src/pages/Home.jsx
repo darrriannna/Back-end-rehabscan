@@ -9,6 +9,7 @@ import Steps from "../components/Steps";
 import LinksHome from "../components/LinksHome";
 import Footer from "../components/Footer";
 import Varfor from "../components/WhyRehabScan";
+import GoogleMap from "../components/Reviews";
 
 function Home() {
 
@@ -21,6 +22,7 @@ function Home() {
                 <LinksHome />
                 <Steps />
                 <TestCarousel />
+                <GoogleMap />
                 <Varfor />
                 <Footer />
             </div>

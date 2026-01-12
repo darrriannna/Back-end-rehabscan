@@ -3,6 +3,7 @@ import "../styles/om-oss.css";
 import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
 import Footer from "../components/Footer";
+import GoogleReviews from "../components/Reviews";
 
 export default function OmOss() {
     return (
@@ -77,6 +78,8 @@ export default function OmOss() {
                     </div>
 
                 </section>
+
+                <GoogleReviews />
 
                 {/* ACCREDITATION SECTION */}
                 <section className="labs-section">

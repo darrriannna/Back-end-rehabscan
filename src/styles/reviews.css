@@ -1,0 +1,141 @@
+/* Container for the slider */
+.carousel-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Each review card */
+.review-card {
+    background: #fff;
+    /* keep your original color */
+    border-radius: 18px;
+    /* same as before */
+    padding: 18px 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(230, 235, 240, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    /* equal height for all cards */
+    box-sizing: border-box;
+}
+
+/* Top section: avatar + name + date */
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #3b82f6;
+    /* keep your original gradient if you had it */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.avatar-initials {
+    text-transform: uppercase;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #6b7280;
+    /* grey */
+}
+
+/* Review text */
+.review-text {
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.45;
+    flex-grow: 1;
+}
+
+/* Bottom section: stars + Google label */
+.review-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: #facc15;
+    font-size: 16px;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Slick slider spacing between slides */
+.slick-slide>div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Dots styling */
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #ccc;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #3b82f6;
+    /* active dot color */
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+    .slick-slide>div {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .slick-slide>div {
+        padding: 6px;
+    }
+
+    .heading {
+        font-size: 2rem;
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .review-card {
+        min-height: auto;
+        /* allow flexible height on small screens */
+    }
+}
