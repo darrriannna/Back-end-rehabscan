@@ -58,7 +58,9 @@
  }
 
  .product-sub {
-     color: var(--gray-600);
+     font-size: 20px;
+
+     color: #d63434;
      margin-bottom: 20px;
  }
 

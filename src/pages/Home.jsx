@@ -10,6 +10,7 @@ import LinksHome from "../components/LinksHome";
 import Footer from "../components/Footer";
 import Varfor from "../components/WhyRehabScan";
 import GoogleMap from "../components/Reviews";
+import HormonesCarousel from "../components/HormonesCarousel";
 
 function Home() {
 
@@ -21,6 +22,7 @@ function Home() {
                 <StartHome />
                 <LinksHome />
                 <Steps />
+                <HormonesCarousel />
                 <TestCarousel />
                 <GoogleMap />
                 <Varfor />

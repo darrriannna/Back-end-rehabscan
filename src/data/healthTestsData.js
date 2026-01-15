@@ -88,7 +88,83 @@ export const healthTests = [
         bg: "#f7eefe",
         image: "/assets/halsotest.png",
         icon: "♀"
+    },
+    {
+        id: 206,
+        type: "test",
+        title: "Testosteron +",
+        subtitle: "+ Hormoner och näringstatus som påverkar Testosteron ",
+        markers: 10,
+        bullets: [
+            "Fördjupad analys av testosteron och styrande hormoner.",
+            "Identifierar hormonell obalans kopplad till energi, libido och välmående.",
+            "Inkluderar viktiga näringsämnen som påverkar testosteronnivåer."
+        ],
+        oldPrice: "1 950",
+        newPrice: "1 769",
+        bg: "#eef5ff",
+        image: "/assets/testosteron.png",
+        icon: "♂"
+    },
+    {
+        id: 207,
+        type: "test",
+        title: "Hormonbalans – Kvinna",
+        subtitle: "Analys av kvinnliga hormoner och hormonell balans",
+        markers: 11,
+        bullets: [
+            "Fördjupad analys av kvinnliga hormoner kopplade till menscykel och fertilitet.",
+            "Identifierar hormonell obalans vid PMS, oregelbunden mens och klimakteriebesvär.",
+            "Inkluderar viktiga näringsämnen som påverkar hormonbalans och välmående."
+        ],
+        discount: 10,
+        oldPrice: "1 645",
+        newPrice: "1 479",
+        bg: "#fdf0f7",
+        image: "/assets/estrogen.png",
+        icon: "♀"
+    },
+    {
+        id: 208,
+        type: "test",
+        title: "Järnstatus & Trötthet",
+        subtitle: "Analys av järnstatus och vanliga orsaker till trötthet",
+        markers: 10,
+        bullets: [
+            "Identifierar järnbrist och tidiga tecken på anemi.",
+            "Lämpligt vid trötthet, yrsel och nedsatt ork.",
+            "Inkluderar kompletterande markörer som påverkar energinivåer."
+        ],
+        discount: 10,
+        oldPrice: "1 295",
+        newPrice: "1 165",
+        bg: "#f7eefe",
+        image: "/assets/jarn.png",
+        icon: "🩸"
+    },
+
+    {
+        id: 209,
+        type: "test",
+        title: "Stress +",
+        subtitle: "Fördjupad analys av stress, mental balans och återhämtning",
+        markers: 12,
+        bullets: [
+            "Analyserar biologiska markörer kopplade till stress och utmattning.",
+            "Identifierar näringsbrister som kan påverka mental balans.",
+            "Ger en fördjupad förståelse för kroppens stress- och återhämtningsförmåga."
+        ],
+        discount: 10,
+        oldPrice: "1 595",
+        newPrice: "1 435",
+        bg: "#eef3f7",
+        image: "/assets/stress.png",
+        icon: "🧠"
     }
+
+
+
+
 ];
 
 export const markerGroups = {
@@ -230,5 +306,89 @@ export const markerGroups = {
             "Kobalamin", "D-vitamin", "Folat (folsyra)",
             "Fosfat", "Kalcium", "Magnesium", "Zink"
         ]
+    },
+    206: {
+        "Hormoner": [
+            "Testosteron",
+            "Fritt testosteron",
+            "SHBG",
+            "Lutropin (LH)",
+            "Follitropin (FSH)",
+            "Prolaktin",
+            "Kortisol"
+        ],
+        "Vitaminer & Mineraler": [
+            "D-vitamin",
+            "Zink",
+            "Magnesium"
+        ]
+    },
+    207: {
+        "Hormoner": [
+            "Östradiol",
+            "Progesteron",
+            "Lutropin (LH)",
+            "Follitropin (FSH)",
+            "Prolaktin",
+            "Testosteron",
+            "SHBG"
+        ],
+        "Vitaminer & Mineraler": [
+            "D-vitamin",
+            "Magnesium",
+            "Kobalamin",
+            "Folat (folsyra)"
+        ]
+    },
+    208: {
+        "Järn": [
+            "Ferritin",
+            "Järn",
+            "Transferrin",
+            "Transferrinmättnad"
+        ],
+        "Blodstatus": [
+            "Hemoglobin",
+            "MCV"
+        ],
+        "Inflammation": [
+            "Högkänslig CRP"
+        ],
+        "Sköldkörtel": [
+            "TSH"
+        ],
+        "Vitaminer & Mineraler": [
+            "Kobalamin",
+            "Folat (folsyra)"
+        ]
+    },
+    209: {
+        "Stress & Hormoner": [
+            "Kortisol"
+        ],
+        "Inflammation": [
+            "Högkänslig CRP"
+        ],
+        "Sköldkörtel": [
+            "TSH",
+            "T4 Fritt"
+        ],
+        "Blodsocker": [
+            "HbA1c",
+            "Glukos"
+        ],
+        "Vitaminer & Mineraler": [
+            "D-vitamin",
+            "Kobalamin",
+            "Folat (folsyra)",
+            "Magnesium"
+        ],
+        "Järn": [
+            "Ferritin"
+        ]
     }
+
+
+
+
 };
