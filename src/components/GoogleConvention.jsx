@@ -17,7 +17,7 @@ export default function GoogleAdsConversion() {
             if (sessionStorage.getItem(firedKey)) return;
 
             window.gtag("event", "conversion", {
-                send_to: "AW-16866588289/GT-55XZMD8K",
+                send_to: "AW-16866588289/mN-JCK2R9OcbEIHtzuo-",
                 transaction_id: sessionId,
             });
 
