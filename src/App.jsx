@@ -23,6 +23,7 @@ import Success from "./pages/Success";
 import Cancel from "./pages/Failed";
 import PresentSteps from "./pages/Presentkort";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAdsConversion from "./components/GoogleConvention";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
     <>
       <CartMessage />
       <ScrollToTop />
-
+      <GoogleAdsConversion />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mr-undersokningar" element={<MR />} />
