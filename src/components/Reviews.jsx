@@ -90,37 +90,38 @@ const GoogleReviews = () => {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2.5,      // default for large screens
+        slidesToShow: 3,       // default for large screens (laptop/desktop)
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1024,  // tablets
                 settings: {
-                    slidesToShow: 2,   // medium screens
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     arrows: true,
                 },
             },
             {
-                breakpoint: 900,
+                breakpoint: 768,   // small tablets / large phones
                 settings: {
-                    slidesToShow: 1,   // mobile
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
                 },
             },
             {
-                breakpoint: 500,
+                breakpoint: 480,   // mobile
                 settings: {
-                    slidesToShow: 1,   // mobile
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
                 },
             },
         ],
     };
+
 
 
     return (

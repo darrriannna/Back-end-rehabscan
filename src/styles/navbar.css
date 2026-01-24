@@ -217,7 +217,7 @@
     margin: auto;
     text-align: center;
     justify-content: center;
-    animation: fade-in-out 10s infinite;
+
 }
 
 @media (max-width: 700px) {

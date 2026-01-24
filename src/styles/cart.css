@@ -42,6 +42,7 @@
 
 .checkout-btn {
     background: #6429cd;
+    font-size: 18px;
     color: white;
     border: none;
     border-radius: 8px;
@@ -50,6 +51,7 @@
 }
 
 .clear-btn {
+    font-size: 18px;
     background: #ccc;
     border: none;
     border-radius: 8px;
