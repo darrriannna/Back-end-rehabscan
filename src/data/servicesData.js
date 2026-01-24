@@ -659,6 +659,28 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
 
     },
     {
+        id: 37,
+        type: "mr",
+        title: "MR Hjärna",
+        subtitle: "Magnetkameraundersökning av hjärnan",
+        description: "MR hjärna används för att utreda hjärnans strukturer och identifiera skador, tumörer, inflammationer eller vaskulära förändringar.",
+        includes: [
+            "Hälsorapport",
+            "Radiologens granskning",
+            "Specialistbedömning av hjärnstrukturer"
+        ],
+        price: 6500,
+        image: "/assets/placeholder-service.png",
+        whenRecommended: `
+    MR hjärna rekommenderas vid huvudvärk, neurologiska symtom, misstänkta tumörer, stroke, inflammationer, degenerativa sjukdomar eller vid uppföljning efter skador.
+    `,
+        detectable: `
+    MR hjärna kan upptäcka tumörer, blödningar, stroke, inflammationer, demyeliniserande sjukdomar, degenerativa förändringar och andra strukturella avvikelser.
+    `,
+    },
+
+
+    {
         id: 401,
         type: "mr",
         title: "MR Helkropp Plus",
