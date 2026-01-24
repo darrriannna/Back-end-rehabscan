@@ -116,7 +116,7 @@
 .mr-card {
     flex: 2;
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/mri-back.mp4") center center / cover no-repeat;
+    background: url("../assets/mr-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +128,7 @@
 .ultraljud-card {
     flex: 2;
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/ultraljud.mp4") center center / cover no-repeat;
+    background: url("../assets/ultraljud-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@
 
 .helkropp-card {
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/helkropp-video.mp4") center center / cover no-repeat;
+    background: url("../assets/hel-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +152,7 @@
 .test-banner-card {
     flex: 2;
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/tester-back.mp4") center center / cover no-repeat;
+    background: url("../assets/tester-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,9 +162,8 @@
 }
 
 .helkropp-banner-card {
-
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/helkropp-video.mp4") center center / cover no-repeat;
+    background: url("../assets/hel-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +171,6 @@
     position: relative;
     text-shadow: 1px black;
 }
-
 
 .background-video {
     position: absolute;
@@ -212,14 +210,6 @@
     text-shadow: 2px black;
 }
 
-.discount-card {
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/julklapp.mp4") center center / cover no-repeat;
-    padding: 40px;
-    margin: 20px;
-    height: 150px;
-    text-align: left;
-    text-shadow: 2px black;
-}
 
 .black-card h3 {
     color: #fff;

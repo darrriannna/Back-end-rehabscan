@@ -54,7 +54,8 @@
 /* Video Section */
 .why-video {
     width: 100%;
-    background: url("https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/varfor-video.mp4") center center / cover no-repeat;
+    background: url("../assets/logo.gif") center center / cover no-repeat;
+
     height: 600px;
     border-radius: 20px;
     overflow: hidden;

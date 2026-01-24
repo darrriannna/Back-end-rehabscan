@@ -38,17 +38,15 @@ export default function Steps() {
 
                 {/* TOP ROW */}
                 <div className="steps-hero">
-                    <motion.video
+                    <motion.img
                         className="steps-video"
-                        src="https://rzxtljoehojvjtswrjao.supabase.co/storage/v1/object/public/GIFs/video-ad.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
+                        src="./assets/video-ad-placeholder.png"
+                        alt="Hur fungerar RehabScan"
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                     />
+
 
                     <div className="steps-title-box">
                         <motion.h2
