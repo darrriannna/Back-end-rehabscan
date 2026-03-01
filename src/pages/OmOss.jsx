@@ -54,7 +54,6 @@ export default function OmOss() {
                         <p className="quote-doctor">
                             — Specialistläkare, Rehabscan Sverige
                         </p>
-                        <img className="image-doctor" src="/assets/doctor.png" alt="specialistläkare" />
                     </div>
                 </section>
 
