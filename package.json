@@ -22,7 +22,8 @@
     "react-slick": "^0.31.0",
     "sass": "^1.93.3",
     "slick-carousel": "^1.8.1",
-    "stripe": "^19.3.1"
+    "stripe": "^19.3.1",
+    "swiper": "^12.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

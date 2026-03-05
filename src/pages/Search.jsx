@@ -45,7 +45,7 @@ function Search() {
                     <div className="search-bar">
                         <input
                             type="text"
-                            placeholder="Sök magnetröntgen eller hälsokontroller"
+                            placeholder="Sök MR-undersökning eller hälsokontroller"
                             className="search-input"
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
@@ -82,7 +82,7 @@ function Search() {
                 <div className="faq-grid">
 
                     <div className="faq-column">
-                        <h3>Magnetröntgen</h3>
+                        <h3>MR-undersökning</h3>
                         {faqData.magnetrontgen.map((item, i) => (
                             <FAQAccordion key={i} question={item.q} answer={item.a} />
                         ))}

@@ -1,6 +1,6 @@
 /* Main layout */
 .home {
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     margin: 20px auto 0;
     /* add margin-top to prevent overlay with navbar */
@@ -172,15 +172,7 @@
     text-shadow: 1px black;
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
+
 
 .hero-content {
     position: relative;
@@ -204,7 +196,7 @@
 
 /* Black Weeks card */
 .black-card {
-    background: url("/assets/second-banner-home.jpg") center center / cover no-repeat;
+    background: url("/assets/second-banner-home.png") center center / cover no-repeat;
     padding: 30px;
     text-align: left;
     text-shadow: 2px black;
@@ -215,7 +207,7 @@
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
@@ -282,21 +274,26 @@
 
 @media (max-width: 1000px) {
     .hero-section {
-        margin: 20px;
+
         gap: 20px;
     }
 }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+
+    .filter-card h1 {
+        font-size: 1.8rem;
+    }
+
     .hero-section {
         flex-direction: column;
         gap: 10px;
-        margin: 20px;
+
     }
 
     .title-hero {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0;
     }
 
@@ -304,16 +301,11 @@
         width: 100%;
     }
 
-    .purple-card {
-        height: 280px;
-    }
 
-    .black-card {
-        height: 250px;
-    }
+
 
     .black-card h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .mr-card {
@@ -412,4 +404,197 @@
 .no-results {
     padding: 12px 18px;
     color: #888;
+}
+
+.filter-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+    background: #1d4ed8;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: #0f172a;
+}
+
+.hero-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.filter-card {
+    flex: 1;
+    background-color: #bfc1ff;
+}
+
+.filter-card h1 {
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #fff;
+    text-shadow: p 2px #0f172a;
+}
+
+
+.mr-map-card {
+    flex: 1;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #6429cd;
+    ;
+    color: white;
+    cursor: pointer;
+}
+
+.mr-intro-section {
+    max-width: 90%;
+    text-align: left;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.mr-intro-section h2 {
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.mr-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.mr-link-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #5a35f0;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.mr-link-btn:hover {
+    background: #4727c7;
+}
+
+.show-all-btn {
+    margin-top: 12px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+}
+
+.show-all-btn:hover {
+    color: #5a35f0;
+    /* subtle hover color */
+}
+
+/* Optional arrow rotation */
+.show-all-btn span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.show-all-btn.open span {
+    transform: rotate(180deg);
+}
+
+/* GLASS CARD */
+.mr-ad-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mr-ad-glass {
+    max-width: 720px;
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: rgba(241, 228, 255, 0.524);
+    backdrop-filter: blur(14px);
+
+    border: 2px solid #5a35f0;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.mr-ad-title {
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.mr-ad-sub {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.mr-ad-includes {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mr-ad-actions {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mr-btn {
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #5a35f0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.mr-price {
+    font-size: 25px;
+    font-weight: 600;
 }

@@ -114,10 +114,11 @@
     .map-section {
         flex-direction: column;
         /* stack vertically */
-        align-items: center;
+        align-items: left;
         /* center map */
         text-align: center;
         width: 90%;
+        margin: auto;
     }
 
     .map-container {

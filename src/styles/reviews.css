@@ -1,36 +1,37 @@
-/* Container for the slider */
-.carousel-container {
+.reviews-section,
+.google-reviews-section {
     width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 10px;
     box-sizing: border-box;
-
+    overflow: hidden;
 }
 
 .heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Each review card */
+
+/* Review card */
 .review-card {
     background: #fff;
-    /* keep your original color */
     border-radius: 18px;
-    /* same as before */
     padding: 18px 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(230, 235, 240, 0.8);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 280px;
-    /* equal height for all cards */
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 350px;
+    word-break: break-word;
     box-sizing: border-box;
 }
 
-/* Top section: avatar + name + date */
+/* Top section */
 .review-top {
     display: flex;
     align-items: center;
@@ -42,7 +43,6 @@
     height: 44px;
     border-radius: 50%;
     background: #3b82f6;
-    /* keep your original gradient if you had it */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,18 +68,16 @@
 .review-date {
     font-size: 12px;
     color: #6b7280;
-    /* grey */
 }
 
 /* Review text */
 .review-text {
     margin: 12px 0;
     font-size: 14px;
-    line-height: 1.45;
-    flex-grow: 1;
+    line-height: 1.5;
 }
 
-/* Bottom section: stars + Google label */
+/* Bottom section */
 .review-bottom {
     display: flex;
     justify-content: space-between;
@@ -91,51 +89,44 @@
     font-size: 16px;
 }
 
-.google-icon {
-    width: 20px;
-    height: 20px;
-}
 
-/* Slick slider spacing between slides */
-.slick-slide>div {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
-/* Dots styling */
-.slick-dots li button:before {
-    font-size: 10px;
-    color: #ccc;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #3b82f6;
-    /* active dot color */
-}
-
-/* Responsive tweaks */
-@media (max-width: 1200px) {
-    .slick-slide>div {
-        padding: 8px;
-    }
-}
-
-@media (max-width: 900px) {
-    .slick-slide>div {
-        padding: 6px;
-    }
-
-    .heading {
-        font-size: 2rem;
-        width: 90%;
-        margin: auto;
-        padding-top: 20px;
+/* Responsive */
+@media (max-width: 768px) {
+    .reviews-section {
+        max-width: 100%;
     }
 
     .review-card {
-        min-height: auto;
-        /* allow flexible height on small screens */
+        max-width: 90%;
+        padding: 16px;
     }
+
+    .review-text {
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+
+
+}
+
+.swiper {
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* pagination dots */
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #3b82f6;
 }

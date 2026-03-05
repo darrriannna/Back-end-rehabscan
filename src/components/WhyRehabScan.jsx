@@ -38,9 +38,6 @@ const Varfor = () => {
                     </ul>
                 </div>
 
-                <div className="why-video">
-                </div>
-
             </div>
         </section>
     );

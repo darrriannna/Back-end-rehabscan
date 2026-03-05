@@ -10,10 +10,23 @@ import "../styles/service-product.css";
 export default function ServiceProductPage() {
     const { id } = useParams();
     const { addToCart, removeFromCart, cart } = useCart();
+
+    // Find the initial service
     const service = services.find((s) => s.id === Number(id));
     if (!service) return <h2>Tjänst hittades inte</h2>;
-    const code = service.title.slice(0, 3).toUpperCase();
 
+    // Find all services in the same group (for vänster/höger toggle)
+    const relatedServices = services.filter(s => s.group === service.group);
+
+    // State for selected side (default to current service)
+    const [selectedServiceId, setSelectedServiceId] = useState(service.id);
+
+    // Displayed service based on selection
+    const displayedService = services.find(s => s.id === selectedServiceId);
+
+    const code = displayedService.title.slice(0, 3).toUpperCase();
+
+    // Accordions
     const [openSections, setOpenSections] = useState({
         when: true,
         detectable: false,
@@ -22,11 +35,10 @@ export default function ServiceProductPage() {
         location: false,
     });
 
-
-    const isInCart = cart.some((item) => item.id === service.id);
-
     const toggleSection = (key) =>
         setOpenSections((s) => ({ ...s, [key]: !s[key] }));
+
+    const isInCart = cart.some((item) => item.id === displayedService.id);
 
     return (
         <div className="product-page">
@@ -34,35 +46,55 @@ export default function ServiceProductPage() {
                 {/* LEFT IMAGE */}
                 <aside className="product-media">
                     <div className="media-block">
-
-                        {service.image.includes("placeholder-service.png") ? (
+                        {displayedService.image.includes("placeholder-service.png") ? (
                             <div className="mr-im-top">
-                                <div className="mr-im-code">
-                                    {code}
-                                </div>
+                                <div className="mr-im-code">{code}</div>
                             </div>
                         ) : (
-                            <img src={service.image} alt={service.title} className="product-image" />
+                            <img
+                                src={displayedService.image}
+                                alt={displayedService.title}
+                                className="product-image"
+                            />
                         )}
-
                     </div>
-
                 </aside>
 
                 {/* RIGHT CONTENT */}
                 <main className="product-content">
-                    <h2 className="product-title">{service.title}</h2>
-                    <p className="product-sub">{service.subtitle}</p>
+
+                    {/* SIDE TOGGLE */}
+                    {relatedServices.length > 1 && (
+                        <div className="side-toggle">
+                            {relatedServices.map(s => (
+                                <button
+                                    key={s.id}
+                                    className={`side-btn ${s.id === selectedServiceId ? "active" : ""}`}
+                                    onClick={() => setSelectedServiceId(s.id)}
+                                >
+                                    {s.title.includes("Vänster")
+                                        ? "Vänster"
+                                        : s.title.includes("Höger")
+                                            ? "Höger"
+                                            : s.title
+                                    }
+                                </button>
+                            ))}
+                        </div>
+                    )}
+
+                    <h2 className="product-title">{displayedService.title}</h2>
+                    <p className="product-sub">{displayedService.subtitle}</p>
 
                     <div className="price-row">
-                        {service.oldPrice && (
-                            <span className="price-old">{service.oldPrice} kr</span>
+                        {displayedService.oldPrice && (
+                            <span className="price-old">{displayedService.oldPrice} kr</span>
                         )}
-                        <span className="price-new">{service.price} kr</span>
+                        <span className="price-new">{displayedService.price} kr</span>
                     </div>
 
                     <ul className="feature-list">
-                        {service.includes?.map((b, i) => (
+                        {displayedService.includes?.map((b, i) => (
                             <li key={i}>{b}</li>
                         ))}
                     </ul>
@@ -74,13 +106,13 @@ export default function ServiceProductPage() {
                                 className="cart-btn"
                                 onClick={() =>
                                     isInCart
-                                        ? removeFromCart(service.id)
+                                        ? removeFromCart(displayedService.id)
                                         : addToCart({
-                                            id: service.id,
-                                            name: service.title,
-                                            price: service.price,
-                                            type: service.type,
-                                            image: service.image,
+                                            id: displayedService.id,
+                                            name: displayedService.title,
+                                            price: displayedService.price,
+                                            type: displayedService.type,
+                                            image: displayedService.image,
                                         })
                                 }
                             >
@@ -95,7 +127,6 @@ export default function ServiceProductPage() {
 
                     {/* ACCORDIONS */}
                     <section className="accordion">
-
                         {/* WHEN RECOMMENDED */}
                         <button
                             className={`acc-toggle ${openSections.when ? "open" : ""}`}
@@ -106,7 +137,7 @@ export default function ServiceProductPage() {
                         </button>
                         {openSections.when && (
                             <div className="acc-body">
-                                <p>{service.whenRecommended}</p>
+                                <p>{displayedService.whenRecommended}</p>
                             </div>
                         )}
 
@@ -120,7 +151,7 @@ export default function ServiceProductPage() {
                         </button>
                         {openSections.detectable && (
                             <div className="acc-body">
-                                <p>{service.detectable}</p>
+                                <p>{displayedService.detectable}</p>
                             </div>
                         )}
 
@@ -187,7 +218,6 @@ export default function ServiceProductPage() {
                         {openSections.location && (
                             <div className="acc-body">
                                 <p>MR-undersökningar utförs på våra anslutna röntgenkliniker.</p>
-
                                 <Link to="/mottagningar" className="location-btn">
                                     Visa mottagningar →
                                 </Link>

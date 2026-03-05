@@ -3,6 +3,7 @@ export const services = [
         id: 1,
         type: "mr",
         title: "MR Ländrygg",
+        group: "Ländrygg",
         subtitle: "Magnetkameraundersökning av ländryggen",
         description: "MR ländrygg används för att utreda smärta, nervpåverkan, diskbråck eller andra förändringar i nedre delen av ryggen.",
         includes: [
@@ -24,6 +25,7 @@ Undersökningen kan påvisa diskbråck, nervkompression, spinal stenos, artros i
         id: 2,
         type: "mr",
         title: "MR Höger Axel",
+        group: "Axel",
         subtitle: "Magnetkameraundersökning av höger axel",
         description: "Ger detaljerade bilder för att upptäcka skador på senor, muskler och leder i höger axel.",
         includes: [
@@ -46,6 +48,7 @@ Undersökningen kan visualisera rotatorcuffskador, inflammationer, instabilitet,
         id: 3,
         type: "mr",
         title: "MR Vänster Axel",
+        group: "Axel",
         subtitle: "Magnetkameraundersökning av vänster axel",
         description: "Används för att utreda smärta, rörelseinskränkning och misstänkta skador i vänster axel.",
         includes: [
@@ -66,6 +69,7 @@ MR kan upptäcka rotatorcuffrupturer, tendiniter, bursit, labrumskador, broskska
         id: 4,
         type: "mr",
         title: "MR Bäcken/Höftleder",
+        group: "Bäcken/Höftleder",
         subtitle: "Magnetkameraundersökning av bäcken och höfter",
         description: "MR bäcken och höfter används för att visualisera leder, mjukdelar och skelett i bäckenområdet.",
         includes: [
@@ -88,6 +92,7 @@ Undersökningen kan upptäcka broskskador, labrumrupturer, artros, stressfraktur
         id: 5,
         type: "mr",
         title: "MR Vänster Knä",
+        group: "Knä",
         subtitle: "Magnetkameraundersökning av vänster knä",
         description: "För att upptäcka meniskskador, ligamentskador och broskförändringar i knäleden.",
         includes: [
@@ -111,6 +116,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligaments
         id: 6,
         type: "mr",
         title: "MR Helkropp",
+        group: "Helkropp",
         subtitle: "Magnetkameraundersökning av hela kroppen",
         description: "En omfattande helkroppsundersökning för tidig upptäckt av sjukdomar, inflammationer och organförändringar.",
         includes: [
@@ -133,6 +139,7 @@ Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador
         id: 7,
         type: "mr",
         title: "MR Bröstrygg",
+        group: "Bröstrygg",
         subtitle: "Magnetkameraundersökning av bröstryggen",
         description: "MR bröstrygg används vid utredning av ryggsmärtor, diskförändringar och nervpåverkan i bröstregionen.",
         includes: [
@@ -155,6 +162,7 @@ MR bröstrygg kan påvisa diskbråck, spinal stenos, frakturer, artros, inflamma
         id: 8,
         type: "mr",
         title: "MR Höger Fot",
+        group: "Fot",
         subtitle: "Magnetkameraundersökning av höger fot",
         description: "MR fot används för att kartlägga mjukdelsskador, ligamentproblem och stressfrakturer.",
         includes: [
@@ -177,6 +185,7 @@ Undersökningen visar stressfrakturer, ligamentskador, senrupturer, inflammation
         id: 9,
         type: "mr",
         title: "MR Vänster Fot",
+        group: "Fot",
         subtitle: "Magnetkameraundersökning av vänster fot",
         description: "Högupplösta bilder av fotens leder, senor och ligament för att upptäcka skador och överbelastning.",
         includes: [
@@ -199,6 +208,7 @@ MR kan upptäcka ligamentrupturer, senskador, broskskador, stressfrakturer, kaps
         id: 10,
         type: "mr",
         title: "MR Höger Fotled",
+        group: "Fotled",
         subtitle: "Magnetkameraundersökning av höger fotled",
         description: "Används vid utredning av ledbandsskador, broskförändringar och inflammation.",
         includes: [
@@ -221,6 +231,7 @@ Undersökningen kan visa ledbandsskador, broskskador, inflammation, osteokondral
         id: 11,
         type: "mr",
         title: "MR Vänster Fotled",
+        group: "Fotled",
         subtitle: "Magnetkameraundersökning av vänster fotled",
         description: "Detaljerad avbildning av fotleden för att diagnostisera skador eller inflammationer.",
         includes: [
@@ -243,6 +254,7 @@ MR upptäcker ligamentrupturer, broskskador, senproblem, inflammation, cystor, �
         id: 12,
         type: "mr",
         title: "MR Höger Hand",
+        group: "Hand",
         subtitle: "Magnetkameraundersökning av höger hand",
         description: "MR hand används för att visualisera senor, leder och mjukdelar, ofta vid smärta eller misstänkt skada.",
         includes: [
@@ -265,6 +277,7 @@ Undersökningen visar senrupturer, senskideinflammation, mjukdelsskador, ledför
         id: 13,
         type: "mr",
         title: "MR Vänster Hand",
+        group: "Hand",
         subtitle: "Magnetkameraundersökning av vänster hand",
         description: "Högdetaljerad undersökning av handens strukturer för att upptäcka överbelastning eller skador.",
         includes: [
@@ -287,6 +300,7 @@ MR kan upptäcka senskador, tendinit, artrit, broskskador, ganglioncystor, ligam
         id: 14,
         type: "mr",
         title: "MR Hälsena",
+        group: "Hälsena",
         subtitle: "Magnetkameraundersökning av hälsenan",
         description: "Används vid utredning av hälseneinflammation, rupturer eller degenerativa förändringar.",
         includes: [
@@ -309,6 +323,7 @@ Undersökningen visar partiella och kompletta rupturer, inflammation (tendinopat
         id: 15,
         type: "mr",
         title: "MR Höger Armbåge",
+        group: "Armbåge",
         subtitle: "Magnetkameraundersökning av höger armbåge",
         description: "MR armbåge används för att diagnostisera senskador, inflammation, broskskador och andra armproblem.",
         includes: [
@@ -331,6 +346,7 @@ MR kan påvisa senskador, broskskador, inflammationer, artros, ledbandsskador, n
         id: 16,
         type: "mr",
         title: "MR Vänster Armbåge",
+        group: "Armbåge",
         subtitle: "Magnetkameraundersökning av vänster armbåge",
         description: "Högupplösta bilder av armbågens leder och mjukdelar för att upptäcka skador eller inflammation.",
         includes: [
@@ -353,6 +369,7 @@ Undersökningen avslöjar senskador, ligamentrupturer, broskförändringar, ledv
         id: 17,
         type: "mr",
         title: "MR Höger Underben",
+        group: "Underben",
         subtitle: "Magnetkameraundersökning av höger underben",
         description: "MR underben används för att diagnostisera muskelbristningar, stressfrakturer och mjukdelsskador.",
         includes: [
@@ -375,6 +392,7 @@ MR visar muskelfiberbristningar, senaavslitningar, stressfrakturer, inflammation
         id: 18,
         type: "mr",
         title: "MR Vänster Underben",
+        group: "Underben",
         subtitle: "Magnetkameraundersökning av vänster underben",
         description: "Visualiserar muskler, ben och mjukdelar för att upptäcka skador, inflammation eller överbelastning.",
         includes: [
@@ -397,6 +415,7 @@ MR upptäcker muskelbristningar, stressfrakturer, senskador, inflammation, ödem
         id: 19,
         type: "mr",
         title: "MR Sacrum/Sacroiliacaleder",
+        group: "Sacrum/Sacroiliacaleder",
         subtitle: "Magnetkameraundersökning av sakrum och SI-lederna",
         description: "Används ofta vid ryggsmärta, SI-ledsdysfunktion och inflammatoriska sjukdomar.",
         includes: [
@@ -419,6 +438,7 @@ Undersökningen visar inflammation (sacroiliit), artros, stressfrakturer, ödem,
         id: 22,
         type: "mr",
         title: "MR Nacke/Halsrygg",
+        group: "Nacke/halsrygg",
         subtitle: "Magnetkameraundersökning av halsryggen",
         description: "MR halsrygg används för att upptäcka nervpåverkan, diskbråck och andra förändringar i nacken.",
         includes: [
@@ -441,6 +461,7 @@ Undersökningen påvisar diskbråck, nervkompression, spinal stenos, artros, inf
         id: 23,
         type: "mr",
         title: "MR Helrygg",
+        group: "Helrygg",
         subtitle: "Magnetkameraundersökning av hela ryggraden",
         description: "En omfattande undersökning av hals-, bröst- och ländrygg för att hitta diskbråck, nervpåverkan och andra förändringar.",
         includes: [
@@ -464,6 +485,7 @@ Undersökningen kan identifiera diskbråck, spinal stenos, inflammatoriska för�
         id: 26,
         type: "mr",
         title: "MR Höger Knä",
+        group: "Knä",
         subtitle: "Magnetkameraundersökning av höger knä",
         description: "MR knä används för att upptäcka meniskskador, korsbandsskador och broskförändringar.",
         includes: [
@@ -486,6 +508,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, inflammat
         id: 29,
         type: "mr",
         title: "MR Höger Överarm",
+        group: "Överarm",
         subtitle: "Magnetkameraundersökning av höger överarm",
         description: "Undersökning av muskler och mjukdelar i överarmen, vanligt vid misstänkt muskelbristning eller överbelastning.",
         includes: [
@@ -508,6 +531,7 @@ MR kan påvisa muskelrupturer, senvävnadsskador, inflammation, blödningar, mju
         id: 30,
         type: "mr",
         title: "MR Vänster Överarm",
+        group: "Överarm",
         subtitle: "Magnetkameraundersökning av vänster överarm",
         description: "Ger detaljerade bilder av mjukdelar och muskler i vänster överarm vid skador eller smärta.",
         includes: [
@@ -530,6 +554,7 @@ Undersökningen avslöjar muskelbristningar, senskador, ödem, inflammation, mju
         id: 31,
         type: "mr",
         title: "MR Höger Underarm",
+        group: "Underarm",
         subtitle: "Magnetkameraundersökning av höger underarm",
         description: "För att upptäcka muskel-, senvävnads- eller ledskador i underarmen.",
         includes: [
@@ -552,6 +577,7 @@ MR visar muskel- och senskador, inflammation, nervinklämningar, ödem, cystor, 
         id: 32,
         type: "mr",
         title: "MR Vänster Underarm",
+        group: "Underarm",
         subtitle: "Magnetkameraundersökning av vänster underarm",
         description: "En MR-undersökning som analyserar muskler och mjukdelar i underarmen för att upptäcka skador.",
         includes: [
@@ -574,6 +600,7 @@ Undersökningen påvisar muskelrupturer, senskador, inflammation, stressfrakture
         id: 33,
         type: "mr",
         title: "MR Höger Handled",
+        group: "Handled",
         subtitle: "Magnetkameraundersökning av höger handled",
         description: "Används för att diagnosticera ligamentskador, broskförändringar och inflammationer i handleden.",
         includes: [
@@ -596,6 +623,7 @@ MR kan upptäcka broskskador, ligamentrupturer, senskador, inflammation, ganglio
         id: 34,
         type: "mr",
         title: "MR Vänster Handled",
+        group: "Handled",
         subtitle: "Magnetkameraundersökning av vänster handled",
         description: "MR handled ger detaljerade bilder av mjukdelar, leder och ligament i handleden.",
         includes: [
@@ -618,6 +646,7 @@ Undersökningen avslöjar ligamentsskador, senskador, broskförändringar, infla
         id: 35,
         type: "mr",
         title: "MR Buk",
+        group: "Buk",
         subtitle: "Magnetkameraundersökning av buken",
         description: "MR buk ger detaljerade bilder av bukens organ som lever, njurar, mjälte och pankreas.",
         includes: [
@@ -641,6 +670,7 @@ Undersökningen avslöjar ligamentsskador, senskador, broskförändringar, infla
         id: 36,
         type: "mr",
         title: "MR Prostata",
+        group: "Prostata",
         subtitle: "Magnetkameraundersökning av prostata",
         description: "MR prostata används vid utredning av prostatacancer, inflammation och strukturella förändringar.",
         includes: [
@@ -662,6 +692,7 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
         id: 37,
         type: "mr",
         title: "MR Hjärna",
+        group: "Hjärna",
         subtitle: "Magnetkameraundersökning av hjärnan",
         description: "MR hjärna används för att utreda hjärnans strukturer och identifiera skador, tumörer, inflammationer eller vaskulära förändringar.",
         includes: [
@@ -684,6 +715,7 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
         id: 401,
         type: "mr",
         title: "MR Helkropp Plus",
+        group: "Helkropp",
         subtitle: "MR + Hälsokontroll Stor",
         description: "Strålningsfri MR-helkroppsundersökning kombinerat med 52 blodmarkörer.",
         includes: [
@@ -704,6 +736,7 @@ Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador
         id: 402,
         type: "mr",
         title: "MR Helkropp Pro",
+        group: "Helkropp",
         subtitle: "MR Helkropp + Hälsokontroll Kvinna/Man +",
         description: "Vår mest omfattande helkroppskontroll med MR och 64 blodmarkörer",
         includes: [

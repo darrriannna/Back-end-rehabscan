@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
-import ProductCarousel from "../components/ProductsCarousel";
+import React, { useState } from "react";
 import TopStrip from "../components/TopStrip";
-import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 import ServiceSelector from "../components/ServiceSelector";
@@ -11,22 +10,22 @@ import Footer from "../components/Footer";
 
 
 function MR() {
+    const [selectedGroup, setSelectedGroup] = useState("alla");
 
     return (
-        <>
-            <div className="body">
-                <TopStrip />
-                <Navbar />
-                <StartMR />
+        <div className="body">
+            <TopStrip />
+            <Navbar />
 
-                <ServiceSelector />
-                <MapMR />
-                <Steps />
-                <Footer />
-            </div>
+            <StartMR onSelectGroup={setSelectedGroup} />
 
-        </>
-    )
+            <ServiceSelector selectedGroup={selectedGroup} />
+
+            <MapMR />
+            <Steps />
+            <Footer />
+        </div>
+    );
 }
 
 export default MR

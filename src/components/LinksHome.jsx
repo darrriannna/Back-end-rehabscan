@@ -8,7 +8,7 @@ const services = [
         link: "/halsotester",
     },
     {
-        title: "Magnetröntgen",
+        title: "MR-undersökning",
         text: "Se insidan av din kropp – helt strålningsfritt.",
         image: "/assets/mri-icon.png",
         link: "/mr-undersokningar",

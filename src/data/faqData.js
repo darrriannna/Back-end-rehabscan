@@ -5,7 +5,7 @@ export const faqData = {
             a: "Du ligger på en brits som förs in i MR-kameran. Undersökningen tar oftast 20–40 minuter och är helt smärtfri."
         },
         {
-            q: "Är magnetröntgen farligt?",
+            q: "Är MR-undersökning farligt?",
             a: "MR använder magnetfält och radiovågor – ingen strålning. Därför är undersökningen säker även vid upprepade tillfällen."
         },
         {

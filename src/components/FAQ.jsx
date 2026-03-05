@@ -11,7 +11,7 @@ const groups = [
                     "För att få tillgång till dina MR-bilder behöver du kontakta den klinik där undersökningen gjordes (Unilabs eller Evidia). Dina röntgenbilder omfattas av sekretess, därför kan vi inte se eller hämta dem utan ditt uttryckliga medgivande. Om din undersökning gjordes hos Unilabs brukar bilderna även bli tillgängliga på *Unilabs Mina sidor* ungefär en vecka efter undersökningen.",
             },
             {
-                question: "Hur går magnetröntgen till?",
+                question: "Hur går MR-undersökning till?",
                 answer:
                     "En MR-undersökning tar vanligtvis 20–40 minuter och genomförs med modern utrustning.",
             },
@@ -20,7 +20,7 @@ const groups = [
                 answer: "Du ligger på en brits som förs in i MR-kameran. Undersökningen tar oftast 20–40 minuter och är helt smärtfri."
             },
             {
-                question: "Är magnetröntgen farligt?",
+                question: "Är MR-undersökning farligt?",
                 answer: "MR använder magnetfält och radiovågor – ingen strålning. Därför är undersökningen säker även vid upprepade tillfällen."
             },
             {

@@ -94,9 +94,6 @@ const MapMR = () => {
                                 </li></ul></li>
                     </ul>
                 </div>
-                <div className="map-container">
-                    <img src="./assets/map-mr.png" alt="Magnetröntgen utan remiss över hela Sverige hos RehabScan" className="map-image" />
-                </div>
             </div></div>
     );
 };

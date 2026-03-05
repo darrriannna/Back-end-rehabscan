@@ -6,14 +6,14 @@ export default function Steps() {
     const [service, setService] = useState("mri");
 
     const subtitles = {
-        mri: "Magnetröntgen – fyra enkla steg",
+        mri: "MR-undersökning – fyra enkla steg",
         health: "Hälsokontroll – fyra enkla steg",
         ultra: "Ultraljud – fyra enkla steg"
     };
 
     const stepData = {
         mri: [
-            ["Beställ magnetröntgen – fyll i förfrågan."],
+            ["Beställ MR-undersökning – fyll i förfrågan."],
             ["Vi kontaktar dig för information samt skickar remiss."],
             ["Kliniken du har valt kontaktar dig vid första lediga tillfälle. Undersökningen genomförs på kliniken."],
             ["Specialistläkaren skickar ett utlåtande till dig så fort vi har fått svar."]
@@ -79,7 +79,7 @@ export default function Steps() {
                     {/* BUTTONS */}
                     <div className="steps-button-group">
                         {[
-                            ["mri", "Magnetröntgen"],
+                            ["mri", "MR-undersökning"],
                             ["health", "Hälsokontroll"],
                             ["ultra", "Ultraljud"]
                         ].map(([key, label]) => (

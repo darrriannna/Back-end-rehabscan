@@ -105,7 +105,7 @@ const ProductCarousel = () => {
     return (
         <div className="carousel-container">
             <div className="carousel-header">
-                <h2>Magnetröntgen</h2>
+                <h2>MR-undersökning</h2>
                 <button className="svg-btn" onClick={() => navigate("/mr-undersokningar")}>
                     <FaArrowRight size={30} />
                 </button>

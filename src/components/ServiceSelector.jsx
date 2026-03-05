@@ -4,17 +4,21 @@ import { useCart } from "../context/CartContext";
 import { services } from "../data/servicesData"; // <-- USE THE REAL DATA
 import "../styles/services.css";
 
-const ServiceSelector = () => {
+const ServiceSelector = ({ selectedGroup }) => {
+    const filteredServices =
+        selectedGroup === "alla"
+            ? services
+            : services.filter(service => service.group === selectedGroup);
     const { cart, addToCart, removeFromCart } = useCart();
 
     const isInCart = (id) => cart.some((item) => item.id === id);
 
     return (
-        <div className="service-selector">
+        <div className="service-selector" id="services" >
             <h2 className="service-title">Välj undersökning</h2>
 
             <div className="service-grid">
-                {services.map((service) => (
+                {filteredServices.map((service) => (
                     <div key={service.id} className="service-card">
 
                         <div className="service-info">
