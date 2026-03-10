@@ -82,7 +82,7 @@
 .ultraljud-hero-card {
     position: relative;
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
     overflow: hidden;
     color: white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -128,7 +128,6 @@
 .ultraljud-card {
     flex: 2;
     width: 100%;
-    background: url("../assets/ultraljud-placeholder.png") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +223,7 @@
 }
 
 .ultraljud-map-card {
-    background: radial-gradient(circle, rgb(38, 13, 122) 0%, rgb(23, 9, 23) 53%, rgb(71, 71, 71) 99%);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(58, 9, 107, 1) 35%, rgb(21, 247, 255) 100%);
     padding: 30px;
     text-align: center;
 }
@@ -232,7 +231,17 @@
 .map-title {
     font-size: 2rem;
     color: #fff;
+    padding-top: 0;
     font-weight: 600;
+    text-align: left;
+    text-shadow: 1px;
+}
+
+.map-title-ultra {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 0;
+    font-weight: 700;
     text-align: left;
     text-shadow: 1px;
 }
@@ -336,6 +345,12 @@
 
 .map-text {
     text-align: left;
+
+}
+
+.map-text-ultra {
+    text-align: left;
+    font-size: 15px;
 }
 
 .map-link {
@@ -440,14 +455,17 @@
 
 .filter-card {
     flex: 1;
-    background-color: #bfc1ff;
+    background: linear-gradient(rgb(159, 154, 255) 0%, rgb(214, 207, 255) 90%, rgb(200, 197, 255) 100%);
+    ;
+
 }
 
 .filter-card h1 {
     padding-top: 10px;
     padding-left: 20px;
     color: #fff;
-    text-shadow: p 2px #0f172a;
+
+    text-shadow: 1px #0f172a;
 }
 
 
@@ -467,8 +485,8 @@
     padding: 8px 16px;
     border-radius: 20px;
     border: none;
-    background: #6429cd;
-    ;
+    background: #5635dc;
+
     color: white;
     cursor: pointer;
 }
@@ -597,4 +615,12 @@
 .mr-price {
     font-size: 25px;
     font-weight: 600;
+}
+
+.mr-title-home .price {
+    font-size: 0.8em;
+    /* slightly smaller than the title */
+    color: #fff;
+    white-space: nowrap;
+    /* small spacing */
 }

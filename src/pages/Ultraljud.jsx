@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import TopStrip from "../components/TopStrip";
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 
@@ -12,14 +12,14 @@ import UltraljudCards from "../components/UltraljudSelector";
 
 
 function UltraljudPage() {
-
+    const [selectedGroup, setSelectedGroup] = useState("alla");
     return (
         <>
             <div className="body">
                 <TopStrip />
                 <Navbar />
-                <StartUltraljud />
-                <UltraljudCards />
+                <StartUltraljud onSelectGroup={setSelectedGroup} />
+                <UltraljudCards selectedGroup={selectedGroup} />
                 <MapMR />
                 <Steps />
                 <Footer />

@@ -100,8 +100,8 @@ export default function HelkroppPage() {
         <div>
             <TopStrip />
             <Navbar />
-            <StartHelkropp />
             <HelkroppPackages services={services} addToCart={addToCart} />
+            <StartHelkropp />
             <div id="helkropp-product">
                 <div className="layout-container">
                     <div className="content-wrapper">

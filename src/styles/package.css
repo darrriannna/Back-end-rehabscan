@@ -27,7 +27,7 @@
 }
 
 .package-card.highlight {
-    border: 2px solid #7b47ff;
+    border: 2px solid #5a35f0;
     background: #faf5ff;
 }
 
@@ -59,7 +59,7 @@
     width: 100%;
     padding: 14px 0;
     border-radius: 12px;
-    background: #7b47ff;
+    background: #5a35f0;
     border: none;
     color: white;
     font-weight: 600;
@@ -70,7 +70,7 @@
 }
 
 .package-add:hover {
-    background: #692ff7;
+    background: #310f86;
 }
 
 .package-more {

@@ -5,19 +5,21 @@ import { FiShoppingCart, FiX, FiChevronDown, FiChevronUp } from "react-icons/fi"
 import { ultrasoundServices } from "../data/ultraljudData";
 import "../styles/ultraljud.css";
 
-const UltraljudCards = () => {
-
+const UltraljudCards = ({ selectedGroup }) => {
 
     const { cart, addToCart, removeFromCart } = useCart();
-
     const [openId, setOpenId] = useState(null);
-
-
 
     const isInCart = (id) => cart.some(item => item.id === id);
 
+    // ✅ FILTER SERVICES
+    const filteredServices =
+        selectedGroup === "alla"
+            ? ultrasoundServices
+            : ultrasoundServices.filter(service => service.group === selectedGroup);
+
     // Convert data to card format
-    const services = ultrasoundServices.map((service) => {
+    const services = filteredServices.map((service) => {
         const code = service.title
             .replace("Ultraljud ", "")
             .slice(0, 3)
@@ -35,9 +37,9 @@ const UltraljudCards = () => {
     };
 
     return (
-        <div className="ultr-container">
+        <div id="services" className="ultr-container">
 
-            <div className="ultr-header">Ultraljud</div>
+            <div className="ultr-header">Välj undersökning</div>
 
             <div className="ultr-grid">
                 {services.map(service => {
@@ -46,7 +48,6 @@ const UltraljudCards = () => {
                     return (
                         <div key={service.id} className="ultr-card">
 
-                            {/* Pastel header */}
                             <div className="ultr-top">
                                 <div className="ultr-code">{service.code}</div>
                             </div>
@@ -61,7 +62,6 @@ const UltraljudCards = () => {
 
                                 <div className="ultr-actions">
 
-                                    {/* Cart */}
                                     <button
                                         className="ultr-cart-btn"
                                         onClick={() =>
@@ -81,7 +81,6 @@ const UltraljudCards = () => {
                                             : <FiShoppingCart size={20} color="#333" />}
                                     </button>
 
-                                    {/* Dropdown toggle */}
                                     <button
                                         className="ultr-more-btn"
                                         onClick={() => toggleDropdown(service.id)}
@@ -101,9 +100,7 @@ const UltraljudCards = () => {
 
                                 </div>
 
-                                {/* DROPDOWN DETAILS */}
                                 <div className={`ultr-dropdown ${openId === service.id ? "open" : ""}`}>
-
 
                                     <div className="ultr-drop-section">
                                         <h4>När rekommenderas?</h4>
@@ -125,7 +122,6 @@ const UltraljudCards = () => {
                                     </div>
 
                                 </div>
-
 
                             </div>
                         </div>

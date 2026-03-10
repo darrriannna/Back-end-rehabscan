@@ -76,7 +76,10 @@ const StartHome = () => {
             <div className="hero-section">
                 {/* MR Links Card */}
                 <div className="hero-card black-card">
-                    <h3 className="mr-title-home">MR-undersökning utan remiss</h3>
+                    <h3 className="mr-title-home">
+                        MR-undersökning utan remiss
+                        <span className="price"> (från 3900kr)</span>
+                    </h3>
 
                     <div className="mr-links">
                         {Array.from(

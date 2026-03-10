@@ -13,7 +13,7 @@ export const healthTests = [
         discount: 10,
         oldPrice: "2 295",
         newPrice: "2 065",
-        bg: "#e9fce9",
+        bg: "#eef3f7",
         image: "/assets/halsotest.png",
         icon: "+"
     },
@@ -49,7 +49,7 @@ export const healthTests = [
         discount: 10,
         oldPrice: "2 195",
         newPrice: "1 975",
-        bg: "#f5efe7",
+        bg: "#eef5ff",
         image: "/assets/halsotest.png",
         icon: "♂"
     },
@@ -67,7 +67,7 @@ export const healthTests = [
         discount: 10,
         oldPrice: "3 895",
         newPrice: "3 500",
-        bg: "#e9fce9",
+        bg: "#eef5ff",
         image: "/assets/halsotest.png",
         icon: "♂"
     },

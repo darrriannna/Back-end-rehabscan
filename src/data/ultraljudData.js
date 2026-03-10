@@ -1,6 +1,7 @@
 export const ultrasoundServices = [
     {
         id: 101,
+        group: "Buk",
         type: "ultraljud",
         title: "Ultraljud Buk",
         description: "Undersökning av hela buken för att bedöma organens struktur.",
@@ -11,6 +12,7 @@ export const ultrasoundServices = [
     },
     {
         id: 102,
+        group: "Bukaorta",
         type: "ultraljud",
         title: "Ultraljud Bukaorta",
         description: "Mätning av bukaortans diameter för att upptäcka aneurysm.",
@@ -21,6 +23,7 @@ export const ultrasoundServices = [
     },
     {
         id: 103,
+        group: "Bukvägg",
         type: "ultraljud",
         title: "Ultraljud Bukvägg",
         description: "Bedömning av bukväggens strukturer.",
@@ -31,6 +34,7 @@ export const ultrasoundServices = [
     },
     {
         id: 104,
+        group: "Gallblåsa",
         type: "ultraljud",
         title: "Ultraljud Gallblåsa",
         description: "Bedömning av gallblåsan för stenar och inflammation.",
@@ -41,6 +45,7 @@ export const ultrasoundServices = [
     },
     {
         id: 105,
+        group: "Gallvägar",
         type: "ultraljud",
         title: "Ultraljud Gallvägar",
         description: "Undersökning av de extrahepatiska gallvägarna.",
@@ -51,6 +56,7 @@ export const ultrasoundServices = [
     },
     {
         id: 106,
+        group: "Njurar",
         type: "ultraljud",
         title: "Ultraljud Njurar",
         description: "Undersökning av båda njurarna.",
@@ -61,6 +67,7 @@ export const ultrasoundServices = [
     },
     {
         id: 107,
+        group: "Mjälten",
         type: "ultraljud",
         title: "Ultraljud Mjälten",
         description: "Bedömning av mjältens storlek och struktur.",
@@ -71,6 +78,7 @@ export const ultrasoundServices = [
     },
     {
         id: 108,
+        group: "Pancreas",
         type: "ultraljud",
         title: "Ultraljud Pancreas",
         description: "Undersökning av bukspottkörteln.",
@@ -81,6 +89,7 @@ export const ultrasoundServices = [
     },
     {
         id: 109,
+        group: "Levern",
         type: "ultraljud",
         title: "Ultraljud Levern",
         description: "Bedömning av leverns struktur och blodflöde.",
@@ -91,6 +100,7 @@ export const ultrasoundServices = [
     },
     {
         id: 110,
+        group: "Elastografi",
         type: "ultraljud",
         title: "Ultraljud Levern Elastografi",
         description: "Mätning av leverns stelhet för att bedöma fibros.",
@@ -101,6 +111,7 @@ export const ultrasoundServices = [
     },
     {
         id: 111,
+        group: "Hälsena",
         type: "ultraljud",
         title: "Ultraljud Hälsena",
         description: "Bedömning av hälsena och omgivande strukturer.",
@@ -111,6 +122,7 @@ export const ultrasoundServices = [
     },
     {
         id: 112,
+        group: "Sköldkörteln",
         type: "ultraljud",
         title: "Ultraljud Sköldkörteln",
         description: "Undersökning av sköldkörtelns storlek och knölar.",
@@ -121,6 +133,7 @@ export const ultrasoundServices = [
     },
     {
         id: 113,
+        group: "Testiklar",
         type: "ultraljud",
         title: "Ultraljud Testiklar",
         description: "Undersökning av testiklar och bitestiklar.",
@@ -131,6 +144,7 @@ export const ultrasoundServices = [
     },
     {
         id: 114,
+        group: "Penis",
         type: "ultraljud",
         title: "Ultraljud Penis",
         description: "Ultraljudsbedömning av penis’ kärl och vävnad.",

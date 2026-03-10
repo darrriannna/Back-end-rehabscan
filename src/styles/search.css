@@ -17,7 +17,7 @@
 .search-container {
     position: relative;
     width: 100%;
-    max-width: 520px;
+    max-width: 650px;
     margin: 0 auto 50px;
 }
 
@@ -26,7 +26,7 @@
     align-items: center;
     background: white;
     border: 1px solid #ddd;
-    border-radius: 12px;
+    border-radius: 35px;
     padding: 10px 14px;
     margin: 10px;
 }

@@ -2,19 +2,19 @@ import "../styles/links.css";
 
 const services = [
     {
-        title: "Hälsokontroller",
+        title: "Alla Hälsokontroller",
         text: "Analys av flera blodprover inklusive läkarutlåtande.",
         image: "🧪",
         link: "/halsotester",
     },
     {
-        title: "MR-undersökning",
+        title: "Alla MR-undersökningar",
         text: "Se insidan av din kropp – helt strålningsfritt.",
         image: "/assets/mri-icon.png",
         link: "/mr-undersokningar",
     },
     {
-        title: "Ultraljud",
+        title: "Ultraljud eller CT",
         text: "Ultraljud – tydliga bilder i realtid för snabbare diagnostik.",
         image: "/assets/ultraljud-icon.png",
         link: "/ultraljud",
