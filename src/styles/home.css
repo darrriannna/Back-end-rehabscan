@@ -311,7 +311,9 @@
     }
 
 
-
+    .black-card {
+        padding: 20px;
+    }
 
     .black-card h3 {
         font-size: 25px;
@@ -490,6 +492,8 @@
     color: white;
     cursor: pointer;
 }
+
+
 
 .mr-intro-section {
     max-width: 90%;

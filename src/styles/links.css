@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 16px;
     max-width: 1300px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 .health-card-link {
     display: flex;
     align-items: center;
-    background: #e5f9e5;
+    background: #f4f4f4;
     border-radius: 20px;
 
     padding: 20px;
@@ -48,7 +48,7 @@
 
 .text-area-link p {
     margin: 4px 0 0;
-    color: #006400;
+    color: #0f0064;
     line-height: 1.3;
 }
 
