@@ -125,7 +125,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligaments
             "Specialistbedömning"
         ],
         price: 19200,
-        image: "/assets/helkropp.png",
+        image: "/assets/helkropp.avif",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
 `,
@@ -724,7 +724,7 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
             "Medicinsk specialistbedömning"
         ],
         price: 20900,
-        image: "/assets/helkropp.png",
+        image: "/assets/helkropp.avif",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
 `,
@@ -746,7 +746,7 @@ Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador
         ],
         price: 22300,
 
-        image: "/assets/helkropp.png",
+        image: "/assets/helkropp.avif",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
 `,

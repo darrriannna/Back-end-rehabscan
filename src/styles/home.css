@@ -138,7 +138,7 @@
 
 .helkropp-card {
     width: 100%;
-    background: url("../assets/hel-placeholder.png") center center / cover no-repeat;
+    background: url("../assets/hel-placeholder.avif") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@
 
 .helkropp-banner-card {
     width: 100%;
-    background: url("../assets/hel-placeholder.png") center center / cover no-repeat;
+    background: url("../assets/hel-placeholder.avif") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,7 +195,7 @@
 
 /* Black Weeks card */
 .black-card {
-    background: url("/assets/second-banner-home.png") center center / cover no-repeat;
+    background: url("/assets/second-banner-home.avif") center center / cover no-repeat;
     padding: 30px;
     text-align: left;
     text-shadow: 2px black;

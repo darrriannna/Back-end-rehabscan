@@ -40,7 +40,7 @@ export default function Steps() {
                 <div className="steps-hero">
                     <motion.img
                         className="steps-video"
-                        src="./assets/video-ad-placeholder.png"
+                        src="./assets/video-ad-placeholder.avif"
                         alt="Hur fungerar RehabScan"
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}

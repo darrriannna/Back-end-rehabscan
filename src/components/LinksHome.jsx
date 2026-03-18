@@ -10,13 +10,13 @@ const services = [
     {
         title: "Alla MR-undersökningar",
         text: "Se insidan av din kropp – helt strålningsfritt.",
-        image: "/assets/mri-icon.png",
+        image: "/assets/mri-icon.avif",
         link: "/mr-undersokningar",
     },
     {
         title: "Ultraljud eller CT",
         text: "Ultraljud – tydliga bilder i realtid för snabbare diagnostik.",
-        image: "/assets/ultraljud-icon.png",
+        image: "/assets/ultraljud-icon.avif",
         link: "/ultraljud",
     },
 ];

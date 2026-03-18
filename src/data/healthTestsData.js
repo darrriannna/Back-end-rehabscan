@@ -14,7 +14,7 @@ export const healthTests = [
         oldPrice: "2 295",
         newPrice: "2 065",
         bg: "#eef3f7",
-        image: "/assets/halsotest.png",
+        image: "/assets/halsotest.avif",
         icon: "+"
     },
     {
@@ -32,7 +32,7 @@ export const healthTests = [
         oldPrice: "2 195",
         newPrice: "1 975",
         bg: "#f7eefe",
-        image: "/assets/halsotest.png",
+        image: "/assets/halsotest.avif",
         icon: "♀"
     },
     {
@@ -50,7 +50,7 @@ export const healthTests = [
         oldPrice: "2 195",
         newPrice: "1 975",
         bg: "#eef5ff",
-        image: "/assets/halsotest.png",
+        image: "/assets/halsotest.avif",
         icon: "♂"
     },
     {
@@ -68,7 +68,7 @@ export const healthTests = [
         oldPrice: "3 895",
         newPrice: "3 500",
         bg: "#eef5ff",
-        image: "/assets/halsotest.png",
+        image: "/assets/halsotest.avif",
         icon: "♂"
     },
     {
@@ -86,7 +86,7 @@ export const healthTests = [
         oldPrice: "3 895",
         newPrice: "3 500",
         bg: "#f7eefe",
-        image: "/assets/halsotest.png",
+        image: "/assets/halsotest.avif",
         icon: "♀"
     },
     {
@@ -103,7 +103,7 @@ export const healthTests = [
         oldPrice: "1 950",
         newPrice: "1 769",
         bg: "#eef5ff",
-        image: "/assets/testosteron.png",
+        image: "/assets/testosteron.avif",
         icon: "♂"
     },
     {
@@ -139,7 +139,7 @@ export const healthTests = [
         oldPrice: "1 295",
         newPrice: "1 165",
         bg: "#f7eefe",
-        image: "/assets/jarn.png",
+        image: "/assets/jarn.avif",
         icon: "🩸"
     },
 
