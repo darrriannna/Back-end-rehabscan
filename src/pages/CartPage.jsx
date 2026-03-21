@@ -5,6 +5,7 @@ import React from 'react';
 import '../styles/main.css';
 import Steps from "../components/Steps";
 import Footer from "../components/Footer";
+import FAQGroups from "../components/FAQ";
 
 function CartPage() {
 
@@ -15,6 +16,7 @@ function CartPage() {
                 <Navbar />
                 <Cart />
                 <Steps />
+                <FAQGroups />
                 <Footer />
             </div>
 

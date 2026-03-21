@@ -12,7 +12,7 @@ export const services = [
             "Bedömning av specialistläkare"
         ],
         price: 4200,
-        image: "/assets/landrygg.jpg",
+        image: "/assets/landrygg.avif",
         whenRecommended: `
 MR ländrygg rekommenderas vid långvarig eller nytillkommen ländryggssmärta, misstänkt nervrotspåverkan eller symtom som domningar, stickningar eller utstrålande smärta i benen. Undersökningen är också motiverad vid misstanke om diskbråck, ryggskada eller inflammatoriska förändringar.
 `,
@@ -34,7 +34,7 @@ Undersökningen kan påvisa diskbråck, nervkompression, spinal stenos, artros i
             "Specialistläkarens bedömning"
         ],
         price: 4100,
-        image: "/assets/axel.jpg",
+        image: "/assets/axel.avif",
         whenRecommended: `
 MR höger axel rekommenderas vid smärta, rörelseinskränkning eller misstänkta mjukdelsskador, särskilt om ultraljud inte gett tydliga svar eller besvären kvarstår. Vanligt vid idrottsskador eller efter falltrauma.
 `,
@@ -57,7 +57,7 @@ Undersökningen kan visualisera rotatorcuffskador, inflammationer, instabilitet,
             "Bedömning av specialist"
         ],
         price: 4100,
-        image: "/assets/axel.jpg",
+        image: "/assets/axel.avif",
         whenRecommended: `
 MR vänster axel rekommenderas vid kvarstående axelsmärta, misstänkta sen- eller muskelskador, svårigheter att lyfta armen eller misstanke om ledinstabilitet. Även lämpligt vid långvariga belastningsrelaterade besvär.
 `,
@@ -78,7 +78,7 @@ MR kan upptäcka rotatorcuffrupturer, tendiniter, bursit, labrumskador, broskska
             "Specialistutlåtande"
         ],
         price: 4100,
-        image: "/assets/backen.jpg",
+        image: "/assets/backen.avif",
         whenRecommended: `
 MR bäcken och höftleder rekommenderas vid höftsmärta, misstänkt broskskada, artros, överbelastningsskador eller symtom som strålar mot ljumsken. Också indicerat vid misstänkt inflammation eller höftledsinstabilitet.
 `,
@@ -101,7 +101,7 @@ Undersökningen kan upptäcka broskskador, labrumrupturer, artros, stressfraktur
             "Specialistläkarens bedömning"
         ],
         price: 4100,
-        image: "/assets/kna-vanster.jpg",
+        image: "/assets/kna-vanster.avif",
         whenRecommended: `
 MR vänster knä rekommenderas vid smärta, svullnad, instabilitet eller ”låsningar” i knät. Lämpligt efter idrottsskador, fall, vridningar eller vid misstanke om menisk- eller korsbandsskador.
 `,
@@ -447,7 +447,7 @@ Undersökningen visar inflammation (sacroiliit), artros, stressfrakturer, ödem,
             "Specialistens bedömning"
         ],
         price: 4100,
-        image: "/assets/nacke.jpg",
+        image: "/assets/nacke.avif",
         whenRecommended: `
 MR nacke/halsrygg rekommenderas vid nacksmärta, utstrålande smärta i armarna, domningar, svaghet, misstänkt diskbråck eller nervpåverkan. Även lämpligt vid whiplash eller kronisk stelhet.
 `,
@@ -471,7 +471,7 @@ Undersökningen påvisar diskbråck, nervkompression, spinal stenos, artros, inf
             "Specialistläkarens utlåtande"
         ],
         price: 11500,
-        image: "/assets/helrygg.jpg",
+        image: "/assets/helrygg.avif",
         whenRecommended: `
 MR helrygg rekommenderas när man behöver en komplett bild av hela ryggraden, exempelvis vid långvarig värk, misstänkta nervpåverkningar, inflammatoriska tillstånd eller utbredning av sjukdomar.
 `,
@@ -494,7 +494,7 @@ Undersökningen kan identifiera diskbråck, spinal stenos, inflammatoriska för�
             "Specialistutlåtande"
         ],
         price: 4100,
-        image: "/assets/kna-hoger.jpg",
+        image: "/assets/kna-hoger.avif",
         whenRecommended: `
 MR höger knä rekommenderas vid smärta, svullnad, instabilitet eller misstänkta menisk- eller korsbandsskador. Även vid belastningsrelaterade besvär och efter idrottstrauma.
 `,

@@ -2,6 +2,8 @@ export const healthTests = [
     {
         id: 201,
         type: "test",
+        group: "Stor",
+        category: "Hälsotester",
         title: "Hälsokontroll Stor",
         subtitle: "Allmän och omfattande hälsokontroll",
         markers: 52,
@@ -20,6 +22,8 @@ export const healthTests = [
     {
         id: 202,
         type: "test",
+        category: "Hälsotester",
+        group: "Kvinna",
         title: "Hälsokontroll – Kvinna",
         subtitle: "Hälsokontroll anpassad för kvinnor",
         markers: 49,
@@ -38,7 +42,9 @@ export const healthTests = [
     {
         id: 203,
         type: "test",
+        category: "Hälsotester",
         title: "Hälsokontroll – Man",
+        group: "Man",
         subtitle: "Hälsokontroll anpassad för män",
         markers: 46,
         bullets: [
@@ -56,6 +62,8 @@ export const healthTests = [
     {
         id: 204,
         type: "test",
+        category: "Hälsotester",
+        group: "Man Plus",
         title: "Hälsokontroll – Man Plus",
         subtitle: "Fördjupad hälsokontroll för män",
         markers: 64,
@@ -74,6 +82,8 @@ export const healthTests = [
     {
         id: 205,
         type: "test",
+        category: "Hälsotester",
+        group: "Kvinna Plus",
         title: "Hälsokontroll – Kvinna Plus",
         subtitle: "Fördjupad hälsokontroll för kvinnor",
         markers: 64,
@@ -92,6 +102,7 @@ export const healthTests = [
     {
         id: 206,
         type: "test",
+        group: "Hormoner",
         title: "Testosteron +",
         subtitle: "+ Hormoner och näringstatus som påverkar Testosteron ",
         markers: 10,
@@ -109,7 +120,9 @@ export const healthTests = [
     {
         id: 207,
         type: "test",
+        category: "Hälsotester",
         title: "Hormonbalans – Kvinna",
+        group: "Hormoner",
         subtitle: "Analys av kvinnliga hormoner och hormonell balans",
         markers: 11,
         bullets: [
@@ -121,13 +134,15 @@ export const healthTests = [
         oldPrice: "1 645",
         newPrice: "1 479",
         bg: "#fdf0f7",
-        image: "/assets/estrogen.png",
+        image: "/assets/estrogen.avif",
         icon: "♀"
     },
     {
         id: 208,
         type: "test",
+        category: "Hälsotester",
         title: "Järnstatus & Trötthet",
+        group: "Energi",
         subtitle: "Analys av järnstatus och vanliga orsaker till trötthet",
         markers: 10,
         bullets: [
@@ -146,7 +161,9 @@ export const healthTests = [
     {
         id: 209,
         type: "test",
+        category: "Hälsotester",
         title: "Stress +",
+        group: "Stress",
         subtitle: "Fördjupad analys av stress, mental balans och återhämtning",
         markers: 12,
         bullets: [
@@ -158,12 +175,29 @@ export const healthTests = [
         oldPrice: "1 595",
         newPrice: "1 435",
         bg: "#eef3f7",
-        image: "/assets/stress.png",
+        image: "/assets/stress.avif",
         icon: "🧠"
-    }
+    },
 
-
-
+    {
+        id: 301,
+        type: "intyg",
+        category: "Intyg",
+        group: "Lungor (CR Lungor + Intyg)",
+        bullets: [
+            "Röntgen av lungor",
+            "Medicinskt intyg",
+            "Bedömning av radiolog"
+        ],
+        markers: 4,
+        title: "Tuberkulos (CR Lungor + Intyg)",
+        subtitle: "Röntgen av lungor + medicinskt intyg",
+        oldPrice: "8 500",
+        newPrice: "6 500",
+        image: "/assets/lungor.avif",
+        bg: "#eef3f7",
+        icon: "🫁"
+    },
 
 ];
 
@@ -386,8 +420,19 @@ export const markerGroups = {
         "Järn": [
             "Ferritin"
         ]
-    }
-
+    },
+    301: {
+        "Undersökning": [
+            "CR Lungor (lungröntgen)"
+        ],
+        "Bedömning": [
+            "Radiologisk analys",
+            "Läkarbedömning"
+        ],
+        "Intyg": [
+            "Medicinskt intyg för arbete / resa"
+        ]
+    },
 
 
 

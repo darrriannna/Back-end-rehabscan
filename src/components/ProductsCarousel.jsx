@@ -18,7 +18,7 @@ const ProductCarousel = () => {
             description: "Upptäck skador i axelledens muskler och senor.",
             oldPrice: "4 900kr",
             newPrice: "4100 kr",
-            image: "/assets/axel.jpg",
+            image: "/assets/axel.avif",
         },
         {
             id: 5,
@@ -26,7 +26,7 @@ const ProductCarousel = () => {
             description: "Upptäck skador på korsband, menisk och ledband.",
             oldPrice: "4 900kr",
             newPrice: "4100 kr",
-            image: "/assets/kna-hoger.jpg",
+            image: "/assets/kna-hoger.avif",
         },
         {
             id: 1,
@@ -34,7 +34,7 @@ const ProductCarousel = () => {
             description: "Identifiera diskbråck eller ryggmärgsproblem.",
             oldPrice: "4 900kr",
             newPrice: "4200 kr",
-            image: "/assets/landrygg.jpg",
+            image: "/assets/landrygg.avif",
         },
         {
             id: 22,
@@ -42,7 +42,7 @@ const ProductCarousel = () => {
             description: "Upptäck skador, diskbråck eller påverkad nervfunktion.",
             oldPrice: "5 200kr",
             newPrice: "4100 kr",
-            image: "/assets/nacke.jpg",
+            image: "/assets/nacke.avif",
         },
         {
             id: 4,
@@ -50,7 +50,7 @@ const ProductCarousel = () => {
             description: "Påvisa inflammation eller artros i höftleder.",
             oldPrice: "4 900kr",
             newPrice: "4100 kr",
-            image: "/assets/backen.jpg",
+            image: "/assets/backen.avif",
         },
         {
             id: 2,
@@ -58,7 +58,7 @@ const ProductCarousel = () => {
             description: "Upptäck inflammation eller artros i axeln.",
             oldPrice: "4 900kr",
             newPrice: "4100 kr",
-            image: "/assets/axel.jpg",
+            image: "/assets/axel.avif",
         },
         {
             id: 26,
@@ -66,7 +66,7 @@ const ProductCarousel = () => {
             description: "Identifiera vanliga knäskador och inflammationer.",
             oldPrice: "4 900kr",
             newPrice: "4100 kr",
-            image: "/assets/kna-vanster.jpg",
+            image: "/assets/kna-vanster.avif",
         },
         {
             id: 23,
@@ -74,7 +74,7 @@ const ProductCarousel = () => {
             description: "Upptäck diskbråck och andra ryggproblem.",
             oldPrice: "12 400kr",
             newPrice: "11500 kr",
-            image: "/assets/helrygg.jpg",
+            image: "/assets/helrygg.avif",
         },
     ];
 

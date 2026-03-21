@@ -73,7 +73,7 @@ export default function OmOss() {
                         </p>
                     </div>
                     <div className="pillar">
-                        <img className="pillar-image" src="/assets/om-oss.png" alt="" />
+                        <img className="pillar-image" src="/assets/om-oss.avif" alt="" />
                     </div>
 
                 </section>
