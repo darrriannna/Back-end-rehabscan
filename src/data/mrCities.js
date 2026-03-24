@@ -3,6 +3,7 @@
 const MR_CITIES = [
     "Stockholm",
     "Göteborg",
+    "Uppsala",
     "Mölndal",
     "Lund",
     "Malmö",

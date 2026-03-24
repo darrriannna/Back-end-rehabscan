@@ -12,19 +12,19 @@ export default function PresentSteps() {
             id: 1,
             title: "Välj hälsokontroll och kontakta oss",
             desc: "Välj hälsokontroll och kontakta oss via e-post eller telefon. Du får en betalningslänk tillsammans med bekräftelse.",
-            img: "/assets/present-step1.png"
+            img: "/assets/present-step1.avif"
         },
         {
             id: 2,
             title: "Vi skickar presentkort med kod samma dag",
             desc: "Du får ett personligt presentkort i PDF-format skickat till din e-post inom några timmar.",
-            img: "/assets/present-step2.png"
+            img: "/assets/present-step2.avif"
         },
         {
             id: 3,
             title: "Skicka presentkortet vidare",
             desc: "Mottagaren kontaktar oss för att fylla i uppgifter och välja mottagning.",
-            img: "/assets/present-step3.png"
+            img: "/assets/present-step3.avif"
         }
     ];
 

@@ -33,6 +33,13 @@ const MapMR = () => {
 
 
                         </li>
+                        <li className='list-map'>Uppsala
+                            <ul className='list-of-clinics'>
+                                <li className='clinic-details'>
+                                    <p className='clinic-name'>Uppsala vid Elisabethsjukhuset Röntgen</p>
+                                    <p className='clinic-adress'>Geijersgatan 20, 752 27 Uppsala</p>
+                                </li>
+                            </ul></li>
                         <li className='list-map'>Göteborg
                             <ul className='list-of-clinics'>
                                 <li className='clinic-details'>
