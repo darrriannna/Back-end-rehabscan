@@ -55,7 +55,7 @@ const Restrictions = () => {
                         <h5>Ångerrätt och transaktionsavgift</h5>
                         <p>
                             Vid utnyttjande av ångerrätt återbetalas hela beloppet med avdrag för bankens
-                            transaktionsavgift. En avgift på 3,5 % av det totala beloppet dras för att täcka kostnader
+                            transaktionsavgift. En avgift på 4% av det totala beloppet dras för att täcka kostnader
                             för hantering av betalningen.
                         </p>
                     </section>
