@@ -251,8 +251,8 @@ export const healthTests = [
             "Används vid sjukdomskänsla eller smärta.",
             "Vanlig screeningmarkör vid hälsokontroller."
         ],
-        oldPrice: "245",
-        newPrice: "195",
+        oldPrice: "345",
+        newPrice: "295",
         bg: "#eef3f7",
         image: "/assets/inframation.avif",
         icon: "🩸"
@@ -270,8 +270,8 @@ export const healthTests = [
             "Relevant vid trötthet och nedsatt ork.",
             "Används ofta tillsammans med andra blodvärden."
         ],
-        oldPrice: "295",
-        newPrice: "245",
+        oldPrice: "395",
+        newPrice: "345",
         bg: "#f7eefe",
         image: "/assets/jarn.avif",
         icon: "🩸"
@@ -346,8 +346,8 @@ export const healthTests = [
             "Påverkar ämnesomsättning, energi och vikt.",
             "Används ofta tillsammans med T3 och T4."
         ],
-        oldPrice: "295",
-        newPrice: "245",
+        oldPrice: "495",
+        newPrice: "445",
         bg: "#eef3f7",
         image: "/assets/TSH.avif",
         icon: "🩸"
@@ -365,8 +365,8 @@ export const healthTests = [
             "Relevant efter vaccination eller misstänkt exponering.",
             "Vanligt test i områden med fästingar."
         ],
-        oldPrice: "395",
-        newPrice: "345",
+        oldPrice: "595",
+        newPrice: "445",
         bg: "#eef3f7",
         image: "/assets/tick.avif",
         icon: "🦠"
