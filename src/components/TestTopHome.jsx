@@ -14,6 +14,16 @@ const StartTest = ({ onSelectGroup }) => {
         )
     ];
 
+    const enskildGroups = [
+        ...Array.from(
+            new Set(
+                healthTests
+                    .filter(t => t.category === "Enskilda tester")
+                    .map(t => t.group)
+            )
+        )
+    ];
+
     const intygGroups = [
         ...Array.from(
             new Set(
@@ -55,9 +65,22 @@ const StartTest = ({ onSelectGroup }) => {
                             </button>
                         ))}
                     </div>
+                    <h2 className="test-title-filter">Enskilda tester</h2>
+                    <div className="test-filter-container">
+
+                        {enskildGroups.map(group => (
+                            <button
+                                key={group}
+                                className="filter-btn"
+                                onClick={() => handleClick(group)}
+                            >
+                                {group}
+                            </button>
+                        ))}
+                    </div>
 
                     {/* INTYG */}
-                    <h1 className="test-title-filter">Intyg</h1>
+                    <h2 className="test-title-filter">Intyg</h2>
                     <div className="filter-container">
                         {intygGroups.map(group => (
                             <button
@@ -80,6 +103,7 @@ const StartTest = ({ onSelectGroup }) => {
                     <a className="map-link" href="./mottagningar">
                         Hitta klinik
                     </a>
+
                 </div>
 
             </div>

@@ -709,6 +709,28 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
     MR hjärna kan upptäcka tumörer, blödningar, stroke, inflammationer, demyeliniserande sjukdomar, degenerativa förändringar och andra strukturella avvikelser.
     `,
     },
+    {
+        id: 38,
+        type: "mr",
+        title: "MR Hals",
+        group: "Hals",
+        subtitle: "Magnetkameraundersökning av halsen",
+        description: "MR hals ger detaljerade bilder av mjukdelar, muskler, lymfkörtlar och strukturer i halsområdet.",
+        includes: [
+            "Hälsorapport",
+            "Radiologisk analys",
+            "Specialistbedömning"
+        ],
+        price: 6000,
+        image: "/assets/placeholder-service.png",
+
+        whenRecommended: `
+    MR hals rekommenderas vid långvarig smärta eller svullnad i halsen, misstänkta tumörer, förstorade lymfkörtlar, infektioner eller andra oklara besvär i halsområdet.
+        `,
+        detectable: `
+    Undersökningen visar förändringar i mjukdelar, lymfkörtlar, muskler, kärl, tumörer, cystor, inflammationer och andra strukturella avvikelser i halsen.
+        `,
+    },
 
 
     {

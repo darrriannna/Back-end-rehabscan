@@ -217,7 +217,7 @@
     max-width: 75%;
     height: auto;
     display: block;
-    transform: rotate(-20deg);
+
     /* if you want the tilted look */
     will-change: transform;
     pointer-events: none;

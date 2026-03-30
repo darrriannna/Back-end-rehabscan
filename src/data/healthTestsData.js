@@ -102,7 +102,8 @@ export const healthTests = [
     {
         id: 206,
         type: "test",
-        group: "Hormoner",
+        category: "Hälsotester",
+        group: "Testosteron +",
         title: "Testosteron +",
         subtitle: "+ Hormoner och näringstatus som påverkar Testosteron ",
         markers: 10,
@@ -198,6 +199,197 @@ export const healthTests = [
         bg: "#eef3f7",
         icon: "🫁"
     },
+    {
+        id: 410,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Borrelia",
+        title: "Borrelia (antikroppar)",
+        subtitle: "Test för att upptäcka borreliainfektion",
+        markers: 1,
+        bullets: [
+            "Analyserar antikroppar mot borrelia.",
+            "Rekommenderas vid misstanke om fästingburen infektion.",
+            "Kan ge vägledning vid långvarig trötthet eller ledvärk.",
+            "Provtagningsavgift inkl."
+        ],
+        oldPrice: "995",
+        newPrice: "845",
+        bg: "#eef3f7",
+        image: "/assets/borelia.avif",
+        icon: "🦠"
+    },
+    {
+        id: 411,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Testorteron",
+        title: "Testosteron",
+        subtitle: "Mäter nivå av testosteron i blodet",
+        markers: 1,
+        bullets: [
+            "Viktig markör för energi, libido och muskelmassa.",
+            "Används vid misstanke om hormonell obalans.",
+            "Relevant för både män och kvinnor."
+        ],
+        oldPrice: "495",
+        newPrice: "459",
+        bg: "#eef5ff",
+        image: "/assets/testo.avif",
+        icon: "♂"
+    },
+    {
+        id: 412,
+        type: "test",
+        category: "Enskilda tester",
+        group: "CRP Inflammation",
+        title: "CRP",
+        subtitle: "Visar nivå av inflammation i kroppen",
+        markers: 1,
+        bullets: [
+            "Snabb indikator på infektion eller inflammation.",
+            "Används vid sjukdomskänsla eller smärta.",
+            "Vanlig screeningmarkör vid hälsokontroller."
+        ],
+        oldPrice: "245",
+        newPrice: "195",
+        bg: "#eef3f7",
+        image: "/assets/inframation.avif",
+        icon: "🩸"
+    },
+    {
+        id: 413,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Ferritin",
+        title: "Ferritin",
+        subtitle: "Visar kroppens järndepåer",
+        markers: 1,
+        bullets: [
+            "Viktig markör för att upptäcka järnbrist.",
+            "Relevant vid trötthet och nedsatt ork.",
+            "Används ofta tillsammans med andra blodvärden."
+        ],
+        oldPrice: "295",
+        newPrice: "245",
+        bg: "#f7eefe",
+        image: "/assets/jarn.avif",
+        icon: "🩸"
+    },
+    {
+        id: 414,
+        type: "test",
+        category: "Hälsotester",
+        group: "Sköldkörtel",
+        title: "Sköldkörtelprov",
+        subtitle: "Analys av sköldkörtelns funktion",
+        markers: 3,
+        bullets: [
+            "Inkluderar TSH, T3 fritt och T4 fritt.",
+            "Ger en helhetsbild av ämnesomsättningen.",
+            "Rekommenderas vid trötthet, viktförändring eller hormonella besvär."
+        ],
+        oldPrice: "695",
+        newPrice: "595",
+        bg: "#eef3f7",
+        image: "/assets/thyroid.avif",
+        icon: "🩸"
+    },
+    {
+        id: 415,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Kortisol",
+        title: "Kortisol",
+        subtitle: "Mäter kroppens stresshormon",
+        markers: 1,
+        bullets: [
+            "Visar kroppens stressnivå och belastning.",
+            "Används vid trötthet, sömnproblem och utmattning.",
+            "Ger insikt i kroppens återhämtningsförmåga."
+        ],
+        oldPrice: "395",
+        newPrice: "345",
+        bg: "#eef3f7",
+        image: "/assets/kortisol.avif",
+        icon: "🧠"
+    },
+    {
+        id: 416,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Östradiol",
+        title: "Östradiol",
+        subtitle: "Mäter nivå av östrogen i kroppen",
+        markers: 1,
+        bullets: [
+            "Viktig för hormonbalans och fertilitet.",
+            "Används vid PMS, klimakteriebesvär eller oregelbunden mens.",
+            "Ger insikt i kroppens östrogennivåer."
+        ],
+        oldPrice: "395",
+        newPrice: "345",
+        bg: "#faf0f7",
+        image: "/assets/estr-1.avif",
+        icon: "♀"
+    },
+    {
+        id: 417,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Sköldkörtel (TSH)",
+        title: "TSH",
+        subtitle: "Basmarkör för sköldkörtelns funktion",
+        markers: 1,
+        bullets: [
+            "Första steget vid utredning av sköldkörteln.",
+            "Påverkar ämnesomsättning, energi och vikt.",
+            "Används ofta tillsammans med T3 och T4."
+        ],
+        oldPrice: "295",
+        newPrice: "245",
+        bg: "#eef3f7",
+        image: "/assets/TSH.avif",
+        icon: "🩸"
+    },
+    {
+        id: 418,
+        type: "test",
+        category: "Enskilda tester",
+        group: "Infektion TBE",
+        title: "TBE (antikroppar)",
+        subtitle: "Test för immunitet eller tidigare exponering för TBE",
+        markers: 1,
+        bullets: [
+            "Visar om du har antikroppar mot TBE-virus.",
+            "Relevant efter vaccination eller misstänkt exponering.",
+            "Vanligt test i områden med fästingar."
+        ],
+        oldPrice: "395",
+        newPrice: "345",
+        bg: "#eef3f7",
+        image: "/assets/tick.avif",
+        icon: "🦠"
+    },
+    {
+        id: 419,
+        type: "test",
+        category: "Hälsotester",
+        group: "Klimakterieprov",
+        title: "Klimakterieprov",
+        subtitle: "Analys av hormonbalans vid klimakteriet",
+        markers: 3,
+        bullets: [
+            "Inkluderar FSH, LH och östradiol.",
+            "Identifierar hormonella förändringar vid klimakteriet.",
+            "Rekommenderas vid värmevallningar, sömnproblem och humörsvängningar."
+        ],
+        oldPrice: "895",
+        newPrice: "795",
+        bg: "#fdf0f7",
+        image: "/assets/klimax.avif",
+        icon: "♀"
+    }
 
 ];
 
@@ -433,6 +625,37 @@ export const markerGroups = {
             "Medicinskt intyg för arbete / resa"
         ]
     },
+
+    410: {
+        "Infektion": ["Borrelia IgG", "Borrelia IgM"]
+    },
+    411: {
+        "Hormoner": ["Testosteron"]
+    },
+    412: {
+        "Inflammation": ["CRP"]
+    },
+    413: {
+        "Järn": ["Ferritin"]
+    },
+    414: {
+        "Sköldkörtel": ["T3 Fritt", "T4 Fritt", "TSH"]
+    },
+    415: {
+        "Stress & Hormoner": ["Kortisol"]
+    },
+    416: {
+        "Hormoner": ["Östradiol"]
+    },
+    417: {
+        "Sköldkörtel": ["TSH"]
+    },
+    418: {
+        "Infektion": ["TBE IgG"]
+    },
+    419: {
+        "Hormoner": ["FSH", "LH", "Östradiol"]
+    }
 
 
 
