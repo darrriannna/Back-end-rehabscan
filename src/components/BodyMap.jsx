@@ -93,12 +93,6 @@ const BodyMap = () => {
                             </div>
                         ))}
                     </div>
-
-                    {/* ⬇️ OVERLAY ARROW (NOW CORRECTLY POSITIONED) */}
-                    <div className={`scroll-indicator ${scrolled ? "hide" : ""}`}>
-                        <div className="arrow" />
-                    </div>
-
                 </div>
             </div>
         </div>
