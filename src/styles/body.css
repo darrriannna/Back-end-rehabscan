@@ -1,0 +1,324 @@
+.body-map-wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* SCROLL CONTAINER */
+.body-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    border-radius: 16px;
+    scroll-behavior: smooth;
+}
+
+/* scrollbar */
+.body-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.body-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* BODY STAGE */
+.body-stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 2;
+}
+
+/* IMAGE */
+.body-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+/* DOT LAYER */
+.dot-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* DOT WRAPPER */
+.dot-wrap {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* bring hovered dot above everything */
+.dot-wrap:hover {
+    z-index: 20;
+}
+
+/* DOT CORE */
+.dot {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #4304fe8f;
+    border: 2px solid #c5a9ed36;
+}
+
+/* SOFT PULSE RING */
+.dot::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid rgba(124, 92, 255, 0.4);
+
+    opacity: 0.6;
+    animation: dotPulse 2.5s ease-out infinite;
+}
+
+/* slow premium pulse */
+@keyframes dotPulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+
+    70% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* hover = only color (no movement = no jumping) */
+.dot-wrap:hover .dot {
+    background: #3c0b80;
+}
+
+/* TOOLTIP (fixed + smaller + centered) */
+.tooltip {
+    position: absolute;
+    bottom: 14px;
+
+    background: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+
+    font-size: 11px;
+    white-space: nowrap;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    z-index: 30;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+/* DEFAULT (center) */
+.dot-wrap:not(.edge-left):not(.edge-right) .tooltip {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* LEFT SIDE → push right */
+.dot-wrap.edge-left .tooltip {
+    left: 0;
+    transform: translateX(0);
+}
+
+/* RIGHT SIDE → push left */
+.dot-wrap.edge-right .tooltip {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+}
+
+/* SHOW */
+.dot-wrap:hover .tooltip {
+    opacity: 1;
+}
+
+
+/* tooltip arrow */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: white;
+    rotate: 45deg;
+}
+
+.title-body {
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+
+.price-body {
+    font-size: 15px;
+    color: #666;
+}
+
+/* ENERGY BACKGROUND */
+.energy-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background: radial-gradient(circle at 50% 15%,
+            rgba(90, 53, 240, 0.12),
+            transparent 60%);
+
+    animation: energyPulse 7s ease-in-out infinite;
+}
+
+.energy-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(circle at 50% 35%,
+            rgba(90, 53, 240, 0.08),
+            transparent 70%);
+
+    animation: energyPulse 10s ease-in-out infinite;
+}
+
+@keyframes energyPulse {
+    0% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.55;
+    }
+
+    100% {
+        opacity: 0.25;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 1150px) {
+    .body-scroll {
+        max-height: 600px;
+    }
+}
+
+.scroll-indicator {
+    position: sticky;
+    bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #5a35f0;
+    opacity: 0.6;
+    animation: bounce 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+.wave-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wave-border::before,
+.wave-border::after {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    border-radius: 20px;
+    border: 2px solid rgba(120, 90, 255, 0.2);
+    animation: waveExpand 6s ease-out infinite;
+}
+
+.wave-border::after {
+    animation-delay: 3s;
+}
+
+@keyframes waveExpand {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.4;
+    }
+
+    70% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.wave-oval {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* each wave */
+.wave-oval span {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    background-color: #3c0b8020;
+    border-radius: 50% / 60%;
+
+    animation: ovalWave 6s ease-out infinite;
+}
+
+/* second wave delayed */
+.wave-oval span:nth-child(2) {
+    animation-delay: 3s;
+}
+
+/* animation */
+@keyframes ovalWave {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.4;
+    }
+
+    70% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

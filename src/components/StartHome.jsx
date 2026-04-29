@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { services } from "../data/servicesData";
 import { healthTests } from "../data/healthTestsData";
+import BodyMap from "./BodyMap";
+
 
 const StartHome = () => {
+    console.log("IMPORTED SERVICES:", services);
     const [query, setQuery] = useState("");
     const [showAll, setShowAll] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -113,41 +116,9 @@ const StartHome = () => {
                 </div>
 
                 {/* MR Helkropp Advertisement */}
-
-                <section className="mr-ad-wrapper">
-
-                    <div className="mr-ad-glass">
-
-                        <h2 className="mr-ad-title">
-                            Europas mest avancerade undersökning
-                        </h2>
-
-                        <p className="mr-ad-sub">
-                            MR helkropp + blodprov med <strong>64 markörer</strong><br />
-                            Granskas av medicinska specialister
-                        </p>
-
-                        <p className="mr-ad-includes">
-                            MR Hjärna • Ögonhålor • Bihålor • MR Hals • MR Lungor •
-                            Buk – lever, gallblåsa, njurar •
-                            Lilla bäcken – prostata/äggstockar •
-                            Skelett – hals, bröst- och ländrygg, höfter •
-                            Ingen strålning
-                        </p>
-
-                        <div className="mr-ad-actions">
-                            <Link to="/magnetrontgen/402" className="mr-btn">
-                                Läs mer
-                            </Link>
-
-                            <span className="mr-price">
-                                22 300 kr
-                            </span>
-                        </div>
-
-                    </div>
-
-                </section>
+                <div className="hero-card">
+                    <BodyMap services={services} />
+                </div>
             </div>
         </div>
     );
