@@ -16,6 +16,7 @@ const bodyMapData = [
 
     { key: "armbage_vanster", title: "MR Vänster Armbåge", price: 3900, x: 18, y: 38 },
     { key: "armbage_hoger", title: "MR Höger Armbåge", price: 3900, x: 83, y: 38 },
+    { key: "prostata", title: "MR Prostata", price: 7400, x: 51, y: 52 },
 
     { key: "hand_vanster", title: "MR Vänster Hand", price: 3900, x: 9, y: 50 },
     { key: "hand_hoger", title: "MR Höger Hand", price: 3900, x: 93, y: 50 },
@@ -29,8 +30,11 @@ const bodyMapData = [
     { key: "kna_vanster", title: "MR Vänster Knä", price: 4100, x: 44, y: 69 },
     { key: "kna_hoger", title: "MR Höger Knä", price: 4100, x: 57, y: 69 },
 
-    { key: "fot_vanster", title: "MR Vänster Fot", price: 3900, x: 45, y: 90 },
-    { key: "fot_hoger", title: "MR Höger Fot", price: 3900, x: 55, y: 90 }
+    { key: "fot_vanster", title: "MR Vänster Fot", price: 3900, x: 46, y: 90 },
+    { key: "fot_hoger", title: "MR Höger Fot", price: 3900, x: 55, y: 90 },
+    { key: "fotled_vanster", title: "MR Vänster Fotled", price: 3900, x: 44, y: 94 },
+    { key: "fotled_hoger", title: "MR Höger Fotled", price: 3900, x: 57, y: 94 }
+
 ];
 
 const BodyMap = () => {
