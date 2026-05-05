@@ -2,15 +2,32 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { services } from "../data/servicesData";
 import { healthTests } from "../data/healthTestsData";
-import BodyMap from "./BodyMap";
-
 
 const StartHome = () => {
-    console.log("IMPORTED SERVICES:", services);
     const [query, setQuery] = useState("");
     const [showAll, setShowAll] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [count, setCount] = useState(0);
 
+    useEffect(() => {
+        let start = 0;
+        const end = 500;
+        const duration = 1200;
+        const stepTime = 20;
+        const step = Math.ceil(end / (duration / stepTime));
+
+        const timer = setInterval(() => {
+            start += step;
+            if (start >= end) {
+                setCount(500);
+                clearInterval(timer);
+            } else {
+                setCount(start);
+            }
+        }, stepTime);
+
+        return () => clearInterval(timer);
+    }, []);
     // Detect mobile width
     useEffect(() => {
         const handleResize = () => setIsMobile(window.innerWidth < 700);
@@ -80,8 +97,8 @@ const StartHome = () => {
                 {/* MR Links Card */}
                 <div className="hero-card black-card">
                     <h3 className="mr-title-home">
-                        MR-undersökning utan remiss
-                        <span className="price"> (från 3900kr)</span>
+                        <span>MR-undersökning utan remiss</span>
+                        <span className="price">från 3900kr</span>
                     </h3>
 
                     <div className="mr-links">
@@ -116,9 +133,45 @@ const StartHome = () => {
                 </div>
 
                 {/* MR Helkropp Advertisement */}
-                <div className="hero-card">
-                    <BodyMap services={services} />
-                </div>
+
+                <section className="mr-ad-wrapper">
+
+                    <div className="mr-ad-glass">
+
+
+                        <div className="trust-number">{count}+</div>
+                        <p className="trust-number-text">
+                            nöjda patienter bara sista året
+                        </p>
+
+
+                        <div className="trust-list">
+
+                            <div className="trust-item">
+
+                                <p>Support via email – svar inom 24h</p>
+                            </div>
+
+                            <div className="trust-item">
+
+                                <p>Röntgenläkare granskar alltid bilderna</p>
+                            </div>
+
+                            <div className="trust-item">
+
+                                <p>Vi guidar dig genom hela processen</p>
+                            </div>
+
+                            <div className="trust-item">
+
+                                <p>Du får alltid tillgång till dina bilder och utlåtande</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
             </div>
         </div>
     );

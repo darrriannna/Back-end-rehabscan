@@ -587,20 +587,96 @@
 
 }
 
+
 .mr-ad-glass {
     max-width: 720px;
     padding: 25px;
-
     border-radius: 20px;
 
-    background: rgba(241, 228, 255, 0.524);
-    backdrop-filter: blur(14px);
+    position: relative;
+    overflow: hidden;
 
-    border: 2px solid #5a35f0;
+    /* Base glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
 
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
 
     text-align: left;
+}
+
+.mr-ad-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background: linear-gradient(120deg,
+            #5a35f0,
+            #7c5cff,
+            #a78bfa,
+            #5a35f0);
+
+    background-size: 200% 200%;
+    animation: liquidFlow 8s ease infinite;
+
+    opacity: 0.25;
+    filter: blur(40px);
+}
+
+.mr-ad-glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background: linear-gradient(120deg,
+            #5a35f0,
+            #7c5cff,
+            #a78bfa,
+            #3b1db4);
+
+    background-size: 200% 200%;
+    animation: liquidFlow 8s ease infinite;
+
+    opacity: 0.25;
+    filter: blur(40px);
+}
+
+@keyframes liquidFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mr-ad-glass>* {
+    position: relative;
+    z-index: 1;
+}
+
+.mr-ad-glass::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+
+    background: radial-gradient(circle at top left,
+            rgba(255, 255, 255, 0.4),
+            transparent 40%);
+
+    pointer-events: none;
 }
 
 .mr-ad-title {
@@ -650,4 +726,60 @@
     color: #fff;
     white-space: nowrap;
     /* small spacing */
+}
+
+
+
+/* Keep spacing tight to preserve original height */
+.trust-counter {
+    margin-bottom: 12px;
+    padding: 20px;
+
+}
+
+.trust-number {
+    padding-top: 20px;
+    font-size: 52px;
+    /* slightly reduced to avoid height growth */
+    font-weight: 800;
+    color: #5a35f0;
+    line-height: 0.2;
+}
+
+.trust-number-text {
+    font-size: 38px;
+    /* slightly reduced to avoid height growth */
+    font-weight: 800;
+    color: #5a35f0;
+    line-height: 1.2;
+}
+
+
+/* Compact list */
+.trust-list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trust-item {
+    position: relative;
+    padding-left: 38px;
+    font-size: 15px;
+    color: #2f0666;
+    line-height: 0.7;
+}
+
+/* The "marker" */
+.trust-item::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+
+    font-size: 33px;
+    font-weight: 600;
+
+    color: #5a35f0;
 }
