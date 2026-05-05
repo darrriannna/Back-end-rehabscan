@@ -97,8 +97,9 @@ const StartHome = () => {
                 {/* MR Links Card */}
                 <div className="hero-card black-card">
                     <h3 className="mr-title-home">
-                        <span>MR-undersökning utan remiss</span>
-                        <span className="price">från 3900kr</span>
+                        MR-undersökning utan remiss
+                        <span className="price"> (från 3900kr)</span>
+
                     </h3>
 
                     <div className="mr-links">
