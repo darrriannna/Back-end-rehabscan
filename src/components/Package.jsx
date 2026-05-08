@@ -26,7 +26,7 @@ const HelkroppPackages = ({ services }) => {
         halsokontrollStor: 2065,
         halsokontrollPlus: 3500
     };
-
+    const isSpecialOffer = services.id === 6;
     // Extra Läs mer info links (link to hälsotester product pages)
     const extraInfoLinks = {
         401: {
@@ -69,10 +69,14 @@ const HelkroppPackages = ({ services }) => {
                                     <li key={index}>✓ {item}</li>
                                 ))}
                             </ul>
+                            {isSpecialOffer && (
+                                <p className="package-badge">SPECIAL ERBJUDANDE</p>
+                            )}
+
 
                             {/* Pricing */}
                             <p className="package-original-price">
-                                Original: {originalPrice.toLocaleString("sv-SE")} kr
+                                Tidigare: {originalPrice.toLocaleString("sv-SE")} kr
                             </p>
                             <p className="package-price">{data.price.toLocaleString("sv-SE")} kr</p>
                             {savings > 0 && (

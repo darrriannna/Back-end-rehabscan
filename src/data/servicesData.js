@@ -124,7 +124,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligaments
             "Radiologens analys",
             "Specialistbedömning"
         ],
-        price: 19200,
+        price: 18500,
         image: "/assets/helkropp.avif",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.

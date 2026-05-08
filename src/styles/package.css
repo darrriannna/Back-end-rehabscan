@@ -89,3 +89,25 @@
 .package-more:hover {
     background: #f2e8ff;
 }
+
+.package-badge {
+    background: #e63946;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.package-original-price s {
+    color: #888;
+    font-size: 14px;
+}
+
+.special-price {
+    color: #1d3557;
+    font-size: 26px;
+    font-weight: 700;
+}
