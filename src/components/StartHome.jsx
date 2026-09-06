@@ -114,7 +114,7 @@ const StartHome = () => {
                             .map((service) => (
                                 <Link
                                     key={service.group}
-                                    to={`/magnetrontgen/${service.id}`}
+                                    to={`/magnetrontgen/${service.slug}`}
                                     className="mr-link-btn"
                                 >
                                     {service.group.charAt(0).toUpperCase() + service.group.slice(1)}
