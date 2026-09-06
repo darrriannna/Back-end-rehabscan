@@ -12,6 +12,11 @@ h3 {
     color: #111827;
 }
 
+.text-box-header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 button {
     padding: 0.5rem 1rem;
     border: none;
