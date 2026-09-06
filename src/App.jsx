@@ -49,8 +49,8 @@ function App() {
         <Route path="/bokning" element={<BookingPage />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
-        <Route path="/magnetrontgen/:id" element={<ServiceProduct />} />
-        <Route path="/halsokontroll/:id" element={<TestProduct />} />
+        <Route path="/magnetrontgen/:slug" element={<ServiceProduct />} />
+        <Route path="/halsokontroll/:slug" element={<TestProduct />} />
         <Route path="/presentkort" element={<PresentSteps />} />
       </Routes></>
   );

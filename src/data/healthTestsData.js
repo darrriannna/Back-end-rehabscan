@@ -5,6 +5,7 @@ export const healthTests = [
         group: "Stor",
         category: "Hälsotester",
         title: "Hälsokontroll Stor",
+        slug: "halsokontroll-stor",
         subtitle: "Allmän och omfattande hälsokontroll",
         markers: 52,
         bullets: [
@@ -25,6 +26,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Kvinna",
         title: "Hälsokontroll – Kvinna",
+        slug: "halsokontroll-kvinna",
         subtitle: "Hälsokontroll anpassad för kvinnor",
         markers: 49,
         bullets: [
@@ -43,8 +45,9 @@ export const healthTests = [
         id: 203,
         type: "test",
         category: "Hälsotester",
-        title: "Hälsokontroll – Man",
         group: "Man",
+        title: "Hälsokontroll – Man",
+        slug: "halsokontroll-man",
         subtitle: "Hälsokontroll anpassad för män",
         markers: 46,
         bullets: [
@@ -65,6 +68,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Man Plus",
         title: "Hälsokontroll – Man Plus",
+        slug: "halsokontroll-man-plus",
         subtitle: "Fördjupad hälsokontroll för män",
         markers: 64,
         bullets: [
@@ -85,6 +89,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Kvinna Plus",
         title: "Hälsokontroll – Kvinna Plus",
+        slug: "halsokontroll-kvinna-plus",
         subtitle: "Fördjupad hälsokontroll för kvinnor",
         markers: 64,
         bullets: [
@@ -105,6 +110,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Testosteron +",
         title: "Testosteron +",
+        slug: "testosteron-plus",
         subtitle: "+ Hormoner och näringstatus som påverkar Testosteron ",
         markers: 10,
         bullets: [
@@ -123,6 +129,7 @@ export const healthTests = [
         type: "test",
         category: "Hälsotester",
         title: "Hormonbalans – Kvinna",
+        slug: "hormonbalans-kvinna",
         group: "Hormoner",
         subtitle: "Analys av kvinnliga hormoner och hormonell balans",
         markers: 11,
@@ -143,6 +150,7 @@ export const healthTests = [
         type: "test",
         category: "Hälsotester",
         title: "Järnstatus & Trötthet",
+        slug: "jarnstatus-trotthet",
         group: "Energi",
         subtitle: "Analys av järnstatus och vanliga orsaker till trötthet",
         markers: 10,
@@ -158,12 +166,12 @@ export const healthTests = [
         image: "/assets/jarn.avif",
         icon: "🩸"
     },
-
     {
         id: 209,
         type: "test",
         category: "Hälsotester",
         title: "Stress +",
+        slug: "stress-plus",
         group: "Stress",
         subtitle: "Fördjupad analys av stress, mental balans och återhämtning",
         markers: 12,
@@ -179,19 +187,19 @@ export const healthTests = [
         image: "/assets/stress.avif",
         icon: "🧠"
     },
-
     {
         id: 301,
         type: "intyg",
         category: "Intyg",
         group: "Lungor (CR Lungor + Intyg)",
+        title: "Tuberkulos (CR Lungor + Intyg)",
+        slug: "tuberkulos-cr-lungor-intyg",
         bullets: [
             "Röntgen av lungor",
             "Medicinskt intyg",
             "Bedömning av radiolog"
         ],
         markers: 4,
-        title: "Tuberkulos (CR Lungor + Intyg)",
         subtitle: "Röntgen av lungor + medicinskt intyg",
         oldPrice: "8 500",
         newPrice: "6 500",
@@ -205,6 +213,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Borrelia",
         title: "Borrelia (antikroppar)",
+        slug: "borrelia-antikroppar",
         subtitle: "Test för att upptäcka borreliainfektion",
         markers: 1,
         bullets: [
@@ -225,6 +234,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Testorteron",
         title: "Testosteron",
+        slug: "testosteron",
         subtitle: "Mäter nivå av testosteron i blodet",
         markers: 1,
         bullets: [
@@ -244,6 +254,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "CRP Inflammation",
         title: "CRP",
+        slug: "crp",
         subtitle: "Visar nivå av inflammation i kroppen",
         markers: 1,
         bullets: [
@@ -263,6 +274,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Ferritin",
         title: "Ferritin",
+        slug: "ferritin",
         subtitle: "Visar kroppens järndepåer",
         markers: 1,
         bullets: [
@@ -282,6 +294,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Sköldkörtel",
         title: "Sköldkörtelprov",
+        slug: "skoldkortelprov",
         subtitle: "Analys av sköldkörtelns funktion",
         markers: 3,
         bullets: [
@@ -301,6 +314,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Kortisol",
         title: "Kortisol",
+        slug: "kortisol",
         subtitle: "Mäter kroppens stresshormon",
         markers: 1,
         bullets: [
@@ -320,6 +334,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Östradiol",
         title: "Östradiol",
+        slug: "ostradiol",
         subtitle: "Mäter nivå av östrogen i kroppen",
         markers: 1,
         bullets: [
@@ -339,6 +354,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Sköldkörtel (TSH)",
         title: "TSH",
+        slug: "tsh",
         subtitle: "Basmarkör för sköldkörtelns funktion",
         markers: 1,
         bullets: [
@@ -358,6 +374,7 @@ export const healthTests = [
         category: "Enskilda tester",
         group: "Infektion TBE",
         title: "TBE (antikroppar)",
+        slug: "tbe-antikroppar",
         subtitle: "Test för immunitet eller tidigare exponering för TBE",
         markers: 1,
         bullets: [
@@ -377,6 +394,7 @@ export const healthTests = [
         category: "Hälsotester",
         group: "Klimakterieprov",
         title: "Klimakterieprov",
+        slug: "klimakterieprov",
         subtitle: "Analys av hormonbalans vid klimakteriet",
         markers: 3,
         bullets: [
@@ -390,7 +408,6 @@ export const healthTests = [
         image: "/assets/klimax.avif",
         icon: "♀"
     }
-
 ];
 
 export const markerGroups = {

@@ -31,11 +31,11 @@ const HelkroppPackages = ({ services }) => {
     const extraInfoLinks = {
         401: {
             text: "Mer om Hälsokontroll Stor",
-            link: "/halsokontroll/201"
+            link: "/halsokontroll/halsokontroll-stor"
         },
         402: {
             text: "Mer om Hälsokontroll Man Plus",
-            link: "/halsokontroll/204"
+            link: "/halsokontroll/halsokontroll-man-plus"
         }
     };
 

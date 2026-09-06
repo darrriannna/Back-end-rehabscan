@@ -77,7 +77,7 @@ export default function HealthTestCard({ test }) {
                         )}
                     </button>
 
-                    <button className="arrow-btn" onClick={() => navigate(`/halsokontroll/${test.id}`)}>
+                    <button className="arrow-btn" onClick={() => navigate(`/halsokontroll/${test.slug}`)}>
                         <FaArrowRight size={18} />
                     </button>
                 </div>

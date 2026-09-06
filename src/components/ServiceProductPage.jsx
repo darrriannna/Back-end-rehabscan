@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 import "../styles/service-product.css";
 
 export default function ServiceProductPage() {
-    const { id } = useParams();
+    const { slug } = useParams();
     const { addToCart, removeFromCart, cart } = useCart();
 
     // Find the initial service
-    const service = services.find((s) => s.id === Number(id));
+    const service = services.find((s) => s.slug === slug);
     if (!service) return <h2>Tjänst hittades inte</h2>;
 
     // Find all services in the same group (for vänster/höger toggle)

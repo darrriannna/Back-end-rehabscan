@@ -1,8 +1,10 @@
+
 export const services = [
     {
         id: 1,
         type: "mr",
         title: "MR Ländrygg",
+        slug: "mr-landrygg",
         group: "Ländrygg",
         subtitle: "Magnetkameraundersökning av ländryggen",
         description: "MR ländrygg används för att utreda smärta, nervpåverkan, diskbråck eller andra förändringar i nedre delen av ryggen.",
@@ -19,12 +21,12 @@ MR ländrygg rekommenderas vid långvarig eller nytillkommen ländryggssmärta, 
         detectable: `
 Undersökningen kan påvisa diskbråck, nervkompression, spinal stenos, artros i facettleder, inflammation, frakturer, tumörer och andra strukturella förändringar i nedre delen av ryggraden.
 `
-
     },
     {
         id: 2,
         type: "mr",
         title: "MR Höger Axel",
+        slug: "mr-hoger-axel",
         group: "Axel",
         subtitle: "Magnetkameraundersökning av höger axel",
         description: "Ger detaljerade bilder för att upptäcka skador på senor, muskler och leder i höger axel.",
@@ -41,13 +43,12 @@ MR höger axel rekommenderas vid smärta, rörelseinskränkning eller misstänkt
         detectable: `
 Undersökningen kan visualisera rotatorcuffskador, inflammationer, instabilitet, senaavslitningar, broskskador, labrumskador och degenerativa förändringar i axelleden.
 `
-
-
     },
     {
         id: 3,
         type: "mr",
         title: "MR Vänster Axel",
+        slug: "mr-vanster-axel",
         group: "Axel",
         subtitle: "Magnetkameraundersökning av vänster axel",
         description: "Används för att utreda smärta, rörelseinskränkning och misstänkta skador i vänster axel.",
@@ -63,12 +64,13 @@ MR vänster axel rekommenderas vid kvarstående axelsmärta, misstänkta sen- el
 `,
         detectable: `
 MR kan upptäcka rotatorcuffrupturer, tendiniter, bursit, labrumskador, broskskador, instabilitet, impingement samt degenerativa förändringar i axelleden.
-`,
+`
     },
     {
         id: 4,
         type: "mr",
         title: "MR Bäcken/Höftleder",
+        slug: "mr-backen-hoftleder",
         group: "Bäcken/Höftleder",
         subtitle: "Magnetkameraundersökning av bäcken och höfter",
         description: "MR bäcken och höfter används för att visualisera leder, mjukdelar och skelett i bäckenområdet.",
@@ -85,13 +87,12 @@ MR bäcken och höftleder rekommenderas vid höftsmärta, misstänkt broskskada,
         detectable: `
 Undersökningen kan upptäcka broskskador, labrumrupturer, artros, stressfrakturer, senfästeinflammationer, mjukdelsskador, bursit, cystor, tumörer eller inflammatoriska förändringar i höftleder och bäcken.
 `
-
     },
-
     {
         id: 5,
         type: "mr",
         title: "MR Vänster Knä",
+        slug: "mr-vanster-kna",
         group: "Knä",
         subtitle: "Magnetkameraundersökning av vänster knä",
         description: "För att upptäcka meniskskador, ligamentskador och broskförändringar i knäleden.",
@@ -107,15 +108,13 @@ MR vänster knä rekommenderas vid smärta, svullnad, instabilitet eller ”lås
 `,
         detectable: `
 Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligamentskador, ödem, inflammation, cystor och tidiga tecken på artros.
-`,
-
-
+`
     },
-
     {
         id: 6,
         type: "mr",
         title: "MR Helkropp",
+        slug: "mr-helkropp",
         group: "Helkropp",
         subtitle: "Magnetkameraundersökning av hela kroppen",
         description: "En omfattande helkroppsundersökning för tidig upptäckt av sjukdomar, inflammationer och organförändringar.",
@@ -131,14 +130,13 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`,
-
+`
     },
-
     {
         id: 7,
         type: "mr",
         title: "MR Bröstrygg",
+        slug: "mr-brostrygg",
         group: "Bröstrygg",
         subtitle: "Magnetkameraundersökning av bröstryggen",
         description: "MR bröstrygg används vid utredning av ryggsmärtor, diskförändringar och nervpåverkan i bröstregionen.",
@@ -154,14 +152,13 @@ MR bröstrygg rekommenderas vid återkommande smärta i bröstryggen, misstänkt
 `,
         detectable: `
 MR bröstrygg kan påvisa diskbråck, spinal stenos, frakturer, artros, inflammation, tumörer, metastaser och andra strukturella förändringar i bröstryggen.
-`,
-
+`
     },
-
     {
         id: 8,
         type: "mr",
         title: "MR Höger Fot",
+        slug: "mr-hoger-fot",
         group: "Fot",
         subtitle: "Magnetkameraundersökning av höger fot",
         description: "MR fot används för att kartlägga mjukdelsskador, ligamentproblem och stressfrakturer.",
@@ -177,14 +174,13 @@ MR höger fot rekommenderas vid långvarig fotsmärta, misstänkta stressfraktur
 `,
         detectable: `
 Undersökningen visar stressfrakturer, ligamentskador, senrupturer, inflammationer, broskskador, cystor, ödem samt mjukdelsförändringar i foten.
-`,
-
+`
     },
-
     {
         id: 9,
         type: "mr",
         title: "MR Vänster Fot",
+        slug: "mr-vanster-fot",
         group: "Fot",
         subtitle: "Magnetkameraundersökning av vänster fot",
         description: "Högupplösta bilder av fotens leder, senor och ligament för att upptäcka skador och överbelastning.",
@@ -200,14 +196,13 @@ MR vänster fot rekommenderas vid ihållande smärta, belastningsbesvär, misst�
 `,
         detectable: `
 MR kan upptäcka ligamentrupturer, senskador, broskskador, stressfrakturer, kapselskador, inflammation, svullnad och andra strukturella förändringar i foten.
-`,
-
+`
     },
-
     {
         id: 10,
         type: "mr",
         title: "MR Höger Fotled",
+        slug: "mr-hoger-fotled",
         group: "Fotled",
         subtitle: "Magnetkameraundersökning av höger fotled",
         description: "Används vid utredning av ledbandsskador, broskförändringar och inflammation.",
@@ -223,14 +218,13 @@ MR höger fotled rekommenderas vid återkommande stukningar, instabilitet, svull
 `,
         detectable: `
 Undersökningen kan visa ledbandsskador, broskskador, inflammation, osteokondrala lesioner, synovit, cystor och mjukdelsskador i fotleden.
-`,
-
+`
     },
-
     {
         id: 11,
         type: "mr",
         title: "MR Vänster Fotled",
+        slug: "mr-vanster-fotled",
         group: "Fotled",
         subtitle: "Magnetkameraundersökning av vänster fotled",
         description: "Detaljerad avbildning av fotleden för att diagnostisera skador eller inflammationer.",
@@ -246,14 +240,13 @@ MR vänster fotled rekommenderas vid smärta, stelhet, instabilitet eller misst�
 `,
         detectable: `
 MR upptäcker ligamentrupturer, broskskador, senproblem, inflammation, cystor, ödem och andra förändringar i fotleden.
-`,
-
+`
     },
-
     {
         id: 12,
         type: "mr",
         title: "MR Höger Hand",
+        slug: "mr-hoger-hand",
         group: "Hand",
         subtitle: "Magnetkameraundersökning av höger hand",
         description: "MR hand används för att visualisera senor, leder och mjukdelar, ofta vid smärta eller misstänkt skada.",
@@ -269,14 +262,13 @@ MR höger hand rekommenderas vid misstänkta senskador, inflammationer, smärta 
 `,
         detectable: `
 Undersökningen visar senrupturer, senskideinflammation, mjukdelsskador, ledförändringar, broskskador, cystor, svullnad, nervinklämning samt tidiga tecken på artros.
-`,
-
+`
     },
-
     {
         id: 13,
         type: "mr",
         title: "MR Vänster Hand",
+        slug: "mr-vanster-hand",
         group: "Hand",
         subtitle: "Magnetkameraundersökning av vänster hand",
         description: "Högdetaljerad undersökning av handens strukturer för att upptäcka överbelastning eller skador.",
@@ -292,14 +284,13 @@ MR vänster hand rekommenderas vid smärta, stelhet, misstänkta sen- eller ledf
 `,
         detectable: `
 MR kan upptäcka senskador, tendinit, artrit, broskskador, ganglioncystor, ligamentrupturer, svullnad, inflammation och mjukdelsskador i handen.
-`,
-
+`
     },
-
     {
         id: 14,
         type: "mr",
         title: "MR Hälsena",
+        slug: "mr-halsena",
         group: "Hälsena",
         subtitle: "Magnetkameraundersökning av hälsenan",
         description: "Används vid utredning av hälseneinflammation, rupturer eller degenerativa förändringar.",
@@ -315,14 +306,13 @@ MR hälsena rekommenderas vid misstänkt hälseneruptur, långvarig hälsenesmä
 `,
         detectable: `
 Undersökningen visar partiella och kompletta rupturer, inflammation (tendinopati), degenerativa förändringar, bursit, ödem och omgivande mjukdelsskador.
-`,
-
+`
     },
-
     {
         id: 15,
         type: "mr",
         title: "MR Höger Armbåge",
+        slug: "mr-hoger-armbage",
         group: "Armbåge",
         subtitle: "Magnetkameraundersökning av höger armbåge",
         description: "MR armbåge används för att diagnostisera senskador, inflammation, broskskador och andra armproblem.",
@@ -338,14 +328,13 @@ MR höger armbåge rekommenderas vid oklara armbågssmärtor, misstänkt tennisa
 `,
         detectable: `
 MR kan påvisa senskador, broskskador, inflammationer, artros, ledbandsskador, nervinklämningar, vätskansamling och mjukdelsförändringar i armbågen.
-`,
-
+`
     },
-
     {
         id: 16,
         type: "mr",
         title: "MR Vänster Armbåge",
+        slug: "mr-vanster-armbage",
         group: "Armbåge",
         subtitle: "Magnetkameraundersökning av vänster armbåge",
         description: "Högupplösta bilder av armbågens leder och mjukdelar för att upptäcka skador eller inflammation.",
@@ -361,14 +350,13 @@ MR vänster armbåge rekommenderas vid smärta, stelhet, misstänkt senfästesin
 `,
         detectable: `
 Undersökningen avslöjar senskador, ligamentrupturer, broskförändringar, ledvätska, inflammation, cystor, nervpåverkan och mjukdelsskador.
-`,
-
+`
     },
-
     {
         id: 17,
         type: "mr",
         title: "MR Höger Underben",
+        slug: "mr-hoger-underben",
         group: "Underben",
         subtitle: "Magnetkameraundersökning av höger underben",
         description: "MR underben används för att diagnostisera muskelbristningar, stressfrakturer och mjukdelsskador.",
@@ -384,14 +372,13 @@ MR höger underben rekommenderas vid misstänkta muskelbristningar, stressfraktu
 `,
         detectable: `
 MR visar muskelfiberbristningar, senaavslitningar, stressfrakturer, inflammation, ödem, kärlförändringar och andra mjukdels- och skelettförändringar.
-`,
-
+`
     },
-
     {
         id: 18,
         type: "mr",
         title: "MR Vänster Underben",
+        slug: "mr-vanster-underben",
         group: "Underben",
         subtitle: "Magnetkameraundersökning av vänster underben",
         description: "Visualiserar muskler, ben och mjukdelar för att upptäcka skador, inflammation eller överbelastning.",
@@ -407,14 +394,13 @@ MR vänster underben rekommenderas vid återkommande smärta, misstänkta stress
 `,
         detectable: `
 MR upptäcker muskelbristningar, stressfrakturer, senskador, inflammation, ödem, skelettförändringar och andra mjukdelsavvikelser.
-`,
-
+`
     },
-
     {
         id: 19,
         type: "mr",
         title: "MR Sacrum/Sacroiliacaleder",
+        slug: "mr-sacrum-sacroiliacaleder",
         group: "Sacrum/Sacroiliacaleder",
         subtitle: "Magnetkameraundersökning av sakrum och SI-lederna",
         description: "Används ofta vid ryggsmärta, SI-ledsdysfunktion och inflammatoriska sjukdomar.",
@@ -430,14 +416,13 @@ MR sacrum och SI-leder rekommenderas vid ryggsmärta som strålar mot skinka ell
 `,
         detectable: `
 Undersökningen visar inflammation (sacroiliit), artros, stressfrakturer, ödem, skelettförändringar, tumörer samt avvikelser i SI-lederna och sakrum.
-`,
-
+`
     },
-
     {
         id: 22,
         type: "mr",
         title: "MR Nacke/Halsrygg",
+        slug: "mr-nacke-halsrygg",
         group: "Nacke/halsrygg",
         subtitle: "Magnetkameraundersökning av halsryggen",
         description: "MR halsrygg används för att upptäcka nervpåverkan, diskbråck och andra förändringar i nacken.",
@@ -453,14 +438,13 @@ MR nacke/halsrygg rekommenderas vid nacksmärta, utstrålande smärta i armarna,
 `,
         detectable: `
 Undersökningen påvisar diskbråck, nervkompression, spinal stenos, artros, inflammation, frakturer, tumörer och andra förändringar i halsryggen.
-`,
-
+`
     },
-
     {
         id: 23,
         type: "mr",
         title: "MR Helrygg",
+        slug: "mr-helrygg",
         group: "Helrygg",
         subtitle: "Magnetkameraundersökning av hela ryggraden",
         description: "En omfattande undersökning av hals-, bröst- och ländrygg för att hitta diskbråck, nervpåverkan och andra förändringar.",
@@ -477,14 +461,13 @@ MR helrygg rekommenderas när man behöver en komplett bild av hela ryggraden, e
 `,
         detectable: `
 Undersökningen kan identifiera diskbråck, spinal stenos, inflammatoriska förändringar, tumörer, nervrotspåverkan, frakturer, degeneration och strukturella avvikelser i hals-, bröst- och ländrygg.
-`,
-
+`
     },
-
     {
         id: 26,
         type: "mr",
         title: "MR Höger Knä",
+        slug: "mr-hoger-kna",
         group: "Knä",
         subtitle: "Magnetkameraundersökning av höger knä",
         description: "MR knä används för att upptäcka meniskskador, korsbandsskador och broskförändringar.",
@@ -500,14 +483,13 @@ MR höger knä rekommenderas vid smärta, svullnad, instabilitet eller misstänk
 `,
         detectable: `
 Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, inflammation, ödem, cystor, ligamentskador och tidiga artrosförändringar.
-`,
-
+`
     },
-
     {
         id: 29,
         type: "mr",
         title: "MR Höger Överarm",
+        slug: "mr-hoger-overarm",
         group: "Överarm",
         subtitle: "Magnetkameraundersökning av höger överarm",
         description: "Undersökning av muskler och mjukdelar i överarmen, vanligt vid misstänkt muskelbristning eller överbelastning.",
@@ -523,14 +505,13 @@ MR höger överarm rekommenderas vid misstänkt muskelbristning, överbelastning
 `,
         detectable: `
 MR kan påvisa muskelrupturer, senvävnadsskador, inflammation, blödningar, mjukdelstumörer, ödem och andra strukturella förändringar i överarmen.
-`,
-
+`
     },
-
     {
         id: 30,
         type: "mr",
         title: "MR Vänster Överarm",
+        slug: "mr-vanster-overarm",
         group: "Överarm",
         subtitle: "Magnetkameraundersökning av vänster överarm",
         description: "Ger detaljerade bilder av mjukdelar och muskler i vänster överarm vid skador eller smärta.",
@@ -546,14 +527,13 @@ MR vänster överarm rekommenderas vid muskel- eller mjukdelsskador, kvarståend
 `,
         detectable: `
 Undersökningen avslöjar muskelbristningar, senskador, ödem, inflammation, mjukdelstumörer och andra patologiska förändringar i överarmen.
-`,
-
+`
     },
-
     {
         id: 31,
         type: "mr",
         title: "MR Höger Underarm",
+        slug: "mr-hoger-underarm",
         group: "Underarm",
         subtitle: "Magnetkameraundersökning av höger underarm",
         description: "För att upptäcka muskel-, senvävnads- eller ledskador i underarmen.",
@@ -569,14 +549,13 @@ MR höger underarm rekommenderas vid misstänkta muskel- eller senvävnadsskador
 `,
         detectable: `
 MR visar muskel- och senskador, inflammation, nervinklämningar, ödem, cystor, frakturer och andra mjukdelsförändringar i underarmen.
-`,
-
+`
     },
-
     {
         id: 32,
         type: "mr",
         title: "MR Vänster Underarm",
+        slug: "mr-vanster-underarm",
         group: "Underarm",
         subtitle: "Magnetkameraundersökning av vänster underarm",
         description: "En MR-undersökning som analyserar muskler och mjukdelar i underarmen för att upptäcka skador.",
@@ -592,14 +571,13 @@ MR vänster underarm rekommenderas vid smärta, misstänkta muskel- eller senvä
 `,
         detectable: `
 Undersökningen påvisar muskelrupturer, senskador, inflammation, stressfrakturer, ödem, mjukdelstumörer och andra strukturella förändringar.
-`,
-
+`
     },
-
     {
         id: 33,
         type: "mr",
         title: "MR Höger Handled",
+        slug: "mr-hoger-handled",
         group: "Handled",
         subtitle: "Magnetkameraundersökning av höger handled",
         description: "Används för att diagnosticera ligamentskador, broskförändringar och inflammationer i handleden.",
@@ -615,14 +593,13 @@ MR höger handled rekommenderas vid smärta, instabilitet, misstänkta ligaments
 `,
         detectable: `
 MR kan upptäcka broskskador, ligamentrupturer, senskador, inflammation, ganglioncystor, nervinklämning och strukturella förändringar i handleden.
-`,
-
+`
     },
-
     {
         id: 34,
         type: "mr",
         title: "MR Vänster Handled",
+        slug: "mr-vanster-handled",
         group: "Handled",
         subtitle: "Magnetkameraundersökning av vänster handled",
         description: "MR handled ger detaljerade bilder av mjukdelar, leder och ligament i handleden.",
@@ -638,14 +615,13 @@ MR vänster handled rekommenderas vid långvarig smärta, misstänkta mjukdelssk
 `,
         detectable: `
 Undersökningen avslöjar ligamentsskador, senskador, broskförändringar, inflammation, cystor, svullnad och andra strukturella avvikelser i handleden.
-`,
-
+`
     },
-
     {
         id: 35,
         type: "mr",
         title: "MR Buk",
+        slug: "mr-buk",
         group: "Buk",
         subtitle: "Magnetkameraundersökning av buken",
         description: "MR buk ger detaljerade bilder av bukens organ som lever, njurar, mjälte och pankreas.",
@@ -656,20 +632,18 @@ Undersökningen avslöjar ligamentsskador, senskador, broskförändringar, infla
         ],
         price: 7200,
         image: "/assets/placeholder-service.png",
-
         whenRecommended: `
-        MR buk rekommenderas vid oklara buksmärtor, misstänkt leversjukdom, cystor, tumörer, inflammatoriska tillstånd eller när man behöver detaljerad organvisualisering utan strålning.
-        `,
+MR buk rekommenderas vid oklara buksmärtor, misstänkt leversjukdom, cystor, tumörer, inflammatoriska tillstånd eller när man behöver detaljerad organvisualisering utan strålning.
+`,
         detectable: `
-        Undersökningen ger tydliga bilder av lever, njurar, pankreas, mjälte, gallvägar, kärl, lymfkörtlar, cystor, tumörer, inflammationer och andra avvikelser i buken.
-        `,
-
+Undersökningen ger tydliga bilder av lever, njurar, pankreas, mjälte, gallvägar, kärl, lymfkörtlar, cystor, tumörer, inflammationer och andra avvikelser i buken.
+`
     },
-
     {
         id: 36,
         type: "mr",
         title: "MR Prostata",
+        slug: "mr-prostata",
         group: "Prostata",
         subtitle: "Magnetkameraundersökning av prostata",
         description: "MR prostata används vid utredning av prostatacancer, inflammation och strukturella förändringar.",
@@ -685,13 +659,13 @@ MR prostata rekommenderas vid utredning av prostatacancer, förhöjt PSA, misst�
 `,
         detectable: `
 MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH), strukturella förändringar, kapselgenombrott, spridning och andra patologiska fynd.
-`,
-
+`
     },
     {
         id: 37,
         type: "mr",
         title: "MR Hjärna",
+        slug: "mr-hjarna",
         group: "Hjärna",
         subtitle: "Magnetkameraundersökning av hjärnan",
         description: "MR hjärna används för att utreda hjärnans strukturer och identifiera skador, tumörer, inflammationer eller vaskulära förändringar.",
@@ -703,16 +677,17 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
         price: 6500,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
-    MR hjärna rekommenderas vid huvudvärk, neurologiska symtom, misstänkta tumörer, stroke, inflammationer, degenerativa sjukdomar eller vid uppföljning efter skador.
-    `,
+MR hjärna rekommenderas vid huvudvärk, neurologiska symtom, misstänkta tumörer, stroke, inflammationer, degenerativa sjukdomar eller vid uppföljning efter skador.
+`,
         detectable: `
-    MR hjärna kan upptäcka tumörer, blödningar, stroke, inflammationer, demyeliniserande sjukdomar, degenerativa förändringar och andra strukturella avvikelser.
-    `,
+MR hjärna kan upptäcka tumörer, blödningar, stroke, inflammationer, demyeliniserande sjukdomar, degenerativa förändringar och andra strukturella avvikelser.
+`
     },
     {
         id: 38,
         type: "mr",
         title: "MR Hals",
+        slug: "mr-hals",
         group: "Hals",
         subtitle: "Magnetkameraundersökning av halsen",
         description: "MR hals ger detaljerade bilder av mjukdelar, muskler, lymfkörtlar och strukturer i halsområdet.",
@@ -723,20 +698,18 @@ MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH),
         ],
         price: 6000,
         image: "/assets/placeholder-service.png",
-
         whenRecommended: `
-    MR hals rekommenderas vid långvarig smärta eller svullnad i halsen, misstänkta tumörer, förstorade lymfkörtlar, infektioner eller andra oklara besvär i halsområdet.
-        `,
+MR hals rekommenderas vid långvarig smärta eller svullnad i halsen, misstänkta tumörer, förstorade lymfkörtlar, infektioner eller andra oklara besvär i halsområdet.
+`,
         detectable: `
-    Undersökningen visar förändringar i mjukdelar, lymfkörtlar, muskler, kärl, tumörer, cystor, inflammationer och andra strukturella avvikelser i halsen.
-        `,
+Undersökningen visar förändringar i mjukdelar, lymfkörtlar, muskler, kärl, tumörer, cystor, inflammationer och andra strukturella avvikelser i halsen.
+`
     },
-
-
     {
         id: 401,
         type: "mr",
         title: "MR Helkropp Plus",
+        slug: "mr-helkropp-plus",
         group: "Helkropp",
         subtitle: "MR + Hälsokontroll Stor",
         description: "Strålningsfri MR-helkroppsundersökning kombinerat med 52 blodmarkörer.",
@@ -752,12 +725,13 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`,
+`
     },
     {
         id: 402,
         type: "mr",
         title: "MR Helkropp Pro",
+        slug: "mr-helkropp-pro",
         group: "Helkropp",
         subtitle: "MR Helkropp + Hälsokontroll Kvinna/Man +",
         description: "Vår mest omfattande helkroppskontroll med MR och 64 blodmarkörer",
@@ -767,15 +741,14 @@ Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador
             "Medicinsk specialistbedömning"
         ],
         price: 22300,
-
         image: "/assets/helkropp.avif",
         whenRecommended: `
 MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidig upptäckt av sjukdomar eller för personer med ärftlig risk för cancer eller systemiska sjukdomar. Även lämplig vid diffusa symtom utan klar diagnos.
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`,
+`
     }
-
-
 ];
+
+

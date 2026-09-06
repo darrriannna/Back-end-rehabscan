@@ -31,7 +31,7 @@ const ServiceSelector = ({ selectedGroup }) => {
                         <div className="card-buttons">
                             {/* Läs mer – goes to product page */}
                             <Link
-                                to={`/magnetrontgen/${service.id}`}
+                                to={`/magnetrontgen/${service.slug}`}
                                 className="readmore-btn"
                             >
                                 Läs mer →

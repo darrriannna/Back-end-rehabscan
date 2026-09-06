@@ -119,7 +119,7 @@ export default function TestCarousel() {
 
                                         <button
                                             className="arrow-btn"
-                                            onClick={() => navigate(`/halsokontroll/${test.id}`)}
+                                            onClick={() => navigate(`/halsokontroll/${test.slug}`)}
                                         >
                                             <FaArrowRight size={18} />
                                         </button>

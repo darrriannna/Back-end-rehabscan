@@ -8,7 +8,7 @@ import { useCart } from "../context/CartContext";
 import "../styles/test-product.css";
 
 export default function TestProductPage() {
-    const { id } = useParams();
+    const { slug } = useParams();
     const { addToCart, removeFromCart, cart } = useCart();
     const [openSections, setOpenSections] = useState({
         common: true,
@@ -17,7 +17,7 @@ export default function TestProductPage() {
         where: false,
     });
 
-    const test = healthTests.find((t) => Number(t.id) === Number(id));
+    const test = healthTests.find((t) => t.slug === slug);
     if (!test) return <h2>Test hittades inte</h2>;
 
     const isInCart = cart.some((item) => item.id === test.id);
