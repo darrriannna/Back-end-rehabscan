@@ -27,7 +27,7 @@
 }
 
 .package-card.highlight {
-    border: 2px solid #5a35f0;
+    border: 2px solid #4A2FB8;
     background: #faf5ff;
 }
 
@@ -59,7 +59,7 @@
     width: 100%;
     padding: 14px 0;
     border-radius: 12px;
-    background: #5a35f0;
+    background: #4A2FB8;
     border: none;
     color: white;
     font-weight: 600;

@@ -1,0 +1,1069 @@
+/* ========================================
+   REHABSCAN – FACTS & ADVICE
+   Premium purple version
+======================================== */
+
+:root {
+    --rs-purple-950: #2f214f;
+    --rs-purple-900: #3d2868;
+    --rs-purple-800: #4a327d;
+    --rs-purple-700: #5b3fa3;
+    --rs-purple-600: #6d50bc;
+    --rs-purple-500: #8266d4;
+
+    --rs-purple-200: #d9d0ee;
+    --rs-purple-100: #ebe6f6;
+    --rs-purple-50: #f7f4fb;
+
+    --rs-text: #1c1a20;
+    --rs-text-soft: #5f5b65;
+    --rs-text-muted: #817d86;
+
+    --rs-border: #e8e5eb;
+    --rs-border-purple: #ddd5ed;
+
+    --rs-background: #ffffff;
+    --rs-background-soft: #faf9fb;
+}
+
+
+/* ========================================
+     GENERAL
+  ======================================== */
+
+.facts-page,
+.article-page {
+    background: var(--rs-background);
+    color: var(--rs-text);
+}
+
+.facts-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* ========================================
+     HERO
+  ======================================== */
+
+.facts-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 105px 0 78px;
+
+    background:
+        radial-gradient(circle at 50% -20%,
+            rgba(130, 102, 212, 0.13),
+            transparent 46%),
+        linear-gradient(180deg,
+            #f8f5fc 0%,
+            #ffffff 100%);
+}
+
+.facts-hero::after {
+    content: "";
+
+    position: absolute;
+    width: 420px;
+    height: 420px;
+
+    right: -180px;
+    top: -220px;
+
+    border-radius: 50%;
+
+    background: rgba(109, 80, 188, 0.05);
+
+    pointer-events: none;
+}
+
+.facts-hero .facts-container {
+    position: relative;
+    z-index: 1;
+
+    max-width: 860px;
+    text-align: center;
+}
+
+.facts-eyebrow,
+.facts-small-title {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+
+    color: var(--rs-purple-600);
+}
+
+.facts-hero h1 {
+    max-width: 790px;
+
+    margin: 0 auto 24px;
+
+    font-size: clamp(42px, 5vw, 64px);
+    line-height: 1.04;
+
+    letter-spacing: -0.045em;
+
+    color: var(--rs-text);
+}
+
+.facts-hero-text {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.75;
+
+    color: var(--rs-text-soft);
+}
+
+
+/* ========================================
+     CATEGORY FILTER
+  ======================================== */
+
+.facts-filter-section {
+    padding: 27px 0;
+
+    border-bottom: 1px solid var(--rs-border);
+
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.facts-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.facts-category {
+    padding: 10px 18px;
+
+    border: 1px solid var(--rs-border);
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #49454e;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.facts-category:hover {
+    color: var(--rs-purple-700);
+
+    border-color: var(--rs-purple-200);
+
+    background: var(--rs-purple-50);
+}
+
+.facts-category.active {
+    color: #ffffff;
+
+    background: var(--rs-purple-700);
+
+    border-color: var(--rs-purple-700);
+
+    box-shadow:
+        0 5px 14px rgba(91, 63, 163, 0.16);
+}
+
+
+/* ========================================
+     ARTICLE LIST
+  ======================================== */
+
+.facts-articles-section {
+    padding: 82px 0 110px;
+
+    background: #ffffff;
+}
+
+.facts-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 38px;
+}
+
+.facts-section-heading h2 {
+    margin: 0;
+
+    font-size: 38px;
+    line-height: 1.15;
+
+    letter-spacing: -0.035em;
+
+    color: var(--rs-text);
+}
+
+.articles-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ========================================
+     ARTICLE CARD
+  ======================================== */
+
+.article-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid var(--rs-border);
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 1px 2px rgba(28, 20, 44, 0.02);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #dcd4eb;
+
+    box-shadow:
+        0 20px 48px rgba(40, 29, 64, 0.075);
+}
+
+.article-card-image-link {
+    display: block;
+}
+
+.article-card-image {
+    position: relative;
+
+    overflow: hidden;
+
+    aspect-ratio: 16 / 10;
+
+    background: var(--rs-purple-50);
+}
+
+.article-card-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(180deg,
+            transparent 70%,
+            rgba(35, 25, 50, 0.04));
+
+    pointer-events: none;
+}
+
+.article-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.article-card:hover .article-card-image img {
+    transform: scale(1.035);
+}
+
+.article-card-content {
+    padding: 25px 25px 27px;
+}
+
+.article-card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 16px;
+}
+
+.article-category {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 6px 10px;
+
+    border: 1px solid #e5dff1;
+    border-radius: 999px;
+
+    background: var(--rs-purple-50);
+
+    color: var(--rs-purple-700);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.article-reading-time {
+    white-space: nowrap;
+
+    font-size: 12px;
+
+    color: var(--rs-text-muted);
+}
+
+.article-card-title {
+    margin: 0 0 12px;
+
+    font-size: 22px;
+    line-height: 1.32;
+
+    letter-spacing: -0.025em;
+}
+
+.article-card-title a {
+    color: var(--rs-text);
+
+    text-decoration: none;
+}
+
+.article-card-title a:hover {
+    color: var(--rs-purple-800);
+}
+
+.article-card-excerpt {
+    margin: 0 0 23px;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    color: var(--rs-text-soft);
+}
+
+.article-read-more {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: var(--rs-purple-700);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.article-read-more:hover {
+    color: var(--rs-purple-900);
+
+    transform: translateX(2px);
+}
+
+
+/* ========================================
+     TRUST / MEDICAL INFO SECTION
+  ======================================== */
+
+.facts-trust {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background:
+        linear-gradient(135deg,
+            #faf8fd 0%,
+            #f5f1fa 100%);
+
+    border-top: 1px solid #eee9f4;
+}
+
+.facts-trust::before {
+    content: "";
+
+    position: absolute;
+
+    width: 440px;
+    height: 440px;
+
+    left: -270px;
+    bottom: -270px;
+
+    border-radius: 50%;
+
+    background: rgba(91, 63, 163, 0.055);
+}
+
+.facts-trust-inner {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 85px;
+
+    align-items: center;
+}
+
+.facts-trust h2 {
+    max-width: 500px;
+
+    margin: 0 0 19px;
+
+    font-size: 40px;
+    line-height: 1.15;
+
+    letter-spacing: -0.035em;
+
+    color: var(--rs-text);
+}
+
+.facts-trust p {
+    max-width: 520px;
+
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: var(--rs-text-soft);
+}
+
+.facts-trust-items {
+    display: grid;
+
+    gap: 13px;
+}
+
+.facts-trust-items>div {
+    padding: 21px 23px;
+
+    border: 1px solid rgba(221, 213, 237, 0.9);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    box-shadow:
+        0 5px 20px rgba(45, 33, 70, 0.025);
+}
+
+.facts-trust-items strong,
+.facts-trust-items span {
+    display: block;
+}
+
+.facts-trust-items strong {
+    margin-bottom: 5px;
+
+    font-size: 15px;
+    font-weight: 650;
+
+    color: var(--rs-text);
+}
+
+.facts-trust-items span {
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: var(--rs-text-soft);
+}
+
+
+/* ========================================
+     SINGLE ARTICLE
+  ======================================== */
+
+.article-container {
+    width: min(920px, calc(100% - 40px));
+
+    margin: 0 auto;
+}
+
+
+/* BREADCRUMBS */
+
+.article-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 9px;
+
+    padding-top: 45px;
+    margin-bottom: 48px;
+
+    font-size: 13px;
+
+    color: var(--rs-text-muted);
+}
+
+.article-breadcrumbs a {
+    color: var(--rs-purple-700);
+
+    text-decoration: none;
+}
+
+.article-breadcrumbs a:hover {
+    color: var(--rs-purple-900);
+}
+
+
+/* ARTICLE HEADER */
+
+.article-header {
+    max-width: 810px;
+
+    margin-bottom: 42px;
+}
+
+.article-header h1 {
+    margin: 18px 0 20px;
+
+    font-size: clamp(40px, 5vw, 60px);
+    line-height: 1.06;
+
+    letter-spacing: -0.045em;
+
+    color: var(--rs-text);
+}
+
+.article-lead {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    color: var(--rs-text-soft);
+}
+
+.article-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: var(--rs-text-muted);
+}
+
+
+/* ARTICLE HERO IMAGE */
+
+.article-hero-image {
+    overflow: hidden;
+
+    margin-bottom: 60px;
+
+    border-radius: 22px;
+
+    aspect-ratio: 16 / 8;
+
+    background: var(--rs-purple-50);
+
+    box-shadow:
+        0 15px 45px rgba(37, 29, 49, 0.045);
+}
+
+.article-hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ========================================
+     ARTICLE CONTENT
+  ======================================== */
+
+.article-layout {
+    width: 100%;
+}
+
+.article-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding-bottom: 105px;
+}
+
+.article-intro {
+    position: relative;
+
+    margin: 0 0 50px;
+
+    padding-left: 22px;
+
+    border-left: 3px solid var(--rs-purple-500);
+
+    font-size: 20px;
+    line-height: 1.78;
+
+    color: #39353e;
+}
+
+.article-section {
+    margin-bottom: 48px;
+}
+
+.article-section h2 {
+    margin: 0 0 17px;
+
+    font-size: 30px;
+    line-height: 1.25;
+
+    letter-spacing: -0.03em;
+
+    color: var(--rs-text);
+}
+
+.article-section p {
+    margin: 0 0 17px;
+
+    font-size: 17px;
+    line-height: 1.82;
+
+    color: #55515b;
+}
+
+.article-section ul {
+    margin: 20px 0 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.article-section li {
+    position: relative;
+
+    margin-bottom: 11px;
+
+    padding-left: 24px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #55515b;
+}
+
+.article-section li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 3px;
+    top: 0.72em;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--rs-purple-500);
+}
+
+
+/* ========================================
+     MEDICAL REVIEW CARD
+  ======================================== */
+
+.medical-review-card {
+    position: relative;
+
+    margin: 58px 0;
+
+    padding: 27px 28px;
+
+    overflow: hidden;
+
+    border: 1px solid #dfd7ef;
+    border-radius: 18px;
+
+    background:
+        linear-gradient(135deg,
+            #fbf9fe 0%,
+            #f5f1fb 100%);
+
+    box-shadow:
+        0 10px 30px rgba(60, 40, 95, 0.035);
+}
+
+.medical-review-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -55px;
+    bottom: -65px;
+
+    border-radius: 50%;
+
+    background: rgba(109, 80, 188, 0.07);
+}
+
+.review-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: var(--rs-purple-600);
+}
+
+.medical-review-card strong {
+    display: block;
+
+    font-size: 17px;
+
+    color: var(--rs-text);
+}
+
+.medical-review-card p {
+    margin: 5px 0 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: var(--rs-text-soft);
+}
+
+
+/* ========================================
+     RELATED SERVICES
+  ======================================== */
+
+.article-services {
+    margin-top: 68px;
+
+    padding-top: 48px;
+
+    border-top: 1px solid var(--rs-border);
+}
+
+.article-services h2 {
+    margin: 0 0 26px;
+
+    font-size: 29px;
+
+    letter-spacing: -0.025em;
+
+    color: var(--rs-text);
+}
+
+.article-service-grid {
+    display: grid;
+
+    gap: 12px;
+}
+
+.article-service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 22px;
+
+    border: 1px solid var(--rs-border);
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    color: var(--rs-text);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.article-service-card:hover {
+    transform: translateX(3px);
+
+    border-color: var(--rs-purple-200);
+
+    background: #fdfcff;
+
+    box-shadow:
+        0 10px 25px rgba(51, 36, 78, 0.05);
+}
+
+.article-service-card strong,
+.article-service-card span {
+    display: block;
+}
+
+.article-service-card strong {
+    font-weight: 650;
+}
+
+.article-service-card div>span {
+    margin-top: 4px;
+
+    font-size: 14px;
+
+    color: var(--rs-text-soft);
+}
+
+.service-arrow {
+    font-size: 22px;
+
+    color: var(--rs-purple-600);
+
+    transition: transform 0.2s ease;
+}
+
+.article-service-card:hover .service-arrow {
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+     TEXT SELECTION
+  ======================================== */
+
+.facts-page ::selection,
+.article-page ::selection {
+    background: #ded4f2;
+    color: #2c2042;
+}
+
+
+/* ========================================
+     TABLET
+  ======================================== */
+
+@media (max-width: 900px) {
+
+    .articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .facts-trust-inner {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .facts-trust h2 {
+        max-width: 620px;
+    }
+
+}
+
+
+/* ========================================
+     MOBILE
+  ======================================== */
+
+@media (max-width: 650px) {
+
+    .facts-container,
+    .article-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+
+    .facts-hero {
+        padding: 67px 0 52px;
+    }
+
+    .facts-hero h1 {
+        font-size: 40px;
+    }
+
+    .facts-hero-text {
+        font-size: 16.5px;
+    }
+
+
+    .facts-filter-section {
+        padding: 20px 0;
+    }
+
+    .facts-categories {
+        justify-content: flex-start;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding-bottom: 4px;
+
+        scrollbar-width: none;
+    }
+
+    .facts-categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .facts-category {
+        flex: 0 0 auto;
+    }
+
+
+    .facts-articles-section {
+        padding: 58px 0 75px;
+    }
+
+    .facts-section-heading {
+        margin-bottom: 28px;
+    }
+
+    .facts-section-heading h2 {
+        font-size: 31px;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .article-card {
+        border-radius: 18px;
+    }
+
+    .article-card-content {
+        padding: 22px;
+    }
+
+
+    .facts-trust {
+        padding: 70px 0;
+    }
+
+    .facts-trust h2 {
+        font-size: 32px;
+    }
+
+
+    .article-breadcrumbs {
+        padding-top: 30px;
+        margin-bottom: 32px;
+    }
+
+    .article-header {
+        margin-bottom: 35px;
+    }
+
+    .article-header h1 {
+        font-size: 39px;
+    }
+
+    .article-lead {
+        font-size: 17px;
+    }
+
+    .article-hero-image {
+        margin-bottom: 43px;
+
+        border-radius: 17px;
+
+        aspect-ratio: 16 / 10;
+    }
+
+
+    .article-content {
+        padding-bottom: 75px;
+    }
+
+    .article-intro {
+        margin-bottom: 42px;
+
+        padding-left: 17px;
+
+        font-size: 17px;
+    }
+
+    .article-section {
+        margin-bottom: 40px;
+    }
+
+    .article-section h2 {
+        font-size: 26px;
+    }
+
+    .article-section p,
+    .article-section li {
+        font-size: 16px;
+    }
+
+
+    .medical-review-card {
+        margin: 45px 0;
+
+        padding: 23px;
+    }
+
+
+    .article-services {
+        margin-top: 53px;
+
+        padding-top: 40px;
+    }
+
+}

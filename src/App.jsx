@@ -24,6 +24,8 @@ import Cancel from "./pages/Failed";
 import PresentSteps from "./pages/Presentkort";
 import ScrollToTop from "./components/ScrollToTop";
 import GoogleAdsConversion from "./components/GoogleConvention";
+import FactsAdvicePage from "./pages/FactsAdvicePage";
+import ArticlePage from "./pages/ArticlePage";
 
 
 function App() {
@@ -52,6 +54,15 @@ function App() {
         <Route path="/magnetrontgen/:slug" element={<ServiceProduct />} />
         <Route path="/halsokontroll/:slug" element={<TestProduct />} />
         <Route path="/presentkort" element={<PresentSteps />} />
+        <Route
+          path="/fakta-och-rad"
+          element={<FactsAdvicePage />}
+        />
+
+        <Route
+          path="/fakta-och-rad/:slug"
+          element={<ArticlePage />}
+        />
       </Routes></>
   );
 }

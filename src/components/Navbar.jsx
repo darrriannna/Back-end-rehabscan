@@ -32,6 +32,9 @@ export default function Navbar() {
                         <li><Link to="/mottagningar">Mottagningar</Link></li>
                         <li><Link to="/om-oss">Om oss</Link></li>
                         <li><Link to="/kontakta">Kontakt</Link></li>
+                        <Link to="/fakta-och-rad">
+                            Fakta & råd
+                        </Link>
                     </ul>
 
                     <div className="nav-actions">

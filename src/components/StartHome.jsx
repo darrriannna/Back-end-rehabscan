@@ -9,17 +9,19 @@ const StartHome = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [count, setCount] = useState(0);
 
+    /* 500+ counter */
     useEffect(() => {
         let start = 0;
-        const end = 500;
+        const end = 600;
         const duration = 1200;
         const stepTime = 20;
         const step = Math.ceil(end / (duration / stepTime));
 
         const timer = setInterval(() => {
             start += step;
+
             if (start >= end) {
-                setCount(500);
+                setCount(end);
                 clearInterval(timer);
             } else {
                 setCount(start);
@@ -28,38 +30,67 @@ const StartHome = () => {
 
         return () => clearInterval(timer);
     }, []);
-    // Detect mobile width
+
+    /* Mobile detection */
     useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth < 700);
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 700);
+        };
+
         handleResize();
+
         window.addEventListener("resize", handleResize);
+
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    /* Search data */
     const allItems = [
-        ...services.map((s) => ({ ...s, type: "mr" })),
-        ...healthTests.map((t) => ({ ...t, type: "test" })),
+        ...services.map((service) => ({
+            ...service,
+            type: "mr",
+        })),
+
+        ...healthTests.map((test) => ({
+            ...test,
+            type: "test",
+        })),
     ];
 
     const filtered = allItems.filter((item) =>
         item.title.toLowerCase().includes(query.toLowerCase())
     );
 
+    /* IMPORTANT: use slugs, not old numeric IDs */
     const resolvePath = (item) => {
-        if (item.type === "mr") return `/magnetrontgen/${item.id}`;
-        if (item.type === "test") return `/halsokontroll/${item.id}`;
+        if (item.type === "mr") {
+            return `/magnetrontgen/${item.slug}`;
+        }
+
+        if (item.type === "test") {
+            return `/halsokontroll/${item.slug}`;
+        }
+
         return "/";
     };
 
-    const visibleServices = isMobile ? (showAll ? services : services.slice(0, 5)) : services;
-
-    const helkroppService = services.find((s) => s.id === 402); // MR Helkropp Pro
+    const visibleServices = isMobile
+        ? showAll
+            ? services
+            : services.slice(0, 5)
+        : services;
 
     return (
         <div className="home">
-            {/* Search */}
+
+            {/* ========================================
+                SEARCH
+            ======================================== */}
+
             <div className="search-container">
+
                 <div className="search-bar">
+
                     <input
                         type="text"
                         placeholder="Sök blodprover eller MR-undersökningar"
@@ -67,17 +98,29 @@ const StartHome = () => {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button className="search-btn">
-                        <img src="/assets/search.svg" alt="Sök" className="cart-icon" />
+
+                    <button
+                        className="search-btn"
+                        type="button"
+                        aria-label="Sök"
+                    >
+                        <img
+                            src="/assets/search.svg"
+                            alt=""
+                            className="cart-icon"
+                        />
                     </button>
+
                 </div>
 
                 {query && (
                     <div className="search-results">
+
                         {filtered.length ? (
+
                             filtered.map((item) => (
                                 <Link
-                                    key={item.id + item.type}
+                                    key={`${item.type}-${item.id}`}
                                     to={resolvePath(item)}
                                     className="search-item"
                                     onClick={() => setQuery("")}
@@ -85,95 +128,199 @@ const StartHome = () => {
                                     {item.title}
                                 </Link>
                             ))
+
                         ) : (
-                            <div className="search-item no-results">Inga träffar</div>
+
+                            <div className="search-item no-results">
+                                Inga träffar
+                            </div>
+
                         )}
+
                     </div>
                 )}
+
             </div>
 
-            {/* Hero Section */}
+
+            {/* ========================================
+                TOP CARDS
+            ======================================== */}
+
             <div className="hero-section">
-                {/* MR Links Card */}
+
+                {/* MR CARD */}
+
                 <div className="hero-card black-card">
-                    <h3 className="mr-title-home">
-                        MR-undersökning utan remiss
-                        <span className="price"> (från 3900kr)</span>
 
-                    </h3>
+                    <div>
 
-                    <div className="mr-links">
-                        {Array.from(
-                            new Map(
-                                visibleServices.map((s) => [s.group.toLowerCase(), s])
-                            ).values()
-                        )
-                            .sort((a, b) =>
-                                a.group.localeCompare(b.group, "sv", { sensitivity: "base" })
+                        <h3 className="mr-title-home">
+                            MR-undersökning utan remiss
+
+                            <span className="price">
+                                {" "}(från 3 900 kr)
+                            </span>
+                        </h3>
+
+
+                        <div className="mr-links">
+
+                            {Array.from(
+                                new Map(
+                                    visibleServices.map((service) => [
+                                        service.group.toLowerCase(),
+                                        service,
+                                    ])
+                                ).values()
                             )
-                            .map((service) => (
-                                <Link
-                                    key={service.group}
-                                    to={`/magnetrontgen/${service.slug}`}
-                                    className="mr-link-btn"
-                                >
-                                    {service.group.charAt(0).toUpperCase() + service.group.slice(1)}
-                                </Link>
-                            ))}
+                                .sort((a, b) =>
+                                    a.group.localeCompare(
+                                        b.group,
+                                        "sv",
+                                        {
+                                            sensitivity: "base",
+                                        }
+                                    )
+                                )
+                                .map((service) => (
+
+                                    <Link
+                                        key={service.group}
+                                        to={`/magnetrontgen/${service.slug}`}
+                                        className="mr-link-btn"
+                                    >
+                                        {service.group
+                                            .charAt(0)
+                                            .toUpperCase() +
+                                            service.group.slice(1)}
+                                    </Link>
+
+                                ))}
+
+                        </div>
+
+
+                        {isMobile && services.length > 5 && (
+
+                            <button
+                                className={`show-all-btn ${showAll ? "open" : ""
+                                    }`}
+                                onClick={() =>
+                                    setShowAll((current) => !current)
+                                }
+                                type="button"
+                            >
+                                {showAll ? "Visa färre" : "Se alla"}
+
+                                <span>⌄</span>
+                            </button>
+
+                        )}
+
                     </div>
 
-                    {/* Show all button for mobile only */}
-                    {isMobile && services.length > 5 && (
-                        <button
-                            className="show-all-btn"
-                            onClick={() => setShowAll(!showAll)}
-                        >
-                            {showAll ? "Visa färre ▲" : "Se alla ▾"}
-                        </button>
-                    )}
                 </div>
 
-                {/* MR Helkropp Advertisement */}
 
-                <section className="mr-ad-wrapper">
+                {/* ========================================
+                    TRUST CARD
+                ======================================== */}
+                <section className="home-clinic-card">
 
-                    <div className="mr-ad-glass">
+                    <div className="home-clinic-topline">
+                        <span>{count}+ patienter senaste året</span>
+                    </div>
 
+                    <div className="home-clinic-main">
+                        <h2>
+                            Professionell diagnostik med trygg vägledning
+                        </h2>
 
-                        <div className="trust-number">{count}+</div>
-                        <p className="trust-number-text">
-                            nöjda patienter bara sista året
+                        <p>
+                            Vi kombinerar medicinsk kompetens, tydlig kommunikation
+                            och personlig vägledning genom hela undersökningen.
                         </p>
+                    </div>
 
+                    <div className="home-clinic-proof">
 
-                        <div className="trust-list">
+                        <div>
+                            <strong>Medicinsk granskning</strong>
+                            <span>Utförd av röntgenläkare</span>
+                        </div>
 
-                            <div className="trust-item">
+                        <div>
+                            <strong>Tydlig process</strong>
+                            <span>Stöd från bokning till svar</span>
+                        </div>
 
-                                <p>Support via email – svar inom 24h</p>
-                            </div>
-
-                            <div className="trust-item">
-
-                                <p>Röntgenläkare granskar alltid bilderna</p>
-                            </div>
-
-                            <div className="trust-item">
-
-                                <p>Vi guidar dig genom hela processen</p>
-                            </div>
-
-                            <div className="trust-item">
-
-                                <p>Du får alltid tillgång till dina bilder och utlåtande</p>
-                            </div>
-
+                        <div>
+                            <strong>Full tillgång</strong>
+                            <span>Bilder och utlåtande tillgängliga för dig</span>
                         </div>
 
                     </div>
 
                 </section>
+
             </div>
+
+
+            {/* ========================================
+                VIDEO / EXPERTISE BANNER
+            ======================================== */}
+
+            <section className="home-video-banner">
+
+                <video
+                    className="home-video-background"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                >
+                    <source
+                        src="/videos/rehabscan-expertise.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+
+
+                <div className="home-video-overlay" />
+
+
+                <div className="home-video-content">
+
+                    <span className="home-video-eyebrow">
+                        Kunskap. Kvalitet. Trygghet.
+                    </span>
+
+                    <h2>
+                        Medicinsk kompetens när det verkligen betyder något
+                    </h2>
+
+                    <p>
+                        Moderna undersökningar, specialistgranskning
+                        och tydlig vägledning – med fokus på att du ska
+                        känna dig trygg genom hela processen.
+                    </p>
+
+
+                    <Link
+                        to="/fakta-och-rad"
+                        className="home-video-link"
+                    >
+                        Utforska Fakta & råd
+
+                        <span>→</span>
+                    </Link>
+
+                </div>
+
+            </section>
+
         </div>
     );
 };

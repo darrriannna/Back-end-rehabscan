@@ -150,7 +150,7 @@ export default function HormonesCarousel() {
                                             className="arrow-btn"
                                             onClick={() =>
                                                 navigate(
-                                                    `/halsokontroll/${test.id}`
+                                                    `/halsokontroll/${test.slug}`
                                                 )
                                             }
                                         >

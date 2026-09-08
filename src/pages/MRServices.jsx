@@ -7,24 +7,30 @@ import ServiceSelector from "../components/ServiceSelector";
 import StartMR from "../components/MRTopHome";
 import MapMR from "../components/MRMap";
 import Footer from "../components/Footer";
-
+import SEO from "../components/SEO";
 
 function MR() {
     const [selectedGroup, setSelectedGroup] = useState("alla");
 
     return (
-        <div className="body">
-            <TopStrip />
-            <Navbar />
+        <>
+            <SEO
+                title="MR-undersökning i Sverige – Magnetkamera | RehabScan"
+                description="Boka MR-undersökning via RehabScan. Magnetkamera för bland annat knä, axel, rygg, hjärna och andra områden."
+                canonical="https://www.rehabscan.se/mr-undersokningar"
+            />
+            <div className="body">
+                <TopStrip />
+                <Navbar />
 
-            <StartMR onSelectGroup={setSelectedGroup} />
+                <StartMR onSelectGroup={setSelectedGroup} />
 
-            <ServiceSelector selectedGroup={selectedGroup} />
+                <ServiceSelector selectedGroup={selectedGroup} />
 
-            <MapMR />
-            <Steps />
-            <Footer />
-        </div>
+                <MapMR />
+                <Steps />
+                <Footer />
+            </div></>
     );
 }
 

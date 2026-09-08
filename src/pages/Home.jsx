@@ -11,11 +11,17 @@ import Footer from "../components/Footer";
 import Varfor from "../components/WhyRehabScan";
 import GoogleMap from "../components/Reviews";
 import HormonesCarousel from "../components/HormonesCarousel";
+import SEO from "../components/SEO";
 
 function Home() {
 
     return (
         <>
+            <SEO
+                title="MR, hälsokontroller & ultraljud i Sverige | RehabScan"
+                description="RehabScan erbjuder MR-undersökningar, hälsokontroller med blodprov och ultraljud på flera orter i Sverige."
+                canonical="https://www.rehabscan.se/"
+            />
             <div className="body">
                 <TopStrip />
                 <Navbar />
