@@ -13,9 +13,9 @@ export const healthTests = [
             "Analys av 52 centrala hälsomarkörer.",
             "Ger en bred genomgång av organfunktion, blodstatus och livsstilsrelaterade risker."
         ],
-        discount: 10,
-        oldPrice: "2 295",
-        newPrice: "2 065",
+
+        oldPrice: "2 495",
+        newPrice: "2 365",
         bg: "#eef3f7",
         image: "/assets/halsotest.avif",
         icon: "+"
@@ -34,9 +34,9 @@ export const healthTests = [
             "49 markörer som ger en tydlig helhetsbild över din hälsa.",
             "Fokus på hormonstatus, vitaminer, ämnesomsättning och blodmarkörer."
         ],
-        discount: 10,
-        oldPrice: "2 195",
-        newPrice: "1 975",
+
+        oldPrice: "2 395",
+        newPrice: "2 275",
         bg: "#f7eefe",
         image: "/assets/halsotest.avif",
         icon: "♀"
@@ -55,9 +55,9 @@ export const healthTests = [
             "46 markörer som analyserar hjärta, blod, hormoner och organfunktion.",
             "Ger en klarare bild av testosteron, näringsstatus och livsstilspåverkan."
         ],
-        discount: 10,
-        oldPrice: "2 195",
-        newPrice: "1 975",
+
+        oldPrice: "2 395",
+        newPrice: "2 275",
         bg: "#eef5ff",
         image: "/assets/halsotest.avif",
         icon: "♂"
@@ -76,9 +76,9 @@ export const healthTests = [
             "64 markörer med extra fokus på hjärta, hormoner och prostatamarkörer.",
             "Ger en mycket detaljerad bild av din hälsa och livsstilsrelaterade risker."
         ],
-        discount: 10,
+
         oldPrice: "3 895",
-        newPrice: "3 500",
+        newPrice: "3 700",
         bg: "#eef5ff",
         image: "/assets/halsotest.avif",
         icon: "♂"
@@ -97,9 +97,9 @@ export const healthTests = [
             "64 markörer med fokus på hormonell balans, näringsstatus och organfunktion.",
             "Ger en djupgående och detaljerad helhetsbild över din hälsa."
         ],
-        discount: 10,
+
         oldPrice: "3 895",
-        newPrice: "3 500",
+        newPrice: "3 700",
         bg: "#f7eefe",
         image: "/assets/halsotest.avif",
         icon: "♀"
@@ -112,7 +112,7 @@ export const healthTests = [
         title: "Testosteron +",
         slug: "testosteron-plus",
         subtitle: "+ Hormoner och näringstatus som påverkar Testosteron ",
-        markers: 10,
+
         bullets: [
             "Fördjupad analys av testosteron och styrande hormoner.",
             "Identifierar hormonell obalans kopplad till energi, libido och välmående.",
@@ -138,9 +138,9 @@ export const healthTests = [
             "Identifierar hormonell obalans vid PMS, oregelbunden mens och klimakteriebesvär.",
             "Inkluderar viktiga näringsämnen som påverkar hormonbalans och välmående."
         ],
-        discount: 10,
-        oldPrice: "1 645",
-        newPrice: "1 479",
+
+        oldPrice: "1 845",
+        newPrice: "1 679",
         bg: "#fdf0f7",
         image: "/assets/estrogen.avif",
         icon: "♀"
@@ -159,7 +159,7 @@ export const healthTests = [
             "Lämpligt vid trötthet, yrsel och nedsatt ork.",
             "Inkluderar kompletterande markörer som påverkar energinivåer."
         ],
-        discount: 10,
+
         oldPrice: "1 295",
         newPrice: "1 165",
         bg: "#f7eefe",
@@ -180,7 +180,7 @@ export const healthTests = [
             "Identifierar näringsbrister som kan påverka mental balans.",
             "Ger en fördjupad förståelse för kroppens stress- och återhämtningsförmåga."
         ],
-        discount: 10,
+
         oldPrice: "1 595",
         newPrice: "1 435",
         bg: "#eef3f7",

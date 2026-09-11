@@ -159,7 +159,7 @@ const StartHome = () => {
                             MR-undersökning utan remiss
 
                             <span className="price">
-                                {" "}(från 3 900 kr)
+                                {" "}(från 3 990 kr)
                             </span>
                         </h3>
 

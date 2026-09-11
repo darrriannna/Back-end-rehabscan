@@ -167,7 +167,7 @@ MR bröstrygg kan påvisa diskbråck, spinal stenos, frakturer, artros, inflamma
             "Radiologens analys",
             "Specialistläkarens bedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger fot rekommenderas vid långvarig fotsmärta, misstänkta stressfrakturer, ligamentsskador eller sentillstånd där röntgen eller ultraljud inte räcker. Även relevant vid idrottsskador och överbelastning.
@@ -189,7 +189,7 @@ Undersökningen visar stressfrakturer, ligamentskador, senrupturer, inflammation
             "Radiologisk granskning",
             "Specialistutlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster fot rekommenderas vid ihållande smärta, belastningsbesvär, misstänkta mjukdelsskador eller vid utredning efter stukningar som inte läker som förväntat.
@@ -211,7 +211,7 @@ MR kan upptäcka ligamentrupturer, senskador, broskskador, stressfrakturer, kaps
             "Radiologens analys",
             "Specialistbedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger fotled rekommenderas vid återkommande stukningar, instabilitet, svullnad, smärta eller misstänkta brosk- och ledbandsskador. Även lämplig vid idrottsskador och oklara smärttillstånd.
@@ -233,7 +233,7 @@ Undersökningen kan visa ledbandsskador, broskskador, inflammation, osteokondral
             "Radiologisk granskning",
             "Specialistutlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster fotled rekommenderas vid smärta, stelhet, instabilitet eller misstänkta överbelastningsskador, särskilt om symtomen inte förbättras trots behandling.
@@ -255,7 +255,7 @@ MR upptäcker ligamentrupturer, broskskador, senproblem, inflammation, cystor, �
             "Bildanalys av radiolog",
             "Specialistbedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger hand rekommenderas vid misstänkta senskador, inflammationer, smärta efter trauma eller vid långvariga överbelastningsbesvär. Även lämplig vid karpala problem eller oklara neuropatiska symtom.
@@ -277,7 +277,7 @@ Undersökningen visar senrupturer, senskideinflammation, mjukdelsskador, ledför
             "Radiologgranskning",
             "Specialistutlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster hand rekommenderas vid smärta, stelhet, misstänkta sen- eller ledförändringar, samt efter trauma eller överbelastning. Passar även när ultraljud inte gett tydlig diagnos.
@@ -321,7 +321,7 @@ Undersökningen visar partiella och kompletta rupturer, inflammation (tendinopat
             "Radiologisk bedömning",
             "Specialistens utlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger armbåge rekommenderas vid oklara armbågssmärtor, misstänkt tennisarmbåge, golfarmbåge, broskskador, ledbandsproblem eller smärta efter trauma.
@@ -343,7 +343,7 @@ MR kan påvisa senskador, broskskador, inflammationer, artros, ledbandsskador, n
             "Bildgranskning",
             "Specialistens bedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster armbåge rekommenderas vid smärta, stelhet, misstänkt senfästesinflammation eller strukturella problem i armbågen. Även vid idrottsskador och långvariga belastningsbesvär.
@@ -365,7 +365,7 @@ Undersökningen avslöjar senskador, ligamentrupturer, broskförändringar, ledv
             "Radiologisk analys",
             "Specialistgranskning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger underben rekommenderas vid misstänkta muskelbristningar, stressfrakturer, svullnad, smärta vid aktivitet eller oklara besvär i underbenet.
@@ -387,7 +387,7 @@ MR visar muskelfiberbristningar, senaavslitningar, stressfrakturer, inflammation
             "Radiologens bildanalys",
             "Specialistens utlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster underben rekommenderas vid återkommande smärta, misstänkta stressfrakturer, överbelastningsskador eller diffusa underbensbesvär som inte kunnat diagnosticeras med röntgen.
@@ -498,7 +498,7 @@ Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, inflammat
             "Radiologisk analys",
             "Specialistbedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger överarm rekommenderas vid misstänkt muskelbristning, överbelastning, smärta vid lyft eller efter trauma. Passar vid idrottsskador och långvariga muskelsmärtor.
@@ -520,7 +520,7 @@ MR kan påvisa muskelrupturer, senvävnadsskador, inflammation, blödningar, mju
             "Bildgranskning",
             "Specialistläkarens bedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster överarm rekommenderas vid muskel- eller mjukdelsskador, kvarstående smärta, misstänkta bristningar eller oklara besvär efter fysisk belastning.
@@ -542,7 +542,7 @@ Undersökningen avslöjar muskelbristningar, senskador, ödem, inflammation, mju
             "Radiologisk analys",
             "Specialistutlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger underarm rekommenderas vid misstänkta muskel- eller senvävnadsskador, smärta vid rotation eller grepp, nervpåverkan eller efter trauma.
@@ -564,7 +564,7 @@ MR visar muskel- och senskador, inflammation, nervinklämningar, ödem, cystor, 
             "Radiologisk analys",
             "Specialistbedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster underarm rekommenderas vid smärta, misstänkta muskel- eller senvävnadsskador, svaghet, överbelastning eller misstänkt stressfraktur.
@@ -586,7 +586,7 @@ Undersökningen påvisar muskelrupturer, senskador, inflammation, stressfrakture
             "Radiologens analys",
             "Specialistens utlåtande"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR höger handled rekommenderas vid smärta, instabilitet, misstänkta ligamentskador, karpaltunnelsymtom eller efter fallskador som ger kvarstående besvär.
@@ -608,7 +608,7 @@ MR kan upptäcka broskskador, ligamentrupturer, senskador, inflammation, ganglio
             "Radiologisk granskning",
             "Specialistbedömning"
         ],
-        price: 3900,
+        price: 3990,
         image: "/assets/placeholder-service.png",
         whenRecommended: `
 MR vänster handled rekommenderas vid långvarig smärta, misstänkta mjukdelsskador, överbelastning eller instabilitet i handleden.
