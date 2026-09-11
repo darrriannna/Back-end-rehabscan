@@ -61,6 +61,34 @@
     opacity: 0.7;
 }
 
+.payment-logos-home {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.payment-logos-home p {
+    color: #333333a1;
+    font-size: 14px;
+}
+
+.payment-logos-home span {
+
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+
+.payment-logos-home img {
+    height: 30px;
+
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
 .payment-logos {
     display: flex;
     justify-content: center;

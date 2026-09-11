@@ -112,6 +112,11 @@ const StartHome = () => {
                     </button>
 
                 </div>
+                <div className="payment-logos-home"><p>Betala med</p>
+                    <span><img src="/assets/klarna.png" alt="klarna" /></span>
+                    <span><img src="/assets/master.png" alt="klarna" /></span>
+                    <span><img src="/assets/visa.png" alt="klarna" /></span>
+                </div>
 
                 {query && (
                     <div className="search-results">

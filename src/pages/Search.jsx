@@ -36,6 +36,7 @@ function Search() {
             <TopStrip />
             <Navbar />
 
+
             {/* 🔍 SEARCH SECTION */}
             <div className="search-page">
 
