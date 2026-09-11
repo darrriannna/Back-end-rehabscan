@@ -1,5 +1,7 @@
 import "../styles/varfor.css";
 import { useEffect } from "react";
+import FAQAccordion from "./FAQAccordition";
+import { faqData } from "../data/faqData";
 
 const Varfor = () => {
 
@@ -11,7 +13,7 @@ const Varfor = () => {
         });
     }, []);
 
-    return (
+    return (<>
         <section className="why-container">
             <div className="why-content">
 
@@ -40,6 +42,58 @@ const Varfor = () => {
 
             </div>
         </section>
+        <section className="faq-section">
+            <h2 className="section-title-fragor">Vanliga frågor</h2>
+
+            <div className="faq-grid">
+
+                <div className="faq-column">
+                    <h3>MR-undersökning</h3>
+                    {faqData.magnetrontgen.map((item, i) => (
+                        <FAQAccordion
+                            key={i}
+                            question={item.q}
+                            answer={item.a}
+                        />
+                    ))}
+                </div>
+
+                <div className="faq-column">
+                    <h3>Hälsokontroller</h3>
+                    {faqData.halsokontroller.map((item, i) => (
+                        <FAQAccordion
+                            key={i}
+                            question={item.q}
+                            answer={item.a}
+                        />
+                    ))}
+                </div>
+
+                <div className="faq-column">
+                    <h3>Betalning</h3>
+                    {faqData.betalning.map((item, i) => (
+                        <FAQAccordion
+                            key={i}
+                            question={item.q}
+                            answer={item.a}
+                        />
+                    ))}
+                </div>
+
+                <div className="faq-column">
+                    <h3>Så fungerar det</h3>
+                    {faqData.saFungerarDet.map((item, i) => (
+                        <FAQAccordion
+                            key={i}
+                            question={item.q}
+                            answer={item.a}
+                        />
+                    ))}
+                </div>
+
+            </div>
+        </section>
+    </>
     );
 };
 

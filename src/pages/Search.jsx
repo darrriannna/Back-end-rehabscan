@@ -25,8 +25,8 @@ function Search() {
     );
 
     const resolvePath = (item) => {
-        if (item.type === "mr") return `/magnetrontgen/${item.id}`;
-        if (item.type === "test") return `/halsokontroll/${item.id}`;
+        if (item.type === "mr") return `/magnetrontgen/${item.slug}`;
+        if (item.type === "test") return `/halsokontroll/${item.slug}`;
         return "/";
     };
 

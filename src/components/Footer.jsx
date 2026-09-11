@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="footer-top">
                 <div className="footer-contact">
                     <h2>Kontakta oss</h2>
-                    <p className="footer-phone">📞 010 210 22 31</p>
+                    <a href="tel:+46102102231" className="footer-phone">010-210 22 31</a>
                     <p className="footer-email">✉️ info@rehabscan.se</p>
                 </div>
             </div>
