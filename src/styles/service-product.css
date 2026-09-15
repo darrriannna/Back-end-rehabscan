@@ -1249,3 +1249,48 @@
         animation: none;
     }
 }
+
+/* ========================================
+   MOBILE PRODUCT HERO FIXES
+======================================== */
+
+.product-hero-copy,
+.product-hero-content,
+.product-title-area {
+    min-width: 0;
+}
+
+.product-hero h1 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+}
+
+@media (max-width: 700px) {
+    .product-hero {
+        padding: 20px 14px 36px;
+    }
+
+    .product-hero-inner {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding: 20px;
+        border-radius: 22px;
+    }
+
+    .product-hero h1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: clamp(30px, 9vw, 40px);
+        line-height: 1.06;
+        letter-spacing: -0.035em;
+    }
+
+    .product-hero p {
+        max-width: 100%;
+    }
+}
