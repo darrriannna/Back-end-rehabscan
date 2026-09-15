@@ -20,7 +20,14 @@ MR ländrygg rekommenderas vid långvarig eller nytillkommen ländryggssmärta, 
 `,
         detectable: `
 Undersökningen kan påvisa diskbråck, nervkompression, spinal stenos, artros i facettleder, inflammation, frakturer, tumörer och andra strukturella förändringar i nedre delen av ryggraden.
-`
+`,
+        // MR Ländrygg
+        bodyArea: {
+            x: 50,
+            y: 46,
+            width: 18,
+            height: 17,
+        },
     },
     {
         id: 2,
@@ -42,7 +49,13 @@ MR höger axel rekommenderas vid smärta, rörelseinskränkning eller misstänkt
 `,
         detectable: `
 Undersökningen kan visualisera rotatorcuffskador, inflammationer, instabilitet, senaavslitningar, broskskador, labrumskador och degenerativa förändringar i axelleden.
-`
+`,
+        bodyArea: {
+            x: 38,
+            y: 23,
+            width: 13,
+            height: 10,
+        }
     },
     {
         id: 3,
@@ -64,7 +77,13 @@ MR vänster axel rekommenderas vid kvarstående axelsmärta, misstänkta sen- el
 `,
         detectable: `
 MR kan upptäcka rotatorcuffrupturer, tendiniter, bursit, labrumskador, broskskador, instabilitet, impingement samt degenerativa förändringar i axelleden.
-`
+`,
+        bodyArea: {
+            x: 62,
+            y: 23,
+            width: 13,
+            height: 10,
+        }
     },
     {
         id: 4,
@@ -86,7 +105,14 @@ MR bäcken och höftleder rekommenderas vid höftsmärta, misstänkt broskskada,
 `,
         detectable: `
 Undersökningen kan upptäcka broskskador, labrumrupturer, artros, stressfrakturer, senfästeinflammationer, mjukdelsskador, bursit, cystor, tumörer eller inflammatoriska förändringar i höftleder och bäcken.
-`
+`,
+        // MR Bäcken/Höftleder
+        bodyArea: {
+            x: 50,
+            y: 50,
+            width: 28,
+            height: 16,
+        },
     },
     {
         id: 5,
@@ -108,7 +134,13 @@ MR vänster knä rekommenderas vid smärta, svullnad, instabilitet eller ”lås
 `,
         detectable: `
 Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, ligamentskador, ödem, inflammation, cystor och tidiga tecken på artros.
-`
+`,
+        bodyArea: {
+            x: 56,
+            y: 73,
+            width: 11,
+            height: 10,
+        }
     },
     {
         id: 6,
@@ -130,7 +162,14 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`
+`,
+        // MR Helkropp / Plus / Pro
+        bodyArea: {
+            x: 50,
+            y: 50,
+            width: 48,
+            height: 88,
+        },
     },
     {
         id: 7,
@@ -152,7 +191,14 @@ MR bröstrygg rekommenderas vid återkommande smärta i bröstryggen, misstänkt
 `,
         detectable: `
 MR bröstrygg kan påvisa diskbråck, spinal stenos, frakturer, artros, inflammation, tumörer, metastaser och andra strukturella förändringar i bröstryggen.
-`
+`,
+        // MR Bröstrygg
+        bodyArea: {
+            x: 50,
+            y: 35,
+            width: 17,
+            height: 22,
+        },
     },
     {
         id: 8,
@@ -174,7 +220,13 @@ MR höger fot rekommenderas vid långvarig fotsmärta, misstänkta stressfraktur
 `,
         detectable: `
 Undersökningen visar stressfrakturer, ligamentskador, senrupturer, inflammationer, broskskador, cystor, ödem samt mjukdelsförändringar i foten.
-`
+`,
+        bodyArea: {
+            x: 45,
+            y: 90,
+            width: 11,
+            height: 9,
+        }
     },
     {
         id: 9,
@@ -196,7 +248,14 @@ MR vänster fot rekommenderas vid ihållande smärta, belastningsbesvär, misst�
 `,
         detectable: `
 MR kan upptäcka ligamentrupturer, senskador, broskskador, stressfrakturer, kapselskador, inflammation, svullnad och andra strukturella förändringar i foten.
-`
+`,
+        bodyArea: {
+            x: 56,
+            y: 90,
+            width: 11,
+            height: 9,
+        }
+
     },
     {
         id: 10,
@@ -218,7 +277,13 @@ MR höger fotled rekommenderas vid återkommande stukningar, instabilitet, svull
 `,
         detectable: `
 Undersökningen kan visa ledbandsskador, broskskador, inflammation, osteokondrala lesioner, synovit, cystor och mjukdelsskador i fotleden.
-`
+`,
+        bodyArea: {
+            x: 45,
+            y: 87,
+            width: 9,
+            height: 8,
+        }
     },
     {
         id: 11,
@@ -240,7 +305,14 @@ MR vänster fotled rekommenderas vid smärta, stelhet, instabilitet eller misst�
 `,
         detectable: `
 MR upptäcker ligamentrupturer, broskskador, senproblem, inflammation, cystor, ödem och andra förändringar i fotleden.
-`
+`,
+        bodyArea: {
+            x: 54,
+            y: 87,
+            width: 9,
+            height: 8,
+        },
+
     },
     {
         id: 12,
@@ -262,7 +334,13 @@ MR höger hand rekommenderas vid misstänkta senskador, inflammationer, smärta 
 `,
         detectable: `
 Undersökningen visar senrupturer, senskideinflammation, mjukdelsskador, ledförändringar, broskskador, cystor, svullnad, nervinklämning samt tidiga tecken på artros.
-`
+`,
+        bodyArea: {
+            x: 16,
+            y: 47,
+            width: 11,
+            height: 13,
+        },
     },
     {
         id: 13,
@@ -284,7 +362,13 @@ MR vänster hand rekommenderas vid smärta, stelhet, misstänkta sen- eller ledf
 `,
         detectable: `
 MR kan upptäcka senskador, tendinit, artrit, broskskador, ganglioncystor, ligamentrupturer, svullnad, inflammation och mjukdelsskador i handen.
-`
+`,
+        bodyArea: {
+            x: 86,
+            y: 47,
+            width: 11,
+            height: 13,
+        }
     },
     {
         id: 14,
@@ -306,7 +390,13 @@ MR hälsena rekommenderas vid misstänkt hälseneruptur, långvarig hälsenesmä
 `,
         detectable: `
 Undersökningen visar partiella och kompletta rupturer, inflammation (tendinopati), degenerativa förändringar, bursit, ödem och omgivande mjukdelsskador.
-`
+`,
+        bodyArea: {
+            x: 50,
+            y: 86,
+            width: 16,
+            height: 11,
+        },
     },
     {
         id: 15,
@@ -328,7 +418,14 @@ MR höger armbåge rekommenderas vid oklara armbågssmärtor, misstänkt tennisa
 `,
         detectable: `
 MR kan påvisa senskador, broskskador, inflammationer, artros, ledbandsskador, nervinklämningar, vätskansamling och mjukdelsförändringar i armbågen.
-`
+`,
+        bodyArea: {
+            x: 29,
+            y: 35,
+            width: 10,
+            height: 9,
+        },
+
     },
     {
         id: 16,
@@ -350,7 +447,13 @@ MR vänster armbåge rekommenderas vid smärta, stelhet, misstänkt senfästesin
 `,
         detectable: `
 Undersökningen avslöjar senskador, ligamentrupturer, broskförändringar, ledvätska, inflammation, cystor, nervpåverkan och mjukdelsskador.
-`
+`,
+        bodyArea: {
+            x: 73,
+            y: 35,
+            width: 10,
+            height: 9,
+        },
     },
     {
         id: 17,
@@ -372,7 +475,13 @@ MR höger underben rekommenderas vid misstänkta muskelbristningar, stressfraktu
 `,
         detectable: `
 MR visar muskelfiberbristningar, senaavslitningar, stressfrakturer, inflammation, ödem, kärlförändringar och andra mjukdels- och skelettförändringar.
-`
+`,
+        bodyArea: {
+            x: 45,
+            y: 80,
+            width: 10,
+            height: 17,
+        }
     },
     {
         id: 18,
@@ -394,7 +503,13 @@ MR vänster underben rekommenderas vid återkommande smärta, misstänkta stress
 `,
         detectable: `
 MR upptäcker muskelbristningar, stressfrakturer, senskador, inflammation, ödem, skelettförändringar och andra mjukdelsavvikelser.
-`
+`,
+        bodyArea: {
+            x: 55,
+            y: 80,
+            width: 10,
+            height: 17,
+        }
     },
     {
         id: 19,
@@ -416,7 +531,14 @@ MR sacrum och SI-leder rekommenderas vid ryggsmärta som strålar mot skinka ell
 `,
         detectable: `
 Undersökningen visar inflammation (sacroiliit), artros, stressfrakturer, ödem, skelettförändringar, tumörer samt avvikelser i SI-lederna och sakrum.
-`
+`,
+        // MR Sacrum/Sacroiliacaleder
+        bodyArea: {
+            x: 50,
+            y: 57,
+            width: 21,
+            height: 12,
+        },
     },
     {
         id: 22,
@@ -438,7 +560,14 @@ MR nacke/halsrygg rekommenderas vid nacksmärta, utstrålande smärta i armarna,
 `,
         detectable: `
 Undersökningen påvisar diskbråck, nervkompression, spinal stenos, artros, inflammation, frakturer, tumörer och andra förändringar i halsryggen.
-`
+`,
+        // MR Nacke/Halsrygg
+        bodyArea: {
+            x: 50,
+            y: 24,
+            width: 14,
+            height: 15,
+        },
     },
     {
         id: 23,
@@ -461,7 +590,14 @@ MR helrygg rekommenderas när man behöver en komplett bild av hela ryggraden, e
 `,
         detectable: `
 Undersökningen kan identifiera diskbråck, spinal stenos, inflammatoriska förändringar, tumörer, nervrotspåverkan, frakturer, degeneration och strukturella avvikelser i hals-, bröst- och ländrygg.
-`
+`,
+        // MR Helrygg
+        bodyArea: {
+            x: 50,
+            y: 37,
+            width: 15,
+            height: 43,
+        },
     },
     {
         id: 26,
@@ -483,7 +619,13 @@ MR höger knä rekommenderas vid smärta, svullnad, instabilitet eller misstänk
 `,
         detectable: `
 Undersökningen påvisar meniskskador, korsbandsrupturer, broskskador, inflammation, ödem, cystor, ligamentskador och tidiga artrosförändringar.
-`
+`,
+        bodyArea: {
+            x: 44,
+            y: 73,
+            width: 11,
+            height: 10,
+        }
     },
     {
         id: 29,
@@ -505,7 +647,13 @@ MR höger överarm rekommenderas vid misstänkt muskelbristning, överbelastning
 `,
         detectable: `
 MR kan påvisa muskelrupturer, senvävnadsskador, inflammation, blödningar, mjukdelstumörer, ödem och andra strukturella förändringar i överarmen.
-`
+`,
+        bodyArea: {
+            x: 32,
+            y: 32,
+            width: 11,
+            height: 10,
+        },
     },
     {
         id: 30,
@@ -527,7 +675,13 @@ MR vänster överarm rekommenderas vid muskel- eller mjukdelsskador, kvarståend
 `,
         detectable: `
 Undersökningen avslöjar muskelbristningar, senskador, ödem, inflammation, mjukdelstumörer och andra patologiska förändringar i överarmen.
-`
+`,
+        bodyArea: {
+            x: 66,
+            y: 32,
+            width: 11,
+            height: 10,
+        },
     },
     {
         id: 31,
@@ -549,7 +703,13 @@ MR höger underarm rekommenderas vid misstänkta muskel- eller senvävnadsskador
 `,
         detectable: `
 MR visar muskel- och senskador, inflammation, nervinklämningar, ödem, cystor, frakturer och andra mjukdelsförändringar i underarmen.
-`
+`,
+        bodyArea: {
+            x: 20,
+            y: 40,
+            width: 10,
+            height: 10,
+        },
     },
     {
         id: 32,
@@ -571,7 +731,13 @@ MR vänster underarm rekommenderas vid smärta, misstänkta muskel- eller senvä
 `,
         detectable: `
 Undersökningen påvisar muskelrupturer, senskador, inflammation, stressfrakturer, ödem, mjukdelstumörer och andra strukturella förändringar.
-`
+`,
+        bodyArea: {
+            x: 70,
+            y: 40,
+            width: 10,
+            height: 10,
+        },
     },
     {
         id: 33,
@@ -593,7 +759,13 @@ MR höger handled rekommenderas vid smärta, instabilitet, misstänkta ligaments
 `,
         detectable: `
 MR kan upptäcka broskskador, ligamentrupturer, senskador, inflammation, ganglioncystor, nervinklämning och strukturella förändringar i handleden.
-`
+`,
+        bodyArea: {
+            x: 21,
+            y: 42,
+            width: 9,
+            height: 8,
+        },
     },
     {
         id: 34,
@@ -615,7 +787,13 @@ MR vänster handled rekommenderas vid långvarig smärta, misstänkta mjukdelssk
 `,
         detectable: `
 Undersökningen avslöjar ligamentsskador, senskador, broskförändringar, inflammation, cystor, svullnad och andra strukturella avvikelser i handleden.
-`
+`,
+        bodyArea: {
+            x: 80,
+            y: 42,
+            width: 9,
+            height: 8,
+        },
     },
     {
         id: 35,
@@ -637,7 +815,14 @@ MR buk rekommenderas vid oklara buksmärtor, misstänkt leversjukdom, cystor, tu
 `,
         detectable: `
 Undersökningen ger tydliga bilder av lever, njurar, pankreas, mjälte, gallvägar, kärl, lymfkörtlar, cystor, tumörer, inflammationer och andra avvikelser i buken.
-`
+`,
+        // MR Buk
+        bodyArea: {
+            x: 50,
+            y: 43,
+            width: 27,
+            height: 20,
+        },
     },
     {
         id: 36,
@@ -659,7 +844,14 @@ MR prostata rekommenderas vid utredning av prostatacancer, förhöjt PSA, misst�
 `,
         detectable: `
 MR prostata upptäcker tumörer, inflammation, benign prostataförstoring (BPH), strukturella förändringar, kapselgenombrott, spridning och andra patologiska fynd.
-`
+`,
+        // MR Prostata
+        bodyArea: {
+            x: 50,
+            y: 50,
+            width: 13,
+            height: 10,
+        },
     },
     {
         id: 37,
@@ -681,7 +873,13 @@ MR hjärna rekommenderas vid huvudvärk, neurologiska symtom, misstänkta tumör
 `,
         detectable: `
 MR hjärna kan upptäcka tumörer, blödningar, stroke, inflammationer, demyeliniserande sjukdomar, degenerativa förändringar och andra strukturella avvikelser.
-`
+`,
+        bodyArea: {
+            x: 50,
+            y: 11,
+            width: 15,
+            height: 12,
+        },
     },
     {
         id: 38,
@@ -703,7 +901,14 @@ MR hals rekommenderas vid långvarig smärta eller svullnad i halsen, misstänkt
 `,
         detectable: `
 Undersökningen visar förändringar i mjukdelar, lymfkörtlar, muskler, kärl, tumörer, cystor, inflammationer och andra strukturella avvikelser i halsen.
-`
+`,
+
+        bodyArea: {
+            x: 50,
+            y: 20,
+            width: 12,
+            height: 9,
+        },
     },
     {
         id: 401,
@@ -725,7 +930,14 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`
+`,
+        // MR Helkropp / Plus / Pro
+        bodyArea: {
+            x: 50,
+            y: 50,
+            width: 48,
+            height: 88,
+        },
     },
     {
         id: 402,
@@ -747,7 +959,14 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
 `,
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
-`
+`,
+        // MR Helkropp / Plus / Pro
+        bodyArea: {
+            x: 50,
+            y: 50,
+            width: 48,
+            height: 88,
+        },
     },
 
 

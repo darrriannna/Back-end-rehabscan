@@ -32,22 +32,25 @@ const Varfor = () => {
                 WHY REHABSCAN
             ======================================== */}
 
-            <section className="why-section">
-                <div className="why-container">
+            <section className="rehab-why-section">
+                <div className="rehab-why-container">
 
-                    <div className="why-header">
-                        <div className="why-heading">
-                            <span className="why-eyebrow">
+                    {/* HEADER */}
+
+                    <div className="rehab-why-header">
+
+                        <div className="rehab-why-heading">
+                            <span className="rehab-why-eyebrow">
                                 Därför RehabScan
                             </span>
 
                             <h2>
-                                Tryggare väg till
-                                <span> rätt undersökning.</span>
+                                Tryggare väg till{" "}
+                                <span>rätt undersökning.</span>
                             </h2>
                         </div>
 
-                        <div className="why-intro">
+                        <div className="rehab-why-intro">
                             <p>
                                 Vi gör det enklare att få tillgång till
                                 medicinska undersökningar och hälsokontroller
@@ -55,61 +58,80 @@ const Varfor = () => {
                                 och kvalitet genom hela processen.
                             </p>
                         </div>
+
                     </div>
 
 
-                    <div className="why-benefits">
+                    {/* BENEFITS */}
+
+                    <div className="rehab-why-benefits">
+
                         {benefits.map((benefit) => (
                             <article
-                                className="why-card"
+                                className="rehab-why-card"
                                 key={benefit.number}
                             >
-                                <div className="why-card-top">
-                                    <span className="why-number">
+                                <div className="rehab-why-card-top">
+
+                                    <span className="rehab-why-number">
                                         {benefit.number}
                                     </span>
 
                                     <span
-                                        className="why-check"
+                                        className="rehab-why-check"
                                         aria-hidden="true"
                                     >
                                         ✓
                                     </span>
+
                                 </div>
 
-                                <h3>{benefit.title}</h3>
+                                <div className="rehab-why-card-content">
+                                    <h3>{benefit.title}</h3>
+                                    <p>{benefit.text}</p>
+                                </div>
 
-                                <p>{benefit.text}</p>
                             </article>
                         ))}
+
                     </div>
 
 
-                    <div className="why-trust-row">
-                        <div className="why-trust-item">
+                    {/* TRUST BAR */}
+
+                    <div className="rehab-why-trust">
+
+                        <div className="rehab-why-trust-item">
                             <strong>Medicinsk kompetens</strong>
                             <span>
                                 Specialistbedömning och etablerade vårdgivare
                             </span>
                         </div>
 
-                        <div className="why-trust-divider" />
+                        <div
+                            className="rehab-why-trust-divider"
+                            aria-hidden="true"
+                        />
 
-                        <div className="why-trust-item">
+                        <div className="rehab-why-trust-item">
                             <strong>Personlig vägledning</strong>
                             <span>
                                 Hjälp genom hela processen
                             </span>
                         </div>
 
-                        <div className="why-trust-divider" />
+                        <div
+                            className="rehab-why-trust-divider"
+                            aria-hidden="true"
+                        />
 
-                        <div className="why-trust-item">
+                        <div className="rehab-why-trust-item">
                             <strong>Tydlig information</strong>
                             <span>
                                 Du vet vad som händer och vad nästa steg är
                             </span>
                         </div>
+
                     </div>
 
                 </div>
@@ -121,6 +143,7 @@ const Varfor = () => {
             ======================================== */}
 
             <section className="faq-section">
+
                 <h2 className="section-title-fragor">
                     Vanliga frågor
                 </h2>
@@ -179,6 +202,7 @@ const Varfor = () => {
                     </div>
 
                 </div>
+
             </section>
         </>
     );

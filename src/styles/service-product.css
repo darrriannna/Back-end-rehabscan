@@ -1102,3 +1102,150 @@
         padding: 15px;
     }
 }
+
+/* =========================================================
+   MR BODY MAP
+   ========================================================= */
+
+.mr-body-map {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border-radius: 22px;
+}
+
+
+/* The wrapper follows the real image ratio */
+.mr-body-image-wrapper {
+    position: relative;
+
+    display: inline-block;
+
+    height: 100%;
+    max-width: 100%;
+
+    line-height: 0;
+}
+
+
+.mr-body-map-image {
+    display: block;
+
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+
+    object-fit: contain;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* 
+   This is the important part.
+
+   The canvas keeps the SAME aspect ratio as the source image.
+   Both the image and highlight live inside this element.
+*/
+.mr-body-canvas {
+    position: relative;
+
+    width: auto;
+    height: 100%;
+
+    aspect-ratio: 1072 / 1430;
+
+    flex: 0 0 auto;
+}
+
+/* Image fills the coordinate canvas exactly */
+
+
+
+/* =========================================================
+   HIGHLIGHT
+   ========================================================= */
+
+.mr-body-highlight {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+
+    border: 2px solid rgba(104, 75, 140, 0.8);
+    border-radius: 50%;
+
+    background: radial-gradient(ellipse at center,
+            rgba(104, 75, 140, 0.5) 0%,
+            rgba(104, 75, 140, 0.3) 35%,
+            rgba(104, 75, 140, 0.12) 58%,
+            rgba(104, 75, 140, 0) 75%);
+
+    box-shadow:
+        0 0 16px rgba(104, 75, 140, 0.28),
+        0 0 30px rgba(104, 75, 140, 0.12);
+
+    pointer-events: none;
+
+    animation: mr-body-pulse 2.2s ease-in-out infinite;
+
+    z-index: 2;
+}
+
+
+/* Small center point */
+.mr-body-highlight::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 7px;
+    height: 7px;
+
+    transform: translate(-50%, -50%);
+
+    background: #684b8c;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 3px rgba(104, 75, 140, 0.18);
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes mr-body-pulse {
+
+    0%,
+    100% {
+        opacity: 0.72;
+        transform:
+            translate(-50%, -50%) scale(0.94);
+    }
+
+    50% {
+        opacity: 1;
+        transform:
+            translate(-50%, -50%) scale(1.07);
+    }
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .mr-body-highlight {
+        animation: none;
+    }
+}
