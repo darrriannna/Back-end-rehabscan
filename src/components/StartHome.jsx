@@ -9,7 +9,19 @@ const StartHome = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [count, setCount] = useState(0);
 
-    /* 500+ counter */
+    /* ========================================
+       ONLY MR SERVICES
+    ======================================== */
+
+    const mrServices = services.filter(
+        (service) => service.type === "mr"
+    );
+
+
+    /* ========================================
+       600+ COUNTER
+    ======================================== */
+
     useEffect(() => {
         let start = 0;
         const end = 600;
@@ -31,7 +43,11 @@ const StartHome = () => {
         return () => clearInterval(timer);
     }, []);
 
-    /* Mobile detection */
+
+    /* ========================================
+       MOBILE DETECTION
+    ======================================== */
+
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 700);
@@ -41,15 +57,22 @@ const StartHome = () => {
 
         window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener("resize", handleResize);
+        return () =>
+            window.removeEventListener("resize", handleResize);
     }, []);
 
-    /* Search data */
+
+    /* ========================================
+       SEARCH DATA
+
+       services already contain their correct
+       type: "mr" or type: "dexa"
+
+       Health tests get type: "test"
+    ======================================== */
+
     const allItems = [
-        ...services.map((service) => ({
-            ...service,
-            type: "mr",
-        })),
+        ...services,
 
         ...healthTests.map((test) => ({
             ...test,
@@ -57,14 +80,29 @@ const StartHome = () => {
         })),
     ];
 
+
+    /* ========================================
+       SEARCH FILTER
+    ======================================== */
+
     const filtered = allItems.filter((item) =>
-        item.title.toLowerCase().includes(query.toLowerCase())
+        item.title
+            .toLowerCase()
+            .includes(query.toLowerCase())
     );
 
-    /* IMPORTANT: use slugs, not old numeric IDs */
+
+    /* ========================================
+       RESOLVE PRODUCT URL
+    ======================================== */
+
     const resolvePath = (item) => {
         if (item.type === "mr") {
             return `/magnetrontgen/${item.slug}`;
+        }
+
+        if (item.type === "dexa") {
+            return `/dexa/${item.slug}`;
         }
 
         if (item.type === "test") {
@@ -74,11 +112,20 @@ const StartHome = () => {
         return "/";
     };
 
+
+    /* ========================================
+       MR SERVICES SHOWN IN BLACK CARD
+
+       IMPORTANT:
+       Only MR services are allowed here.
+    ======================================== */
+
     const visibleServices = isMobile
         ? showAll
-            ? services
-            : services.slice(0, 5)
-        : services;
+            ? mrServices
+            : mrServices.slice(0, 5)
+        : mrServices;
+
 
     return (
         <div className="home">
@@ -93,10 +140,12 @@ const StartHome = () => {
 
                     <input
                         type="text"
-                        placeholder="Sök blodprover eller MR-undersökningar"
+                        placeholder="Sök MR, DEXA eller blodprover"
                         className="search-input"
                         value={query}
-                        onChange={(e) => setQuery(e.target.value)}
+                        onChange={(e) =>
+                            setQuery(e.target.value)
+                        }
                     />
 
                     <button
@@ -112,11 +161,37 @@ const StartHome = () => {
                     </button>
 
                 </div>
-                <div className="payment-logos-home"><p>Betala med</p>
-                    <span><img src="/assets/klarna.png" alt="klarna" /></span>
-                    <span><img src="/assets/master.png" alt="klarna" /></span>
-                    <span><img src="/assets/visa.png" alt="klarna" /></span>
+
+
+                <div className="payment-logos-home">
+
+                    <p>Betala med</p>
+
+                    <span>
+                        <img
+                            src="/assets/klarna.png"
+                            alt="Klarna"
+                        />
+                    </span>
+
+                    <span>
+                        <img
+                            src="/assets/master.png"
+                            alt="Mastercard"
+                        />
+                    </span>
+
+                    <span>
+                        <img
+                            src="/assets/visa.png"
+                            alt="Visa"
+                        />
+                    </span>
+
                 </div>
+
+
+                {/* SEARCH RESULTS */}
 
                 {query && (
                     <div className="search-results">
@@ -124,14 +199,18 @@ const StartHome = () => {
                         {filtered.length ? (
 
                             filtered.map((item) => (
+
                                 <Link
                                     key={`${item.type}-${item.id}`}
                                     to={resolvePath(item)}
                                     className="search-item"
-                                    onClick={() => setQuery("")}
+                                    onClick={() =>
+                                        setQuery("")
+                                    }
                                 >
                                     {item.title}
                                 </Link>
+
                             ))
 
                         ) : (
@@ -154,18 +233,23 @@ const StartHome = () => {
 
             <div className="hero-section">
 
-                {/* MR CARD */}
+
+                {/* ========================================
+                    MR CARD
+                ======================================== */}
 
                 <div className="hero-card black-card">
 
                     <div>
 
                         <h3 className="mr-title-home">
+
                             MR-undersökning utan remiss
 
                             <span className="price">
                                 {" "}(från 3 990 kr)
                             </span>
+
                         </h3>
 
 
@@ -173,10 +257,12 @@ const StartHome = () => {
 
                             {Array.from(
                                 new Map(
-                                    visibleServices.map((service) => [
-                                        service.group.toLowerCase(),
-                                        service,
-                                    ])
+                                    visibleServices.map(
+                                        (service) => [
+                                            service.group.toLowerCase(),
+                                            service,
+                                        ]
+                                    )
                                 ).values()
                             )
                                 .sort((a, b) =>
@@ -206,22 +292,33 @@ const StartHome = () => {
                         </div>
 
 
-                        {isMobile && services.length > 5 && (
+                        {/* MOBILE SHOW ALL */}
 
-                            <button
-                                className={`show-all-btn ${showAll ? "open" : ""
-                                    }`}
-                                onClick={() =>
-                                    setShowAll((current) => !current)
-                                }
-                                type="button"
-                            >
-                                {showAll ? "Visa färre" : "Se alla"}
+                        {isMobile &&
+                            mrServices.length > 5 && (
 
-                                <span>⌄</span>
-                            </button>
+                                <button
+                                    className={`show-all-btn ${showAll
+                                            ? "open"
+                                            : ""
+                                        }`}
+                                    onClick={() =>
+                                        setShowAll(
+                                            (current) =>
+                                                !current
+                                        )
+                                    }
+                                    type="button"
+                                >
+                                    {showAll
+                                        ? "Visa färre"
+                                        : "Se alla"}
 
-                        )}
+                                    <span>⌄</span>
+
+                                </button>
+
+                            )}
 
                     </div>
 
@@ -231,38 +328,66 @@ const StartHome = () => {
                 {/* ========================================
                     TRUST CARD
                 ======================================== */}
+
                 <section className="home-clinic-card">
 
                     <div className="home-clinic-topline">
-                        <span>{count}+ patienter senaste året</span>
+                        <span>
+                            {count}+ patienter senaste året
+                        </span>
                     </div>
 
+
                     <div className="home-clinic-main">
+
                         <h2>
-                            Professionell diagnostik med trygg vägledning
+                            Professionell diagnostik med
+                            trygg vägledning
                         </h2>
 
                         <p>
-                            Vi kombinerar medicinsk kompetens, tydlig kommunikation
-                            och personlig vägledning genom hela undersökningen.
+                            Vi kombinerar medicinsk
+                            kompetens, tydlig kommunikation
+                            och personlig vägledning genom
+                            hela undersökningen.
                         </p>
+
                     </div>
+
 
                     <div className="home-clinic-proof">
 
                         <div>
-                            <strong>Medicinsk granskning</strong>
-                            <span>Utförd av röntgenläkare</span>
+                            <strong>
+                                Medicinsk granskning
+                            </strong>
+
+                            <span>
+                                Utförd av röntgenläkare
+                            </span>
                         </div>
 
-                        <div>
-                            <strong>Tydlig process</strong>
-                            <span>Stöd från bokning till svar</span>
-                        </div>
 
                         <div>
-                            <strong>Full tillgång</strong>
-                            <span>Bilder och utlåtande tillgängliga för dig</span>
+                            <strong>
+                                Tydlig process
+                            </strong>
+
+                            <span>
+                                Stöd från bokning till svar
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                Full tillgång
+                            </strong>
+
+                            <span>
+                                Bilder och utlåtande
+                                tillgängliga för dig
+                            </span>
                         </div>
 
                     </div>
@@ -302,13 +427,17 @@ const StartHome = () => {
                         Kunskap. Kvalitet. Trygghet.
                     </span>
 
+
                     <h2>
-                        Medicinsk kompetens när det verkligen betyder något
+                        Medicinsk kompetens när det
+                        verkligen betyder något
                     </h2>
 
+
                     <p>
-                        Moderna undersökningar, specialistgranskning
-                        och tydlig vägledning – med fokus på att du ska
+                        Moderna undersökningar,
+                        specialistgranskning och tydlig
+                        vägledning – med fokus på att du ska
                         känna dig trygg genom hela processen.
                     </p>
 

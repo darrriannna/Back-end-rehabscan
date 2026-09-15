@@ -1,0 +1,488 @@
+/* =========================================================
+   REHABSCAN — DEXA LANDING PAGE
+   ========================================================= */
+
+.dexa-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+    color: #25212b;
+}
+
+.dexa-page *,
+.dexa-page *::before,
+.dexa-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.dexa-hero {
+    padding: 28px 20px 20px;
+}
+
+.dexa-hero-inner {
+    width: 100%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+    padding: 68px 60px;
+
+    background:
+        radial-gradient(circle at 85% 20%,
+            rgba(104, 75, 140, 0.11),
+            transparent 35%),
+        #f8f6fb;
+
+    border: 1px solid #eee9f3;
+    border-radius: 30px;
+}
+
+.dexa-eyebrow {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    color: #76569b;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 750;
+
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.dexa-hero h1 {
+    max-width: 720px;
+
+    margin: 0 0 18px;
+
+    color: #26212c;
+
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.04;
+    font-weight: 650;
+    letter-spacing: -0.045em;
+}
+
+.dexa-hero p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #6d6772;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+   ========================================================= */
+
+.dexa-services {
+    width: calc(100% - 40px);
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 70px 0 74px;
+}
+
+.dexa-section-heading {
+    max-width: 650px;
+
+    margin-bottom: 32px;
+}
+
+.dexa-section-heading>span {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    color: #76569b;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 750;
+
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+.dexa-section-heading h2 {
+    margin: 0 0 12px;
+
+    color: #29242f;
+
+    font-size: clamp(29px, 3.5vw, 40px);
+    line-height: 1.12;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+}
+
+.dexa-section-heading p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #716b76;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DEXA PRODUCT CARDS
+   ========================================================= */
+
+.dexa-service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.dexa-service-card {
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+
+    overflow: hidden;
+
+    background: #f9f8fb;
+
+    border: 1px solid #ece8f0;
+    border-radius: 24px;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.dexa-service-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #ded5e8;
+
+    box-shadow:
+        0 14px 34px rgba(65, 45, 84, 0.08);
+}
+
+
+/* CARD IMAGE */
+
+.dexa-card-image {
+    width: 190px;
+    min-height: 270px;
+
+    overflow: hidden;
+
+    background: #f0ecf4;
+}
+
+.dexa-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.dexa-service-card:hover .dexa-card-image img {
+    transform: scale(1.025);
+}
+
+
+/* CARD CONTENT */
+
+.dexa-card-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 27px 25px;
+}
+
+.dexa-card-category {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #76569b;
+
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 750;
+
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+.dexa-card-content h3 {
+    margin: 0 0 10px;
+
+    color: #2c2731;
+
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+}
+
+.dexa-card-content>p {
+    margin: 0 0 24px;
+
+    color: #716b76;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.dexa-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-top: auto;
+    padding-top: 17px;
+
+    border-top: 1px solid #e8e3eb;
+}
+
+.dexa-card-bottom strong {
+    color: #302a35;
+
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.dexa-card-bottom span {
+    color: #684b8c;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ABOUT DEXA
+   ========================================================= */
+
+.dexa-about {
+    width: calc(100% - 40px);
+    max-width: 1120px;
+
+    margin: 0 auto;
+    padding-bottom: 72px;
+}
+
+.dexa-about-inner {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.3fr);
+    gap: 70px;
+
+    padding: 48px;
+
+    background: #f7f4fa;
+
+    border: 1px solid #ece6f1;
+    border-radius: 28px;
+}
+
+.dexa-about h2 {
+    margin: 0;
+
+    color: #29242f;
+
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.15;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+}
+
+.dexa-about-inner>div:last-child {
+    max-width: 650px;
+}
+
+.dexa-about p {
+    margin: 0;
+
+    color: #68616e;
+
+    font-size: 15.5px;
+    line-height: 1.75;
+}
+
+.dexa-about p+p {
+    margin-top: 17px;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.dexa-service-card:focus-visible {
+    outline: 3px solid rgba(104, 75, 140, 0.25);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .dexa-hero-inner {
+        padding: 54px 42px;
+    }
+
+    .dexa-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dexa-service-card {
+        grid-template-columns: 210px minmax(0, 1fr);
+    }
+
+    .dexa-card-image {
+        width: 210px;
+        min-height: 250px;
+    }
+
+    .dexa-about-inner {
+        gap: 40px;
+
+        padding: 38px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .dexa-hero {
+        padding: 14px 14px 10px;
+    }
+
+    .dexa-hero-inner {
+        padding: 38px 24px;
+
+        border-radius: 22px;
+    }
+
+    .dexa-hero h1 {
+        margin-bottom: 14px;
+
+        font-size: 37px;
+    }
+
+    .dexa-hero p {
+        font-size: 16px;
+    }
+
+
+    /* SERVICES */
+
+    .dexa-services {
+        width: calc(100% - 28px);
+
+        padding: 50px 0 54px;
+    }
+
+    .dexa-section-heading {
+        margin-bottom: 24px;
+    }
+
+    .dexa-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .dexa-section-heading p {
+        font-size: 15px;
+    }
+
+
+    /* PRODUCT CARDS */
+
+    .dexa-service-grid {
+        gap: 14px;
+    }
+
+    .dexa-service-card {
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 20px;
+    }
+
+    .dexa-card-image {
+        width: 100%;
+        height: 190px;
+        min-height: 0;
+    }
+
+    .dexa-card-content {
+        padding: 22px;
+    }
+
+    .dexa-card-content h3 {
+        font-size: 20px;
+    }
+
+    .dexa-card-content>p {
+        margin-bottom: 20px;
+    }
+
+
+    /* ABOUT */
+
+    .dexa-about {
+        width: calc(100% - 28px);
+
+        padding-bottom: 50px;
+    }
+
+    .dexa-about-inner {
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+        padding: 28px 22px;
+
+        border-radius: 22px;
+    }
+
+    .dexa-about h2 {
+        font-size: 28px;
+    }
+
+    .dexa-about p {
+        font-size: 15px;
+    }
+}

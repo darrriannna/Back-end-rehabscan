@@ -26,7 +26,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import GoogleAdsConversion from "./components/GoogleConvention";
 import FactsAdvicePage from "./pages/FactsAdvicePage";
 import ArticlePage from "./pages/ArticlePage";
-
+import DexaPage from "./components/DexaPage";
 
 function App() {
   return (
@@ -53,10 +53,18 @@ function App() {
         <Route path="/cancel" element={<Cancel />} />
         <Route path="/magnetrontgen/:slug" element={<ServiceProduct />} />
         <Route path="/halsokontroll/:slug" element={<TestProduct />} />
+        <Route
+          path="/dexa/:slug"
+          element={<ServiceProduct />}
+        />
         <Route path="/presentkort" element={<PresentSteps />} />
         <Route
           path="/fakta-och-rad"
           element={<FactsAdvicePage />}
+        />
+        <Route
+          path="/dexa"
+          element={<DexaPage />}
         />
 
         <Route

@@ -28,6 +28,7 @@ export default function Navbar() {
                         <li><Link to="/mr-undersokningar">MR-undersökningar</Link></li>
                         <li><Link to="/helkropp">Helkropp</Link></li>
                         <li><Link to="/ultraljud">Ultraljud/CT</Link></li>
+                        <Link to="/dexa">DEXA</Link>
                         <li><Link to="/hur-fungerar-det">Så fungerar det</Link></li>
                         <li><Link to="/mottagningar">Mottagningar</Link></li>
                         <li><Link to="/om-oss">Om oss</Link></li>

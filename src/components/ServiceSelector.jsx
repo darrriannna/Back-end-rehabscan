@@ -1,35 +1,57 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-import { services } from "../data/servicesData"; // <-- USE THE REAL DATA
+import { services } from "../data/servicesData";
 import "../styles/services.css";
 
 const ServiceSelector = ({ selectedGroup }) => {
-    const filteredServices =
-        selectedGroup === "alla"
-            ? services
-            : services.filter(service => service.group === selectedGroup);
     const { cart, addToCart, removeFromCart } = useCart();
 
-    const isInCart = (id) => cart.some((item) => item.id === id);
+    /* Only MR services belong on the MR page */
+    const mrServices = services.filter(
+        (service) => service.type === "mr"
+    );
+
+    const filteredServices =
+        selectedGroup === "alla"
+            ? mrServices
+            : mrServices.filter(
+                (service) => service.group === selectedGroup
+            );
+
+    const isInCart = (id) =>
+        cart.some((item) => item.id === id);
 
     return (
-        <div className="service-selector" id="services" >
-            <h2 className="service-title">Välj undersökning</h2>
+        <div
+            className="service-selector"
+            id="services"
+        >
+            <h2 className="service-title">
+                Välj MR-undersökning
+            </h2>
 
             <div className="service-grid">
                 {filteredServices.map((service) => (
-                    <div key={service.id} className="service-card">
-
+                    <div
+                        key={service.id}
+                        className="service-card"
+                    >
                         <div className="service-info">
                             <h3>{service.title}</h3>
+
                             <p className="price">
-                                {service.price.toLocaleString("sv-SE")} kr
+                                {service.price.toLocaleString(
+                                    "sv-SE"
+                                )}{" "}
+                                kr
                             </p>
                         </div>
 
                         <div className="card-buttons">
-                            {/* Läs mer – goes to product page */}
+
+                            {/* PRODUCT PAGE */}
+
                             <Link
                                 to={`/magnetrontgen/${service.slug}`}
                                 className="readmore-btn"
@@ -37,16 +59,24 @@ const ServiceSelector = ({ selectedGroup }) => {
                                 Läs mer →
                             </Link>
 
-                            {/* Add/remove cart */}
+
+                            {/* CART */}
+
                             {isInCart(service.id) ? (
                                 <button
+                                    type="button"
                                     className="remove-btn"
-                                    onClick={() => removeFromCart(service.id)}
+                                    onClick={() =>
+                                        removeFromCart(
+                                            service.id
+                                        )
+                                    }
                                 >
                                     Ta bort
                                 </button>
                             ) : (
                                 <button
+                                    type="button"
                                     className="add-btn"
                                     onClick={() =>
                                         addToCart({
@@ -61,8 +91,8 @@ const ServiceSelector = ({ selectedGroup }) => {
                                     Lägg till i varukorg
                                 </button>
                             )}
-                        </div>
 
+                        </div>
                     </div>
                 ))}
             </div>

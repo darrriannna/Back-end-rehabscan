@@ -748,7 +748,190 @@ MR helkropp rekommenderas vid önskemål om en omfattande hälsogenomgång, tidi
         detectable: `
 Undersökningen kan identifiera tumörer, cystor, inflammationsprocesser, skador, skelettförändringar, organavvikelser, degenerativa förändringar samt tidiga sjukdomstecken i hela kroppen.
 `
+    },
+
+
+    {
+        id: 1001,
+        type: "dexa",
+        slug: "dexa-kroppssammansattning",
+        group: "DEXA",
+
+        title: "DEXA Kroppssammansättning",
+        subtitle: "Mätning av fett, fettfri massa och kroppssammansättning",
+
+        seoTitle:
+            "DEXA kroppssammansättning – fett & muskelmassa | RehabScan",
+
+        metaDescription:
+            "DEXA-mätning av kroppssammansättning ger en detaljerad bild av kroppens fettmassa, fettfria massa och fettfördelning. Läs mer och boka via RehabScan.",
+
+        description:
+            "En DEXA-undersökning av kroppssammansättningen ger en detaljerad analys av hur kroppens vävnader är fördelade. Undersökningen kan användas för att följa förändringar i fettmassa och fettfri massa över tid.",
+
+        price: 1895,
+
+        image: "/assets/dexa.AVIF",
+
+        includes: [
+            "DEXA-skanning av kroppssammansättning",
+            "Analys av fettmassa",
+            "Analys av fettfri massa",
+            "Information om kroppens fettfördelning",
+            "Resultat från undersökningen",
+        ],
+
+        whenRecommended:
+            "Undersökningen kan vara relevant för dig som vill få en mer detaljerad bild av din kroppssammansättning än vad vikt och BMI kan ge. Den kan även användas för att följa förändringar över tid, exempelvis i samband med träning eller förändrade levnadsvanor.",
+
+        detectable:
+            "DEXA kan mäta kroppens sammansättning och ge information om bland annat fettmassa, fettfri massa och hur fett är fördelat i olika delar av kroppen.",
+
+        examination:
+            "Under undersökningen ligger du stilla på undersökningsbordet medan DEXA-utrustningen skannar kroppen. Undersökningen är icke-invasiv och genomförs med en låg dos joniserande strålning.",
+
+        preparation:
+            "Du får information om eventuella förberedelser inför besöket. Metallföremål och vissa kläder kan behöva tas av eftersom de kan påverka mätningen.",
+
+        afterExam:
+            "Efter undersökningen sammanställs resultaten från mätningen. Resultatet ger en översikt över din kroppssammansättning och kan användas som utgångspunkt för att följa förändringar över tid.",
+
+        faq: [
+            {
+                question: "Vad är en DEXA-mätning av kroppssammansättning?",
+                answer:
+                    "DEXA är en bilddiagnostisk metod som kan användas för att uppskatta kroppens sammansättning, bland annat fettmassa och fettfri massa.",
+            },
+            {
+                question: "Är DEXA samma sak som BMI?",
+                answer:
+                    "Nej. BMI baseras på längd och vikt, medan DEXA analyserar hur kroppens olika vävnader är fördelade och ger därför annan information om kroppssammansättningen.",
+            },
+            {
+                question: "Använder DEXA strålning?",
+                answer:
+                    "Ja. DEXA använder röntgenstrålning, men stråldosen vid undersökningen är låg.",
+            },
+            {
+                question: "Kan jag följa min utveckling med flera DEXA-mätningar?",
+                answer:
+                    "DEXA kan användas för att jämföra kroppssammansättningen vid olika mättillfällen. Hur ofta en undersökning är lämplig beror på syftet och individuella förutsättningar.",
+            },
+        ],
+
+        relatedArticles: [],
+
+        relatedServices: [
+            "bentathetsmatning",
+        ],
+        clinics: [
+            {
+                name: "Evidia Farsta Röntgen",
+                address: "Karlandaplan 6, Farstagången 32",
+                city: "Farsta",
+                booking: "Kallelse",
+            },
+            {
+                name: "Evidia Mölndal GoCo Röntgen",
+                address: "Entreprenörsstråket 6",
+                city: "Göteborg",
+                booking: "Kallelse",
+            },
+            {
+                name: "Unilabs Sophiahemmet röntgen",
+                address: "Valhallavägen 91",
+                city: "Stockholm",
+                booking: "Kallelse",
+            },
+        ],
+    },
+
+    {
+        id: 1002,
+        type: "dexa",
+        slug: "bentathetsmatning",
+        group: "DEXA",
+
+        title: "Bentäthetsmätning med DEXA",
+        subtitle: "DEXA-skanning för mätning av bentäthet",
+
+        seoTitle:
+            "Bentäthetsmätning med DEXA | RehabScan",
+
+        metaDescription:
+            "Bentäthetsmätning med DEXA används för att mäta bentäthet och kan bidra vid bedömning av osteoporos och frakturrisk. Läs mer och boka via RehabScan.",
+
+        description:
+            "Bentäthetsmätning med DEXA är en undersökning som mäter mineralinnehållet i skelettet. Metoden används bland annat vid utredning och uppföljning av låg bentäthet och osteoporos.",
+
+        price: 2195,
+
+        image: "/assets/dexa.AVIF",
+
+        includes: [
+            "Bentäthetsmätning med DEXA",
+            "Mätning av skelettets mineralinnehåll",
+            "Bedömning av bentäthet",
+            "Resultat från undersökningen",
+        ],
+
+        whenRecommended:
+            "Bentäthetsmätning kan vara aktuell när det finns riskfaktorer för osteoporos eller låg bentäthet, exempelvis efter vissa frakturer, vid långvarig behandling med vissa läkemedel eller när en läkare bedömer att bentätheten behöver utredas.",
+
+        detectable:
+            "DEXA mäter bentätheten och kan identifiera nedsatt bentäthet. Resultatet används tillsammans med andra medicinska uppgifter vid bedömning av bland annat osteopeni, osteoporos och framtida frakturrisk.",
+
+        examination:
+            "Under undersökningen ligger du på ett undersökningsbord medan DEXA-utrustningen genomför mätningen. Vid bentäthetsmätning undersöks vanligtvis områden som höft och ländrygg.",
+
+        preparation:
+            "Undersökningen kräver vanligtvis begränsade förberedelser. Du får information från mottagningen inför besöket och kan behöva ta av metallföremål eller kläder med metalldelar.",
+
+        afterExam:
+            "Resultatet från bentäthetsmätningen sammanställs och kan bland annat uttryckas med T-score och, beroende på situation, Z-score. Resultatet behöver bedömas tillsammans med ålder, sjukdomshistoria och andra riskfaktorer.",
+
+        faq: [
+            {
+                question: "Vad visar en bentäthetsmätning?",
+                answer:
+                    "Undersökningen mäter skelettets bentäthet och används bland annat för att identifiera låg bentäthet och som en del av bedömningen av osteoporos.",
+            },
+            {
+                question: "Vad är T-score?",
+                answer:
+                    "T-score jämför den uppmätta bentätheten med bentätheten hos en referenspopulation av unga vuxna. Värdet används i vissa patientgrupper som en del av diagnostiken av osteoporos.",
+            },
+            {
+                question: "Vad är Z-score?",
+                answer:
+                    "Z-score jämför bentätheten med en referenspopulation med liknande ålder och kön. Vilket mått som är mest relevant beror bland annat på patientens ålder och kliniska situation.",
+            },
+            {
+                question: "Använder bentäthetsmätning strålning?",
+                answer:
+                    "Ja. DEXA använder en låg dos röntgenstrålning för att genomföra mätningen.",
+            },
+        ],
+
+        relatedArticles: [],
+
+        relatedServices: [
+            "dexa-kroppssammansattning",
+        ],
+        clinics: [
+            {
+                name: "Unilabs Hötorget röntgen",
+                address: "Apelbergsgatan 48",
+                city: "Stockholm",
+                booking: "Kallelse",
+            },
+            {
+                name: "Unilabs Sophiahemmet röntgen",
+                address: "Valhallavägen 91",
+                city: "Stockholm",
+                booking: "Kallelse",
+            },
+        ],
+
     }
 ];
-
-
