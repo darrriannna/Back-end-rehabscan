@@ -38,7 +38,7 @@ const Restrictions = () => {
                         </p>
                         <p>
                             Vid avbokning av personliga skäl efter att din undersökningstid redan är bokad (gäller
-                            ej ombokning) kan vi återbetala kostnaden minus bankavgifter och remisskostnader.
+                            ej ombokning) kan vi återbetala kostnaden minus bankavgifter och remisskostnader (1000kr).
                         </p>
                     </section>
 
