@@ -94,7 +94,7 @@ const groups = [
             },
             {
                 question: "Vilka regler gäller vid avbokning?",
-                answer: "Vid avbokning av personliga skäl efter att din undersökningstid redan är bokad kan kostnaden återbetalas med avdrag för bankavgifter och remisskostnader. Uteblivet besök eller avbokning senare än 24 timmar innan bokad tid debiteras fullt.",
+                answer: "Vid avbokning av personliga skäl efter att din undersökningstid redan är bokad kan kostnaden återbetalas med avdrag för bankavgifter och remisskostnader (1000kr). Uteblivet besök eller avbokning senare än 24 timmar innan bokad tid debiteras fullt.",
             },
             {
                 question: "Hur betalar jag för hälsotester och presentkort?",

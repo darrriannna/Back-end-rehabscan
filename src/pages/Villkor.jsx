@@ -58,6 +58,10 @@ const Restrictions = () => {
                             transaktionsavgift. En avgift på 4% av det totala beloppet dras för att täcka kostnader
                             för hantering av betalningen.
                         </p>
+                        <p>
+                            Vid avbokning av personliga skäl efter att din undersökningstid redan är bokad (gäller
+                            ej ombokning) kan vi återbetala kostnaden minus bankavgifter och remisskostnader (1000kr).
+                        </p>
                     </section>
 
                     <section>
